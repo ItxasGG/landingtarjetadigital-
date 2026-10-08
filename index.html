@@ -10,7 +10,7 @@
   <meta name="description"
     content="Tu negocio en el móvil de tu cliente en 3 segundos. Tarjeta de presentación digital elegante con foto, enlaces, WhatsApp y código QR. Sin descargar aplicaciones. 120 € con primer año de mantenimiento incluido.">
   <meta name="author" content="Estrategia Digital Estrella">
-  <meta name="theme-color" content="#2978A0">
+  <meta name="theme-color" content="#270722">
   <link rel="canonical" href="https://tarjetapresentacion-9by.pages.dev/">
 
   <!-- Open Graph / Redes Sociales -->
@@ -29,61 +29,55 @@
     content="Tu negocio en el móvil de tu cliente en 3 segundos. Elegante, con código QR y contacto en un solo toque.">
   <meta name="twitter:image" content="https://tarjetapresentacion-9by.pages.dev/preview.png">
 
-  <!-- Tipografía Google Fonts -->
+  <!-- Tipografía Google Fonts: Outfit (Titulares limpios y geométricos de gran escala) + Plus Jakarta Sans (Cuerpo editorial) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
 
   <style>
     /* ==========================================================================
-       VARIABLES Y SISTEMA DE DISEÑO (REGLA 60 - 30 - 10)
+       DISEÑO ESCANDINAVO EDITORIAL - VARIABLES Y PALETA ESTRICTA
        ========================================================================== */
     :root {
-      /* 60 % Color dominante: Fondo general y secciones */
-      --color-dominant: #E5FCFF;
+      /* Fondos principales y espacios amplios */
+      --bg-mist: #E5FCFF;        /* Niebla azul */
+      --bg-ice: #ABDAFC;         /* Azul hielo */
 
-      /* 30 % Color secundario: Cabecera, secciones alternas, iconos, números de pasos, tarjeta precio, enlaces */
-      --color-secondary: #2978A0;
-      --color-secondary-soft: #D7F4FA;
-      --color-secondary-dark: #1E5C7D;
+      /* Formas geométricas, botones y acentos visuales */
+      --accent-blue: #2978A0;    /* Azul claro */
+      --accent-violet: #270722;  /* Violeta de Medianoche */
 
-      /* 10 % Color de acento: Botones de acción, botón flotante, sellos, títulos principales */
-      --color-accent: #270722;
+      /* Textos principales y elementos de alto contraste */
+      --text-black: #000000;     /* Negro de máximo contraste */
+      --text-violet: #270722;    /* Violeta oscuro */
+      --text-light: #E5FCFF;     /* Contraste sobre fondos violeta/azul */
 
-      /* Efecto hover y activo (desktop y táctil móvil) */
-      --color-hover-bg: #ABDAFC;
-      --color-hover-text: #270722;
-
-      /* Colores de texto y tarjetas */
-      --color-text-title: #270722;
-      --color-text-body: #2B2B2B;
-      --color-text-muted: #56646B;
-      --color-white: #FFFFFF;
-
-      /* Tipografías */
+      /* Tipografía sans-serif editorial limpia */
       --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
-      /* Sombras y bordes redondeados */
-      --radius-sm: 10px;
-      --radius-md: 18px;
-      --radius-lg: 24px;
-      --radius-xl: 32px;
-      --radius-full: 9999px;
+      /* Geometría modular escandinava: arcos, semicírculos y bloques limpios */
+      --radius-sm: 12px;
+      --radius-md: 22px;
+      --radius-lg: 32px;
+      --radius-arch: 56px 56px 22px 22px;
+      --radius-arch-lg: 72px 72px 32px 32px;
+      --radius-pill: 9999px;
 
-      --shadow-sm: 0 4px 12px rgba(41, 120, 160, 0.08);
-      --shadow-card: 0 12px 30px rgba(41, 120, 160, 0.10);
-      --shadow-hover: 0 16px 36px rgba(41, 120, 160, 0.22);
-      --shadow-btn: 0 10px 24px rgba(39, 7, 34, 0.28);
-      --shadow-btn-hover: 0 14px 30px rgba(41, 120, 160, 0.40);
+      /* Bordes arquitectónicos precisos y sombras con relieve geométrico */
+      --border-blue: 2px solid var(--accent-blue);
+      --border-violet: 2.5px solid var(--accent-violet);
+      --shadow-geo-blue: 0 6px 0 var(--accent-blue);
+      --shadow-geo-violet: 0 8px 0 var(--accent-violet);
+      --shadow-geo-lift: 0 12px 0 var(--accent-violet);
 
-      --transition-base: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      --transition-scandi: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     /* ==========================================================================
-       RESET Y ESTILOS GLOBALES
+       RESET Y BASE ESTRUCTURAL
        ========================================================================== */
     *,
     *::before,
@@ -100,8 +94,8 @@
     }
 
     body {
-      background-color: var(--color-dominant);
-      color: var(--color-text-body);
+      background-color: var(--bg-mist);
+      color: var(--text-black);
       font-family: var(--font-body);
       font-size: 16px;
       line-height: 1.65;
@@ -127,17 +121,17 @@
     }
 
     /* ==========================================================================
-       TIPOGRAFÍA Y CONTENEDOR
+       CONTENEDOR Y ENCABEZADOS EDITORIALES DE GRAN TAMAÑO
        ========================================================================== */
     .container {
       width: 100%;
-      max-width: 1100px;
+      max-width: 1140px;
       margin: 0 auto;
-      padding: 0 20px;
+      padding: 0 24px;
     }
 
     .container-narrow {
-      max-width: 780px;
+      max-width: 820px;
     }
 
     h1,
@@ -145,72 +139,88 @@
     h3,
     h4 {
       font-family: var(--font-heading);
-      color: var(--color-text-title);
-      line-height: 1.25;
-      font-weight: 700;
+      color: var(--text-violet);
+      line-height: 1.12;
+      font-weight: 800;
+      letter-spacing: -0.035em;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 50px;
     }
 
     .section-tag {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      background-color: var(--color-secondary-soft);
-      color: var(--color-secondary-dark);
+      gap: 10px;
+      background-color: var(--bg-ice);
+      color: var(--accent-violet);
+      border: 1.5px solid var(--accent-blue);
       font-family: var(--font-heading);
-      font-size: 0.85rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      padding: 6px 14px;
-      border-radius: var(--radius-full);
-      margin-bottom: 16px;
+      font-size: 0.9rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      padding: 8px 20px;
+      border-radius: var(--radius-pill);
+      margin-bottom: 20px;
     }
 
-    .section-header {
-      text-align: center;
-      margin-bottom: 44px;
+    .section-tag::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: var(--accent-violet);
+      display: inline-block;
     }
 
     .section-title {
-      font-size: 1.95rem;
-      margin-bottom: 14px;
-      color: var(--color-text-title);
+      font-size: clamp(2.1rem, 4.4vw, 3.1rem);
+      margin-bottom: 16px;
+      color: var(--text-violet);
+      font-weight: 800;
     }
 
     .section-subtitle {
-      font-size: 1.08rem;
-      color: var(--color-text-muted);
-      max-width: 620px;
+      font-size: 1.12rem;
+      color: var(--text-black);
+      max-width: 640px;
       margin: 0 auto;
+      font-weight: 500;
+      line-height: 1.6;
     }
 
     /* ==========================================================================
-       BOTONES DE ACCIÓN (ESTILO Y EFECTO HOVER EXIGIDO)
+       BOTONES DE ACCIÓN: FORMAS GEOMÉTRICAS Y RELIEVE MODULAR
        ========================================================================== */
     .btn-primary {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
-      background-color: var(--color-accent);
-      color: var(--color-white);
+      gap: 12px;
+      background-color: var(--accent-violet);
+      color: var(--text-light);
       font-family: var(--font-heading);
-      font-size: 1.05rem;
-      font-weight: 700;
-      padding: 16px 32px;
-      border-radius: var(--radius-full);
-      box-shadow: var(--shadow-btn);
-      transition: var(--transition-base);
+      font-size: 1.1rem;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      padding: 18px 38px;
+      border-radius: var(--radius-pill);
+      border: 2px solid var(--accent-violet);
+      box-shadow: var(--shadow-geo-blue);
+      transition: var(--transition-scandi);
       cursor: pointer;
       text-align: center;
     }
 
     .btn-primary:hover,
     .btn-primary:active {
-      background-color: var(--color-hover-bg) !important;
-      color: var(--color-hover-text) !important;
+      background-color: var(--bg-ice) !important;
+      color: var(--accent-violet) !important;
+      border-color: var(--accent-violet) !important;
       transform: translateY(-3px);
-      box-shadow: var(--shadow-btn-hover);
+      box-shadow: var(--shadow-geo-lift);
     }
 
     .btn-primary svg {
@@ -219,33 +229,7 @@
     }
 
     .btn-primary:hover svg {
-      transform: translateX(4px);
-    }
-
-    .btn-secondary {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      background-color: var(--color-white);
-      color: var(--color-secondary);
-      border: 2px solid var(--color-secondary);
-      font-family: var(--font-heading);
-      font-size: 1.02rem;
-      font-weight: 700;
-      padding: 14px 28px;
-      border-radius: var(--radius-full);
-      transition: var(--transition-base);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .btn-secondary:hover,
-    .btn-secondary:active {
-      background-color: var(--color-hover-bg);
-      border-color: var(--color-hover-bg);
-      color: var(--color-accent);
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-card);
+      transform: translateX(5px);
     }
 
     .btn-full {
@@ -253,16 +237,16 @@
     }
 
     /* ==========================================================================
-       BARRA SUPERIOR (HEADER)
+       CABECERA (HEADER) ESCANDINAVA MINIMALISTA
        ========================================================================== */
     .site-header {
-      background-color: var(--color-secondary);
-      color: var(--color-white);
-      padding: 14px 0;
+      background-color: var(--accent-violet);
+      color: var(--text-light);
+      padding: 16px 0;
       position: sticky;
       top: 0;
       z-index: 100;
-      box-shadow: 0 4px 16px rgba(41, 120, 160, 0.15);
+      border-bottom: 2px solid var(--accent-blue);
     }
 
     .header-content {
@@ -274,97 +258,128 @@
     .brand-logo {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
       font-family: var(--font-heading);
       font-weight: 800;
-      font-size: 1.12rem;
-      color: var(--color-white);
-      letter-spacing: -0.01em;
+      font-size: 1.15rem;
+      color: var(--text-light);
+      letter-spacing: -0.02em;
     }
 
+    /* Logotipo con semicírculo geométrico invertido */
     .brand-logo-badge {
-      width: 32px;
-      height: 32px;
-      background-color: var(--color-dominant);
-      color: var(--color-accent);
-      border-radius: var(--radius-sm);
+      width: 34px;
+      height: 34px;
+      background-color: var(--bg-ice);
+      color: var(--accent-violet);
+      border-radius: 12px 12px 4px 4px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-weight: 800;
-      font-size: 0.95rem;
+      font-weight: 900;
+      font-size: 1.05rem;
+      border: 1.5px solid var(--accent-blue);
     }
 
     .header-contact-link {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      font-size: 0.88rem;
-      font-weight: 600;
-      color: var(--color-dominant);
-      padding: 6px 14px;
-      border-radius: var(--radius-full);
-      background-color: rgba(229, 252, 255, 0.12);
-      transition: var(--transition-base);
+      gap: 8px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--accent-violet);
+      background-color: var(--bg-mist);
+      padding: 8px 18px;
+      border-radius: var(--radius-pill);
+      border: 1.5px solid var(--accent-blue);
+      transition: var(--transition-scandi);
     }
 
     .header-contact-link:hover {
-      background-color: var(--color-hover-bg);
-      color: var(--color-accent);
+      background-color: var(--bg-ice);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 0 var(--accent-blue);
     }
 
     /* ==========================================================================
-       SECCIÓN 1: HERO (CABECERA)
+       SECCIÓN 1: HERO CON FORMAS GEOMÉTRICAS MODULARES
        ========================================================================== */
     .hero-section {
-      padding: 56px 0 64px 0;
+      padding: 68px 0 84px 0;
       position: relative;
+      background-color: var(--bg-mist);
+      overflow: hidden;
+    }
+
+    /* Fondo decorativo con semicírculo geométrico nórdico */
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      top: -40px;
+      right: -70px;
+      width: 260px;
+      height: 130px;
+      border-radius: 130px 130px 0 0;
+      background-color: var(--bg-ice);
+      border: 2px solid var(--accent-blue);
+      opacity: 0.7;
+      pointer-events: none;
+      z-index: 0;
+      transform: rotate(-15deg);
     }
 
     .hero-grid {
       display: flex;
       flex-direction: column;
-      gap: 44px;
+      gap: 48px;
       align-items: center;
+      position: relative;
+      z-index: 1;
     }
 
     .hero-content {
       text-align: center;
-      max-width: 720px;
+      max-width: 740px;
     }
 
     .hero-title {
-      font-size: 2.35rem;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      margin-bottom: 20px;
-      color: var(--color-accent);
+      font-size: clamp(2.7rem, 6.2vw, 4.4rem);
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      line-height: 1.06;
+      margin-bottom: 22px;
+      color: var(--accent-violet);
     }
 
     .hero-subtitle {
-      font-size: 1.15rem;
-      color: var(--color-text-body);
-      margin-bottom: 30px;
-      line-height: 1.6;
+      font-size: 1.2rem;
+      color: var(--text-black);
+      margin-bottom: 34px;
+      line-height: 1.65;
+      font-weight: 500;
     }
 
     .hero-cta-group {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 12px;
+      gap: 14px;
     }
 
     .hero-price-note {
-      font-size: 0.88rem;
-      font-weight: 600;
-      color: var(--color-secondary-dark);
+      font-size: 0.94rem;
+      font-weight: 700;
+      color: var(--text-black);
       display: inline-flex;
       align-items: center;
-      gap: 6px;
+      gap: 8px;
     }
 
-    /* MOCKUP DEL MÓVIL (TARJETA DE EJEMPLO) */
+    .hero-price-note svg {
+      color: var(--accent-blue);
+    }
+
+    /* MOCKUP GEOMÉTRICO DEL SMARTPHONE */
     .phone-mockup-wrapper {
       position: relative;
       width: 100%;
@@ -372,11 +387,39 @@
       margin: 0 auto;
     }
 
+    /* Semicírculo entrelazado decorativo detrás del móvil */
+    .phone-mockup-wrapper::before {
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: -28px;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background-color: var(--bg-ice);
+      border: 2px solid var(--accent-blue);
+      z-index: -1;
+    }
+
+    .phone-mockup-wrapper::after {
+      content: "";
+      position: absolute;
+      bottom: 20px;
+      right: -24px;
+      width: 160px;
+      height: 80px;
+      border-radius: 80px 80px 0 0;
+      background-color: var(--accent-blue);
+      opacity: 0.35;
+      z-index: -1;
+      transform: rotate(-25deg);
+    }
+
     .phone-mockup-frame {
-      background: #111418;
-      border: 9px solid #1A2127;
+      background: var(--accent-violet);
+      border: 9px solid var(--accent-violet);
       border-radius: 46px;
-      box-shadow: 0 24px 60px rgba(39, 7, 34, 0.22), 0 10px 24px rgba(41, 120, 160, 0.18);
+      box-shadow: var(--shadow-geo-blue), 0 24px 50px rgba(39, 7, 34, 0.22);
       padding: 12px 10px;
       position: relative;
     }
@@ -388,24 +431,24 @@
       transform: translateX(-50%);
       width: 90px;
       height: 18px;
-      background-color: #111418;
-      border-radius: var(--radius-full);
+      background-color: var(--accent-violet);
+      border-radius: var(--radius-pill);
       z-index: 10;
     }
 
     .phone-screen {
-      background: #FFFFFF;
+      background: var(--bg-mist);
       border-radius: 36px;
       overflow: hidden;
       padding: 24px 16px 20px 16px;
       text-align: center;
-      box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.04);
+      border: 1px solid var(--accent-blue);
     }
 
     .phone-header-banner {
       width: 100%;
       height: 60px;
-      background: linear-gradient(135deg, #2978A0 0%, #1E5C7D 100%);
+      background: var(--accent-blue);
       border-radius: 18px;
       margin-bottom: -32px;
     }
@@ -416,44 +459,33 @@
       height: 68px;
       margin: 0 auto 10px auto;
       border-radius: 50%;
-      border: 3px solid #FFFFFF;
-      background-color: #E5FCFF;
-      box-shadow: var(--shadow-sm);
+      border: 3px solid var(--accent-violet);
+      background-color: var(--bg-ice);
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: hidden;
     }
 
-    .phone-avatar-img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .phone-avatar-placeholder {
-      font-size: 1.6rem;
-    }
-
     .phone-profile-name {
       font-family: var(--font-heading);
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: #270722;
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--accent-violet);
       margin-bottom: 2px;
     }
 
     .phone-profile-role {
-      font-size: 0.78rem;
-      color: #2978A0;
-      font-weight: 600;
+      font-size: 0.8rem;
+      color: var(--accent-blue);
+      font-weight: 700;
       margin-bottom: 16px;
     }
 
     .phone-action-list {
       display: flex;
       flex-direction: column;
-      gap: 7px;
+      gap: 8px;
       margin-bottom: 14px;
     }
 
@@ -462,55 +494,55 @@
       align-items: center;
       justify-content: center;
       gap: 8px;
-      font-size: 0.76rem;
-      font-weight: 600;
-      padding: 9px 12px;
-      border-radius: var(--radius-full);
-      text-decoration: none;
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 10px 12px;
+      border-radius: var(--radius-pill);
     }
 
     .phone-btn-whatsapp {
-      background-color: #25D366;
-      color: #FFFFFF;
+      background-color: var(--accent-violet);
+      color: var(--text-light);
+      border: 1.5px solid var(--accent-violet);
     }
 
     .phone-btn-save {
-      background-color: #270722;
-      color: #FFFFFF;
+      background-color: var(--accent-blue);
+      color: var(--text-light);
     }
 
     .phone-btn-call {
-      background-color: #E5FCFF;
-      color: #2978A0;
-      border: 1px solid #ABDAFC;
+      background-color: var(--bg-ice);
+      color: var(--accent-violet);
+      border: 1.5px solid var(--accent-blue);
     }
 
     .phone-qr-preview {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      background-color: #F7FAFC;
-      border: 1px dashed #CBD5E0;
+      background-color: var(--bg-ice);
+      border: 1.5px solid var(--accent-blue);
       padding: 6px 12px;
-      border-radius: var(--radius-sm);
-      font-size: 0.7rem;
-      color: #4A5568;
-      font-weight: 600;
+      border-radius: 12px;
+      font-size: 0.72rem;
+      color: var(--accent-violet);
+      font-weight: 700;
     }
 
     .phone-float-badge {
       position: absolute;
-      background: #FFFFFF;
-      padding: 8px 14px;
-      border-radius: var(--radius-full);
-      font-size: 0.78rem;
-      font-weight: 700;
-      color: #270722;
-      box-shadow: 0 8px 20px rgba(39, 7, 34, 0.15);
+      background: var(--bg-ice);
+      padding: 8px 16px;
+      border-radius: var(--radius-pill);
+      font-size: 0.82rem;
+      font-weight: 800;
+      color: var(--accent-violet);
+      border: 2px solid var(--accent-violet);
+      box-shadow: 0 4px 0 var(--accent-blue);
       display: flex;
       align-items: center;
       gap: 6px;
-      border: 1px solid #E5FCFF;
       animation: floatBadge 4s ease-in-out infinite alternate;
     }
 
@@ -536,228 +568,242 @@
     }
 
     /* ==========================================================================
-       SECCIÓN 2: EL PROBLEMA (TARJETAS DE PAPEL)
+       SECCIÓN 2: EL PROBLEMA (BLOQUES LIMPIOS EN AZUL HIELO)
        ========================================================================== */
     .problem-section {
-      padding: 64px 0;
-      background-color: var(--color-white);
+      padding: 84px 0;
+      background-color: var(--bg-ice);
+      border-top: var(--border-blue);
+      border-bottom: var(--border-blue);
     }
 
     .problem-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 20px;
+      gap: 22px;
     }
 
     .problem-card {
-      background-color: var(--color-dominant);
+      background-color: var(--bg-mist);
       border-radius: var(--radius-md);
-      padding: 24px;
+      padding: 26px;
       display: flex;
       align-items: flex-start;
-      gap: 16px;
-      border: 1px solid #D2F5FA;
-      transition: var(--transition-base);
+      gap: 18px;
+      border: var(--border-blue);
+      box-shadow: var(--shadow-geo-blue);
+      transition: var(--transition-scandi);
     }
 
     .problem-card:hover {
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-sm);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-geo-lift);
+      border-color: var(--accent-violet);
     }
 
     .problem-icon-wrap {
       flex-shrink: 0;
-      width: 44px;
-      height: 44px;
-      background-color: #FFE6E6;
-      color: #C53030;
+      width: 48px;
+      height: 48px;
+      background-color: var(--accent-violet);
+      color: var(--text-light);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.25rem;
+      border: 2px solid var(--accent-blue);
     }
 
     .problem-text {
-      font-size: 1.05rem;
+      font-size: 1.08rem;
       font-weight: 600;
-      color: var(--color-text-body);
-      line-height: 1.5;
+      color: var(--text-black);
+      line-height: 1.55;
     }
 
     /* ==========================================================================
-       SECCIÓN 3: LOS 3 BENEFICIOS CON ICONOS
+       SECCIÓN 3: BENEFICIOS (FORMA GEOMÉTRICA DE ARCOS MODULARES)
        ========================================================================== */
     .benefits-section {
-      padding: 72px 0;
-      background-color: var(--color-dominant);
+      padding: 92px 0;
+      background-color: var(--bg-mist);
     }
 
     .benefits-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 24px;
+      gap: 28px;
     }
 
     .benefit-card {
-      background-color: var(--color-white);
-      border-radius: var(--radius-lg);
-      padding: 34px 28px;
-      box-shadow: var(--shadow-card);
-      border: 1px solid rgba(41, 120, 160, 0.08);
-      transition: var(--transition-base);
+      background-color: var(--bg-ice);
+      border-radius: var(--radius-arch);
+      padding: 44px 30px;
+      border: var(--border-violet);
+      box-shadow: var(--shadow-geo-blue);
+      transition: var(--transition-scandi);
       display: flex;
       flex-direction: column;
     }
 
     .benefit-card:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-hover);
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-geo-lift);
     }
 
     .benefit-icon-box {
-      width: 60px;
-      height: 60px;
-      background-color: var(--color-dominant);
-      border-radius: var(--radius-md);
+      width: 66px;
+      height: 66px;
+      background-color: var(--accent-violet);
+      color: var(--text-light);
+      border-radius: 32px 32px 14px 14px;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: var(--color-secondary);
-      margin-bottom: 22px;
+      margin-bottom: 24px;
+      border: 2px solid var(--accent-blue);
     }
 
     .benefit-title {
-      font-size: 1.32rem;
+      font-size: 1.45rem;
       margin-bottom: 12px;
-      color: var(--color-text-title);
+      color: var(--text-violet);
+      font-weight: 800;
     }
 
     .benefit-desc {
-      font-size: 0.98rem;
-      color: var(--color-text-body);
+      font-size: 1.02rem;
+      color: var(--text-black);
       line-height: 1.6;
     }
 
     /* ==========================================================================
-       SECCIÓN 4: EJEMPLO REAL
+       SECCIÓN 4: EJEMPLO REAL (PANEL EDITORIAL ESCANDINAVO)
        ========================================================================== */
     .demo-section {
-      padding: 70px 0;
-      background-color: var(--color-secondary);
-      color: var(--color-white);
+      padding: 88px 0;
+      background-color: var(--bg-ice);
+      border-top: var(--border-blue);
+      border-bottom: var(--border-blue);
       text-align: center;
     }
 
     .demo-card {
-      background-color: var(--color-white);
-      color: var(--color-text-body);
-      border-radius: var(--radius-xl);
-      padding: 44px 28px;
-      max-width: 760px;
+      background-color: var(--bg-mist);
+      color: var(--text-black);
+      border-radius: var(--radius-lg);
+      padding: 52px 34px;
+      max-width: 800px;
       margin: 0 auto;
-      box-shadow: var(--shadow-card);
+      border: var(--border-violet);
+      box-shadow: var(--shadow-geo-violet);
     }
 
     .demo-tag {
       display: inline-block;
-      background-color: var(--color-dominant);
-      color: var(--color-secondary-dark);
+      background-color: var(--bg-ice);
+      color: var(--accent-violet);
       font-family: var(--font-heading);
-      font-size: 0.82rem;
-      font-weight: 700;
-      padding: 6px 14px;
-      border-radius: var(--radius-full);
-      margin-bottom: 16px;
+      font-size: 0.85rem;
+      font-weight: 800;
+      padding: 6px 18px;
+      border-radius: var(--radius-pill);
+      margin-bottom: 18px;
+      border: 1.5px solid var(--accent-blue);
       text-transform: uppercase;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.08em;
     }
 
     .demo-title {
-      font-size: 1.85rem;
-      margin-bottom: 14px;
-      color: var(--color-accent);
+      font-size: clamp(2.1rem, 4.4vw, 2.9rem);
+      margin-bottom: 16px;
+      color: var(--accent-violet);
+      font-weight: 800;
     }
 
     .demo-subtitle {
-      font-size: 1.05rem;
-      color: var(--color-text-muted);
-      margin-bottom: 26px;
+      font-size: 1.12rem;
+      color: var(--text-black);
+      margin-bottom: 30px;
     }
 
     .demo-notice {
-      margin-top: 22px;
-      font-size: 0.88rem;
-      color: var(--color-text-muted);
-      line-height: 1.55;
-      background-color: var(--color-dominant);
-      padding: 14px 20px;
-      border-radius: var(--radius-md);
-      border-left: 4px solid var(--color-secondary);
+      margin-top: 26px;
+      font-size: 0.94rem;
+      color: var(--text-black);
+      line-height: 1.6;
+      background-color: var(--bg-ice);
+      padding: 16px 22px;
+      border-radius: 18px;
+      border: 2px solid var(--accent-blue);
     }
 
     /* ==========================================================================
-       SECCIÓN 5: PARA QUIÉN ES
+       SECCIÓN 5: PARA QUIÉN ES (RETÍCULA MODULAR LIMPIA)
        ========================================================================== */
     .audience-section {
-      padding: 72px 0;
-      background-color: var(--color-dominant);
+      padding: 92px 0;
+      background-color: var(--bg-mist);
     }
 
     .audience-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 16px;
+      gap: 20px;
     }
 
     .audience-card {
-      background-color: var(--color-white);
+      background-color: var(--bg-ice);
       border-radius: var(--radius-md);
-      padding: 22px 24px;
+      padding: 26px 24px;
       display: flex;
       align-items: center;
-      gap: 18px;
-      box-shadow: var(--shadow-card);
-      border: 1px solid rgba(41, 120, 160, 0.06);
-      transition: var(--transition-base);
+      gap: 20px;
+      border: var(--border-blue);
+      box-shadow: var(--shadow-geo-blue);
+      transition: var(--transition-scandi);
     }
 
     .audience-card:hover {
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-hover);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-geo-lift);
+      border-color: var(--accent-violet);
     }
 
     .audience-icon-box {
-      width: 52px;
-      height: 52px;
-      background-color: var(--color-dominant);
-      color: var(--color-secondary);
-      border-radius: var(--radius-sm);
+      width: 56px;
+      height: 56px;
+      background-color: var(--accent-violet);
+      color: var(--text-light);
+      border-radius: 16px;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
+      border: 2px solid var(--accent-blue);
     }
 
     .audience-title {
-      font-size: 1.08rem;
-      font-weight: 700;
-      color: var(--color-text-title);
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--accent-violet);
       margin-bottom: 4px;
     }
 
     .audience-detail {
-      font-size: 0.9rem;
-      color: var(--color-text-muted);
-      line-height: 1.4;
+      font-size: 0.96rem;
+      color: var(--text-black);
+      line-height: 1.45;
     }
 
     /* ==========================================================================
-       SECCIÓN 6: CÓMO FUNCIONA EN 3 PASOS
+       SECCIÓN 6: CÓMO FUNCIONA EN 3 PASOS (ESTAMPA CIRCULAR GEOMÉTRICA)
        ========================================================================== */
     .steps-section {
-      padding: 72px 0;
-      background-color: var(--color-white);
+      padding: 92px 0;
+      background-color: var(--bg-ice);
+      border-top: var(--border-blue);
+      border-bottom: var(--border-blue);
     }
 
     .steps-grid {
@@ -767,125 +813,131 @@
     }
 
     .step-card {
-      background-color: var(--color-dominant);
+      background-color: var(--bg-mist);
       border-radius: var(--radius-lg);
-      padding: 34px 28px;
-      position: relative;
-      border: 1px solid #D2F5FA;
-      transition: var(--transition-base);
+      padding: 40px 30px;
+      border: var(--border-blue);
+      box-shadow: var(--shadow-geo-blue);
+      transition: var(--transition-scandi);
     }
 
     .step-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-sm);
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-geo-lift);
+      border-color: var(--accent-violet);
     }
 
+    /* Número dentro de sello geométrico circular nórdico */
     .step-number {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 48px;
-      height: 48px;
-      background-color: var(--color-secondary);
-      color: var(--color-white);
+      width: 58px;
+      height: 58px;
+      background-color: var(--accent-violet);
+      color: var(--text-light);
       font-family: var(--font-heading);
-      font-size: 1.35rem;
-      font-weight: 800;
-      border-radius: var(--radius-md);
-      margin-bottom: 20px;
-      box-shadow: 0 6px 14px rgba(41, 120, 160, 0.25);
+      font-size: 1.6rem;
+      font-weight: 900;
+      border-radius: 50%;
+      margin-bottom: 22px;
+      border: 2px solid var(--accent-blue);
+      box-shadow: 0 4px 0 var(--accent-blue);
     }
 
     .step-title {
-      font-size: 1.25rem;
-      color: var(--color-text-title);
-      margin-bottom: 10px;
+      font-size: 1.35rem;
+      color: var(--accent-violet);
+      margin-bottom: 12px;
+      font-weight: 800;
     }
 
     .step-desc {
-      font-size: 0.98rem;
-      color: var(--color-text-body);
+      font-size: 1.02rem;
+      color: var(--text-black);
       line-height: 1.6;
     }
 
     /* ==========================================================================
-       SECCIÓN 7: PRECIO DESTACADO
+       SECCIÓN 7: PRECIO DESTACADO (GRAN ARCO ESCANDINAVO)
        ========================================================================== */
     .pricing-section {
-      padding: 76px 0;
-      background-color: var(--color-dominant);
+      padding: 98px 0;
+      background-color: var(--bg-mist);
     }
 
     .pricing-card-wrapper {
-      max-width: 650px;
+      max-width: 680px;
       margin: 0 auto;
     }
 
     .pricing-card {
-      background-color: var(--color-white);
-      border-radius: var(--radius-xl);
-      padding: 44px 32px;
-      box-shadow: var(--shadow-card);
-      border: 2px solid var(--color-secondary);
+      background-color: var(--bg-ice);
+      border-radius: var(--radius-arch-lg);
+      padding: 56px 36px 48px 36px;
+      border: var(--border-violet);
+      box-shadow: var(--shadow-geo-blue);
       position: relative;
       text-align: center;
     }
 
-    /* Sello destacado para Primer año incluido */
+    /* Sello destacado superior con forma de semicírculo de píldora */
     .pricing-badge-seal {
       position: absolute;
-      top: -18px;
+      top: -22px;
       left: 50%;
       transform: translateX(-50%);
-      background-color: var(--color-accent);
-      color: var(--color-white);
+      background-color: var(--accent-violet);
+      color: var(--text-light);
       font-family: var(--font-heading);
-      font-size: 0.88rem;
+      font-size: 0.94rem;
       font-weight: 800;
-      padding: 8px 22px;
-      border-radius: var(--radius-full);
-      box-shadow: var(--shadow-btn);
+      padding: 10px 24px;
+      border-radius: var(--radius-pill);
+      border: 2px solid var(--accent-blue);
+      box-shadow: 0 4px 0 var(--accent-blue);
       letter-spacing: 0.02em;
       white-space: nowrap;
       display: inline-flex;
       align-items: center;
-      gap: 6px;
+      gap: 8px;
     }
 
     .pricing-service-name {
-      font-size: 1.35rem;
-      color: var(--color-secondary);
-      font-weight: 700;
-      margin-top: 10px;
-      margin-bottom: 12px;
+      font-size: 1.45rem;
+      color: var(--accent-violet);
+      font-weight: 800;
+      margin-top: 14px;
+      margin-bottom: 14px;
     }
 
     .pricing-amount-box {
-      margin-bottom: 26px;
+      margin-bottom: 28px;
     }
 
     .pricing-currency {
-      font-size: 1.7rem;
-      font-weight: 700;
-      color: var(--color-accent);
+      font-size: 2.1rem;
+      font-weight: 800;
+      color: var(--accent-violet);
       vertical-align: top;
       position: relative;
-      top: 6px;
+      top: 10px;
     }
 
     .pricing-price {
       font-family: var(--font-heading);
-      font-size: 4.2rem;
-      font-weight: 800;
-      color: var(--color-accent);
+      font-size: 5.2rem;
+      font-weight: 900;
+      color: var(--accent-violet);
       line-height: 1;
+      letter-spacing: -0.05em;
     }
 
     .pricing-type {
       display: block;
-      font-size: 0.95rem;
-      color: var(--color-text-muted);
-      font-weight: 600;
+      font-size: 1rem;
+      color: var(--text-black);
+      font-weight: 700;
       margin-top: 6px;
     }
 
@@ -895,98 +947,101 @@
       margin: 28px 0 34px 0;
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 16px;
     }
 
     .pricing-includes-item {
       display: flex;
       align-items: flex-start;
-      gap: 12px;
-      font-size: 1rem;
-      color: var(--color-text-body);
-      line-height: 1.45;
+      gap: 14px;
+      font-size: 1.05rem;
+      color: var(--text-black);
+      line-height: 1.5;
     }
 
     .pricing-check-icon {
       flex-shrink: 0;
-      width: 22px;
-      height: 22px;
-      background-color: var(--color-secondary-soft);
-      color: var(--color-secondary);
+      width: 24px;
+      height: 24px;
+      background-color: var(--accent-violet);
+      color: var(--text-light);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       margin-top: 2px;
+      border: 1.5px solid var(--accent-blue);
     }
 
     .pricing-maintenance-notice {
-      background-color: var(--color-dominant);
-      border: 1px solid #C4F3FB;
+      background-color: var(--bg-mist);
+      border: var(--border-blue);
       border-radius: var(--radius-md);
-      padding: 16px 20px;
-      margin-bottom: 30px;
+      padding: 20px 22px;
+      margin-bottom: 32px;
       text-align: left;
     }
 
     .maintenance-title {
-      font-size: 0.98rem;
-      font-weight: 700;
-      color: var(--color-secondary-dark);
-      margin-bottom: 4px;
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--accent-violet);
+      margin-bottom: 6px;
       display: flex;
       align-items: center;
       gap: 8px;
     }
 
     .maintenance-desc {
-      font-size: 0.9rem;
-      color: var(--color-text-body);
-      line-height: 1.5;
+      font-size: 0.95rem;
+      color: var(--text-black);
+      line-height: 1.55;
     }
 
     /* ==========================================================================
-       SECCIÓN 8: PREGUNTAS FRECUENTES (FORMATO DESPLEGABLE)
+       SECCIÓN 8: PREGUNTAS FRECUENTES (ACORDEÓN MODULAR)
        ========================================================================== */
     .faq-section {
-      padding: 72px 0;
-      background-color: var(--color-white);
+      padding: 92px 0;
+      background-color: var(--bg-ice);
+      border-top: var(--border-blue);
+      border-bottom: var(--border-blue);
     }
 
     .faq-list {
       display: flex;
       flex-direction: column;
-      gap: 14px;
-      max-width: 780px;
+      gap: 16px;
+      max-width: 820px;
       margin: 0 auto;
     }
 
     .faq-item {
-      background-color: var(--color-dominant);
-      border: 1px solid #D2F5FA;
+      background-color: var(--bg-mist);
+      border: var(--border-blue);
       border-radius: var(--radius-md);
       overflow: hidden;
-      transition: var(--transition-base);
+      box-shadow: 0 4px 0 var(--accent-blue);
+      transition: var(--transition-scandi);
     }
 
     .faq-item[open] {
-      box-shadow: var(--shadow-sm);
-      border-color: var(--color-secondary);
-      background-color: var(--color-white);
+      border-color: var(--accent-violet);
+      box-shadow: 0 8px 0 var(--accent-violet);
     }
 
     .faq-summary {
       list-style: none;
-      padding: 20px 22px;
+      padding: 22px 24px;
       font-family: var(--font-heading);
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: var(--color-text-title);
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--accent-violet);
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 14px;
+      gap: 16px;
       user-select: none;
     }
 
@@ -995,11 +1050,12 @@
     }
 
     .faq-icon-arrow {
-      width: 22px;
-      height: 22px;
+      width: 24px;
+      height: 24px;
       flex-shrink: 0;
       transition: transform 0.3s ease;
-      color: var(--color-secondary);
+      color: var(--accent-violet);
+      stroke-width: 3;
     }
 
     .faq-item[open] .faq-icon-arrow {
@@ -1007,129 +1063,139 @@
     }
 
     .faq-content {
-      padding: 0 22px 20px 22px;
-      font-size: 0.98rem;
-      color: var(--color-text-body);
-      line-height: 1.65;
+      padding: 0 24px 24px 24px;
+      font-size: 1.02rem;
+      color: var(--text-black);
+      line-height: 1.7;
     }
 
     /* ==========================================================================
-       SECCIÓN 9: CIERRE PERSUASIVO Y CONTACTO
+       SECCIÓN 9: CIERRE PERSUASIVO Y CONTACTO MODULAR
        ========================================================================== */
     .closing-section {
-      padding: 80px 0 60px 0;
-      background-color: var(--color-dominant);
+      padding: 98px 0 74px 0;
+      background-color: var(--bg-mist);
       text-align: center;
     }
 
     .closing-card {
-      background-color: var(--color-white);
-      border-radius: var(--radius-xl);
-      padding: 48px 30px;
-      max-width: 800px;
-      margin: 0 auto 40px auto;
-      box-shadow: var(--shadow-card);
+      background-color: var(--bg-ice);
+      border-radius: var(--radius-lg);
+      padding: 56px 34px;
+      max-width: 840px;
+      margin: 0 auto 44px auto;
+      border: var(--border-violet);
+      box-shadow: var(--shadow-geo-blue);
     }
 
     .closing-title {
-      font-size: 2.1rem;
-      margin-bottom: 16px;
-      color: var(--color-accent);
+      font-size: clamp(2.2rem, 4.6vw, 3.2rem);
+      margin-bottom: 18px;
+      color: var(--accent-violet);
+      font-weight: 900;
+      letter-spacing: -0.035em;
     }
 
     .closing-subtitle {
-      font-size: 1.12rem;
-      color: var(--color-text-body);
-      max-width: 640px;
-      margin: 0 auto 32px auto;
-      line-height: 1.6;
+      font-size: 1.18rem;
+      color: var(--text-black);
+      max-width: 660px;
+      margin: 0 auto 36px auto;
+      line-height: 1.65;
+      font-weight: 500;
     }
 
     .contact-block {
-      background-color: var(--color-white);
-      border-radius: var(--radius-lg);
-      padding: 30px 24px;
-      max-width: 680px;
+      background-color: var(--bg-ice);
+      border-radius: var(--radius-md);
+      padding: 34px 26px;
+      max-width: 720px;
       margin: 0 auto;
-      box-shadow: var(--shadow-card);
-      border: 1px solid rgba(41, 120, 160, 0.1);
+      border: var(--border-blue);
+      box-shadow: var(--shadow-geo-blue);
     }
 
     .contact-title {
-      font-size: 1.25rem;
-      color: var(--color-text-title);
-      margin-bottom: 20px;
-      font-weight: 700;
+      font-size: 1.3rem;
+      color: var(--accent-violet);
+      margin-bottom: 22px;
+      font-weight: 800;
     }
 
     .contact-links-grid {
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 16px;
     }
 
     .contact-link-card {
       display: flex;
       align-items: center;
       gap: 16px;
-      background-color: var(--color-dominant);
-      padding: 16px 20px;
+      background-color: var(--bg-mist);
+      padding: 18px 22px;
       border-radius: var(--radius-md);
-      transition: var(--transition-base);
+      border: var(--border-blue);
+      box-shadow: 0 4px 0 var(--accent-blue);
+      transition: var(--transition-scandi);
       text-align: left;
     }
 
     .contact-link-card:hover {
-      background-color: var(--color-hover-bg);
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-sm);
+      background-color: var(--bg-mist);
+      border-color: var(--accent-violet);
+      box-shadow: 0 8px 0 var(--accent-violet);
+      transform: translateY(-3px);
     }
 
     .contact-icon-box {
-      width: 44px;
-      height: 44px;
+      width: 48px;
+      height: 48px;
       border-radius: 50%;
-      background-color: var(--color-white);
-      color: var(--color-secondary);
+      background-color: var(--accent-violet);
+      color: var(--text-light);
       display: flex;
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
+      border: 1.5px solid var(--accent-blue);
     }
 
     .contact-label {
       display: block;
-      font-size: 0.8rem;
+      font-size: 0.82rem;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--color-secondary-dark);
-      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--accent-blue);
+      font-weight: 800;
     }
 
     .contact-value {
       display: block;
-      font-size: 1.02rem;
-      font-weight: 700;
-      color: var(--color-text-title);
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--accent-violet);
     }
 
     /* ==========================================================================
        PIE DE PÁGINA (FOOTER)
        ========================================================================== */
     .site-footer {
-      background-color: var(--color-secondary);
-      color: var(--color-white);
-      padding: 30px 0;
+      background-color: var(--accent-violet);
+      color: var(--text-light);
+      padding: 34px 0;
       text-align: center;
-      font-size: 0.88rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border-top: var(--border-blue);
     }
 
     .footer-copy {
-      opacity: 0.9;
+      opacity: 0.95;
     }
 
     /* ==========================================================================
-       BOTÓN FLOTANTE DE WHATSAPP (FIJO EN ESQUINA INFERIOR DERECHA)
+       BOTÓN FLOTANTE DE WHATSAPP CON FORMA MODULAR
        ========================================================================== */
     .whatsapp-floating-btn {
       position: fixed;
@@ -1138,52 +1204,55 @@
       z-index: 9999;
       display: flex;
       align-items: center;
-      gap: 10px;
-      background-color: var(--color-accent);
-      color: var(--color-white);
-      padding: 12px 20px;
-      border-radius: var(--radius-full);
-      box-shadow: 0 8px 24px rgba(39, 7, 34, 0.35);
+      gap: 12px;
+      background-color: var(--accent-violet);
+      color: var(--text-light);
+      padding: 14px 22px;
+      border-radius: var(--radius-pill);
+      border: 2px solid var(--accent-blue);
+      box-shadow: var(--shadow-geo-blue);
       font-family: var(--font-heading);
-      font-weight: 700;
-      font-size: 0.95rem;
-      transition: var(--transition-base);
+      font-weight: 800;
+      font-size: 0.98rem;
+      transition: var(--transition-scandi);
       cursor: pointer;
     }
 
     .whatsapp-floating-btn:hover,
     .whatsapp-floating-btn:active {
-      background-color: var(--color-hover-bg) !important;
-      color: var(--color-hover-text) !important;
+      background-color: var(--bg-ice) !important;
+      color: var(--accent-violet) !important;
+      border-color: var(--accent-violet) !important;
       transform: translateY(-3px);
-      box-shadow: var(--shadow-btn-hover);
+      box-shadow: var(--shadow-geo-lift);
     }
 
     .whatsapp-pulse-dot {
       width: 10px;
       height: 10px;
-      background-color: #25D366;
+      background-color: var(--bg-ice);
       border-radius: 50%;
-      box-shadow: 0 0 0 rgba(37, 211, 102, 0.5);
-      animation: pulseGreen 2s infinite;
+      border: 1px solid var(--accent-blue);
+      box-shadow: 0 0 0 rgba(171, 218, 252, 0.6);
+      animation: pulseScandi 2s infinite;
     }
 
-    @keyframes pulseGreen {
+    @keyframes pulseScandi {
       0% {
-        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+        box-shadow: 0 0 0 0 rgba(171, 218, 252, 0.8);
       }
 
       70% {
-        box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+        box-shadow: 0 0 0 10px rgba(171, 218, 252, 0);
       }
 
       100% {
-        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+        box-shadow: 0 0 0 0 rgba(171, 218, 252, 0);
       }
     }
 
     /* ==========================================================================
-       RESPONSIVE & MEDIA QUERIES (DESKTOP Y TABLETS)
+       RESPONSIVE & ADAPTACIONES (MÓVIL Y ESCRITORIO)
        ========================================================================== */
     @media (min-width: 640px) {
       .problem-grid {
@@ -1203,7 +1272,7 @@
       }
     }
 
-    @media (min-width: 860px) {
+    @media (min-width: 880px) {
       .hero-grid {
         flex-direction: row;
         justify-content: space-between;
@@ -1221,7 +1290,7 @@
       }
 
       .hero-title {
-        font-size: 2.9rem;
+        font-size: clamp(3rem, 4.5vw, 4.2rem);
       }
 
       .benefits-grid {
@@ -1234,10 +1303,6 @@
 
       .steps-grid {
         grid-template-columns: repeat(3, 1fr);
-      }
-
-      .section-title {
-        font-size: 2.3rem;
       }
 
       .badge-top-right {
@@ -1255,23 +1320,23 @@
       }
 
       .whatsapp-floating-btn {
-        padding: 14px;
+        padding: 16px;
         border-radius: 50%;
         bottom: 20px;
         right: 20px;
       }
 
       .hero-title {
-        font-size: 2rem;
+        font-size: 2.35rem;
       }
 
       .pricing-price {
-        font-size: 3.4rem;
+        font-size: 4rem;
       }
 
       .pricing-badge-seal {
-        font-size: 0.78rem;
-        padding: 7px 16px;
+        font-size: 0.8rem;
+        padding: 8px 16px;
       }
     }
   </style>
@@ -1501,7 +1566,8 @@
             <div class="benefit-icon-box" aria-hidden="true">
               <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
                 stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
                 </path>
               </svg>
             </div>
