@@ -29,11 +29,11 @@
     content="Tu negocio en el móvil de tu cliente en 3 segundos. Elegante, con código QR y contacto en un solo toque.">
   <meta name="twitter:image" content="https://tarjetapresentacion-9by.pages.dev/preview.png">
 
-  <!-- Tipografías Google Fonts: Bodoni Moda (títulos en medium italic y cuerpo regular) + Montserrat (subtítulos medium espaciados) -->
+  <!-- Tipografía Google Fonts de estilo escandinavo: Jost (Títulos, Subtítulos, Botones y Precio) + Inter (Texto corrido) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;1,6..96,400;1,6..96,500;1,6..96,600;1,6..96,700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Jost:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
     rel="stylesheet">
 
   <style>
@@ -54,11 +54,11 @@
       --text-violet: #270722;    /* Violeta oscuro */
       --text-light: #E5FCFF;     /* Contraste sobre fondos violeta/azul */
 
-      /* Tipografías: Bodoni Moda (títulos medium italic y cuerpo regular) + Montserrat (subtítulos medium con espaciado) */
-      --font-title: 'Bodoni Moda', 'Bodoni MT', Didot, 'Hoefler Text', Garamond, 'Times New Roman', serif;
-      --font-heading: 'Bodoni Moda', 'Bodoni MT', Didot, 'Hoefler Text', Garamond, 'Times New Roman', serif;
-      --font-subtitle: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      --font-body: 'Bodoni Moda', 'Bodoni MT', Didot, 'Hoefler Text', Garamond, 'Times New Roman', serif;
+      /* Tipografía de estilo escandinavo: Jost (títulos, subtítulos, botones y precio) + Inter (texto corrido) */
+      --font-heading: 'Jost', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-title: 'Jost', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-subtitle: 'Jost', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
       /* Geometría modular escandinava: arcos, semicírculos y bloques limpios */
       --radius-sm: 12px;
@@ -99,10 +99,10 @@
       background-color: var(--bg-mist);
       color: var(--text-black);
       font-family: var(--font-body);
-      font-size: 17.5px;
+      font-size: 16.5px;
       font-weight: 400;
       font-style: normal;
-      line-height: 1.7;
+      line-height: 1.6;
       overflow-x: hidden;
     }
 
@@ -142,12 +142,12 @@
     h2,
     h3,
     h4 {
-      font-family: var(--font-title);
-      font-style: italic;
-      font-weight: 500;
+      font-family: var(--font-heading);
+      font-style: normal;
+      font-weight: 600;
       color: var(--text-violet);
       line-height: 1.18;
-      letter-spacing: 0.035em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
     }
 
@@ -164,12 +164,13 @@
       color: var(--accent-violet);
       border: 1.5px solid var(--accent-blue);
       font-family: var(--font-subtitle);
-      font-size: 0.88rem;
-      font-weight: 500;
-      letter-spacing: 0.06em;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
       padding: 8px 20px;
       border-radius: var(--radius-pill);
       margin-bottom: 20px;
+      text-transform: uppercase;
     }
 
     .section-tag::before {
@@ -182,27 +183,28 @@
     }
 
     .section-title {
-      font-family: var(--font-title);
-      font-style: italic;
-      font-size: clamp(2.1rem, 4.4vw, 3.1rem);
+      font-family: var(--font-heading);
+      font-style: normal;
+      font-size: clamp(2rem, 4.2vw, 2.9rem);
       margin-bottom: 16px;
       color: var(--text-violet);
-      font-weight: 500;
-      letter-spacing: 0.035em;
-      line-height: 1.16;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      line-height: 1.18;
       text-transform: uppercase;
     }
 
     .section-subtitle {
       font-family: var(--font-subtitle);
-      font-size: 1.12rem;
+      font-size: 1.05rem;
       color: var(--text-black);
       max-width: 640px;
       margin: 0 auto;
       font-weight: 500;
       font-style: normal;
-      letter-spacing: 0.055em;
-      line-height: 1.7;
+      letter-spacing: 0.085em;
+      line-height: 1.6;
+      text-transform: uppercase;
     }
 
     /* ==========================================================================
@@ -215,10 +217,11 @@
       gap: 12px;
       background-color: var(--accent-violet);
       color: var(--text-light);
-      font-family: var(--font-subtitle);
+      font-family: var(--font-heading);
       font-size: 1.05rem;
-      font-weight: 500;
-      letter-spacing: 0.05em;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
       padding: 18px 38px;
       border-radius: var(--radius-pill);
       border: 2px solid var(--accent-violet);
@@ -273,11 +276,12 @@
       display: flex;
       align-items: center;
       gap: 12px;
-      font-family: var(--font-subtitle);
-      font-weight: 500;
-      font-size: 1.08rem;
+      font-family: var(--font-heading);
+      font-weight: 600;
+      font-size: 1.05rem;
       color: var(--text-light);
-      letter-spacing: 0.05em;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
     }
 
     /* Logotipo con semicírculo geométrico invertido */
@@ -299,10 +303,11 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      font-family: var(--font-subtitle);
-      font-size: 0.9rem;
-      font-weight: 500;
-      letter-spacing: 0.05em;
+      font-family: var(--font-heading);
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
       color: var(--accent-violet);
       background-color: var(--bg-mist);
       padding: 8px 18px;
@@ -359,12 +364,12 @@
     }
 
     .hero-title {
-      font-family: var(--font-title);
-      font-style: italic;
-      font-size: clamp(2.7rem, 6.2vw, 4.4rem);
-      font-weight: 500;
-      letter-spacing: 0.035em;
-      line-height: 1.1;
+      font-family: var(--font-heading);
+      font-style: normal;
+      font-size: clamp(2.5rem, 5.8vw, 4.1rem);
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      line-height: 1.12;
       margin-bottom: 22px;
       color: var(--accent-violet);
       text-transform: uppercase;
@@ -372,13 +377,14 @@
 
     .hero-subtitle {
       font-family: var(--font-subtitle);
-      font-size: 1.15rem;
+      font-size: 1.08rem;
       color: var(--text-black);
       margin-bottom: 34px;
-      line-height: 1.7;
+      line-height: 1.6;
       font-weight: 500;
       font-style: normal;
-      letter-spacing: 0.055em;
+      letter-spacing: 0.085em;
+      text-transform: uppercase;
     }
 
     .hero-cta-group {
@@ -390,13 +396,14 @@
 
     .hero-price-note {
       font-family: var(--font-subtitle);
-      font-size: 0.94rem;
+      font-size: 0.92rem;
       font-weight: 500;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.08em;
       color: var(--text-black);
       display: inline-flex;
       align-items: center;
       gap: 8px;
+      text-transform: uppercase;
     }
 
     .hero-price-note svg {
@@ -501,21 +508,23 @@
     }
 
     .phone-profile-name {
-      font-family: var(--font-title);
-      font-style: italic;
+      font-family: var(--font-heading);
+      font-style: normal;
       font-size: 1.15rem;
-      font-weight: 500;
-      letter-spacing: 0.015em;
+      font-weight: 600;
+      letter-spacing: 0.08em;
       color: var(--accent-violet);
       margin-bottom: 2px;
+      text-transform: uppercase;
     }
 
     .phone-profile-role {
       font-family: var(--font-subtitle);
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       color: var(--accent-blue);
-      font-weight: 500;
-      letter-spacing: 0.06em;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
       margin-bottom: 16px;
     }
 
@@ -531,10 +540,11 @@
       align-items: center;
       justify-content: center;
       gap: 8px;
-      font-family: var(--font-subtitle);
+      font-family: var(--font-heading);
       font-size: 0.78rem;
-      font-weight: 500;
-      letter-spacing: 0.04em;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
       padding: 10px 12px;
       border-radius: var(--radius-pill);
     }
@@ -657,11 +667,11 @@
 
     .problem-text {
       font-family: var(--font-body);
-      font-size: 1.12rem;
+      font-size: 1.05rem;
       font-weight: 400;
       font-style: normal;
       color: var(--text-black);
-      line-height: 1.65;
+      line-height: 1.6;
     }
 
     /* ==========================================================================
@@ -708,23 +718,23 @@
     }
 
     .benefit-title {
-      font-family: var(--font-title);
-      font-style: italic;
-      font-size: 1.45rem;
+      font-family: var(--font-heading);
+      font-style: normal;
+      font-size: 1.35rem;
       margin-bottom: 12px;
       color: var(--text-violet);
-      font-weight: 500;
-      letter-spacing: 0.035em;
+      font-weight: 600;
+      letter-spacing: 0.09em;
       text-transform: uppercase;
     }
 
     .benefit-desc {
       font-family: var(--font-body);
-      font-size: 1.05rem;
+      font-size: 1.02rem;
       font-weight: 400;
       font-style: normal;
       color: var(--text-black);
-      line-height: 1.65;
+      line-height: 1.6;
     }
 
     /* ==========================================================================
@@ -755,35 +765,36 @@
       color: var(--accent-violet);
       font-family: var(--font-subtitle);
       font-size: 0.85rem;
-      font-weight: 500;
+      font-weight: 600;
       padding: 6px 18px;
       border-radius: var(--radius-pill);
       margin-bottom: 18px;
       border: 1.5px solid var(--accent-blue);
       text-transform: uppercase;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.1em;
     }
 
     .demo-title {
-      font-family: var(--font-title);
-      font-style: italic;
-      font-size: clamp(2.1rem, 4.4vw, 2.9rem);
+      font-family: var(--font-heading);
+      font-style: normal;
+      font-size: clamp(2rem, 4.2vw, 2.8rem);
       margin-bottom: 16px;
       color: var(--accent-violet);
-      font-weight: 500;
-      letter-spacing: 0.035em;
+      font-weight: 600;
+      letter-spacing: 0.09em;
       text-transform: uppercase;
     }
 
     .demo-subtitle {
       font-family: var(--font-subtitle);
-      font-size: 1.12rem;
+      font-size: 1.05rem;
       color: var(--text-black);
       margin-bottom: 30px;
       font-weight: 500;
       font-style: normal;
-      letter-spacing: 0.055em;
-      line-height: 1.7;
+      letter-spacing: 0.085em;
+      line-height: 1.6;
+      text-transform: uppercase;
     }
 
     .demo-notice {
@@ -843,11 +854,11 @@
     }
 
     .audience-title {
-      font-family: var(--font-title);
-      font-style: italic;
-      font-size: 1.25rem;
-      font-weight: 500;
-      letter-spacing: 0.035em;
+      font-family: var(--font-heading);
+      font-style: normal;
+      font-size: 1.2rem;
+      font-weight: 600;
+      letter-spacing: 0.085em;
       color: var(--accent-violet);
       margin-bottom: 4px;
       text-transform: uppercase;
@@ -859,7 +870,7 @@
       font-weight: 400;
       font-style: normal;
       color: var(--text-black);
-      line-height: 1.55;
+      line-height: 1.6;
     }
 
     /* ==========================================================================
@@ -902,10 +913,10 @@
       height: 58px;
       background-color: var(--accent-violet);
       color: var(--text-light);
-      font-family: var(--font-title);
-      font-style: italic;
-      font-size: 1.7rem;
-      font-weight: 500;
+      font-family: var(--font-heading);
+      font-style: normal;
+      font-size: 1.6rem;
+      font-weight: 600;
       border-radius: 50%;
       margin-bottom: 22px;
       border: 2px solid var(--accent-blue);
@@ -913,23 +924,23 @@
     }
 
     .step-title {
-      font-family: var(--font-title);
-      font-style: italic;
-      font-size: 1.35rem;
+      font-family: var(--font-heading);
+      font-style: normal;
+      font-size: 1.25rem;
       color: var(--accent-violet);
       margin-bottom: 12px;
-      font-weight: 500;
-      letter-spacing: 0.035em;
+      font-weight: 600;
+      letter-spacing: 0.085em;
       text-transform: uppercase;
     }
 
     .step-desc {
       font-family: var(--font-body);
-      font-size: 1.05rem;
+      font-size: 1.02rem;
       font-weight: 400;
       font-style: normal;
       color: var(--text-black);
-      line-height: 1.65;
+      line-height: 1.6;
     }
 
     /* ==========================================================================
@@ -964,13 +975,13 @@
       background-color: var(--accent-violet);
       color: var(--text-light);
       font-family: var(--font-subtitle);
-      font-size: 0.92rem;
-      font-weight: 500;
+      font-size: 0.9rem;
+      font-weight: 600;
       padding: 10px 24px;
       border-radius: var(--radius-pill);
       border: 2px solid var(--accent-blue);
       box-shadow: 0 4px 0 var(--accent-blue);
-      letter-spacing: 0.06em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       white-space: nowrap;
       display: inline-flex;
@@ -979,12 +990,12 @@
     }
 
     .pricing-service-name {
-      font-family: var(--font-title);
-      font-style: italic;
-      font-size: 1.55rem;
+      font-family: var(--font-heading);
+      font-style: normal;
+      font-size: 1.5rem;
       color: var(--accent-violet);
-      font-weight: 500;
-      letter-spacing: 0.035em;
+      font-weight: 600;
+      letter-spacing: 0.09em;
       margin-top: 14px;
       margin-bottom: 14px;
       text-transform: uppercase;
@@ -1001,9 +1012,9 @@
       border: 2px solid #ff3131;
       font-family: var(--font-subtitle);
       font-size: 0.92rem;
-      font-weight: 500;
+      font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.1em;
       padding: 7px 20px;
       border-radius: var(--radius-pill);
       margin-bottom: 16px;
@@ -1028,10 +1039,10 @@
     }
 
     .pricing-old-price {
-      font-family: var(--font-title);
-      font-style: italic;
-      font-size: 2.8rem;
-      font-weight: 500;
+      font-family: var(--font-heading);
+      font-style: normal;
+      font-size: 2.9rem;
+      font-weight: 600;
       color: var(--accent-violet);
       opacity: 0.65;
       line-height: 1;
@@ -1053,10 +1064,10 @@
     }
 
     .pricing-currency {
-      font-family: var(--font-title);
-      font-style: italic;
-      font-size: 2.1rem;
-      font-weight: 500;
+      font-family: var(--font-heading);
+      font-style: normal;
+      font-size: 2.2rem;
+      font-weight: 600;
       color: var(--accent-violet);
       vertical-align: top;
       position: relative;
@@ -1064,23 +1075,24 @@
     }
 
     .pricing-price {
-      font-family: var(--font-title);
-      font-style: italic;
-      font-size: 5.2rem;
-      font-weight: 500;
+      font-family: var(--font-heading);
+      font-style: normal;
+      font-size: 5.4rem;
+      font-weight: 600;
       color: var(--accent-violet);
       line-height: 1;
-      letter-spacing: -0.01em;
+      letter-spacing: -0.02em;
     }
 
     .pricing-type {
       display: block;
       font-family: var(--font-subtitle);
-      font-size: 1rem;
+      font-size: 0.95rem;
       color: var(--text-black);
-      font-weight: 500;
-      letter-spacing: 0.055em;
-      margin-top: 6px;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      margin-top: 8px;
     }
 
     .hero-promo-tag {
@@ -1090,18 +1102,18 @@
       color: var(--text-light);
       font-family: var(--font-subtitle);
       font-size: 0.78rem;
-      font-weight: 500;
+      font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.09em;
       padding: 3px 10px;
       border-radius: var(--radius-pill);
       border: 1.5px solid #ff3131;
     }
 
     .hero-old-price-crossed {
-      font-family: var(--font-title);
-      font-style: italic;
-      font-weight: 500;
+      font-family: var(--font-heading);
+      font-style: normal;
+      font-weight: 600;
       position: relative;
       display: inline-block;
       padding: 0 4px;
@@ -1133,11 +1145,11 @@
       align-items: flex-start;
       gap: 14px;
       font-family: var(--font-body);
-      font-size: 1.08rem;
+      font-size: 1.04rem;
       font-weight: 400;
       font-style: normal;
       color: var(--text-black);
-      line-height: 1.55;
+      line-height: 1.6;
     }
 
     .pricing-check-icon {
@@ -1164,11 +1176,11 @@
     }
 
     .maintenance-title {
-      font-family: var(--font-title);
-      font-style: italic;
-      font-size: 1.15rem;
-      font-weight: 500;
-      letter-spacing: 0.035em;
+      font-family: var(--font-heading);
+      font-style: normal;
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.085em;
       color: var(--accent-violet);
       margin-bottom: 6px;
       display: flex;
@@ -1221,11 +1233,11 @@
     .faq-summary {
       list-style: none;
       padding: 22px 24px;
-      font-family: var(--font-title);
-      font-style: italic;
-      font-size: 1.25rem;
-      font-weight: 500;
-      letter-spacing: 0.025em;
+      font-family: var(--font-heading);
+      font-style: normal;
+      font-size: 1.12rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
       color: var(--accent-violet);
       cursor: pointer;
       display: flex;
@@ -1256,11 +1268,11 @@
     .faq-content {
       padding: 0 24px 24px 24px;
       font-family: var(--font-body);
-      font-size: 1.05rem;
+      font-size: 1.02rem;
       font-weight: 400;
       font-style: normal;
       color: var(--text-black);
-      line-height: 1.7;
+      line-height: 1.6;
     }
 
     /* ==========================================================================
@@ -1283,26 +1295,27 @@
     }
 
     .closing-title {
-      font-family: var(--font-title);
-      font-style: italic;
-      font-size: clamp(2.2rem, 4.6vw, 3.2rem);
+      font-family: var(--font-heading);
+      font-style: normal;
+      font-size: clamp(2.1rem, 4.4vw, 3.1rem);
       margin-bottom: 18px;
       color: var(--accent-violet);
-      font-weight: 500;
-      letter-spacing: 0.035em;
+      font-weight: 600;
+      letter-spacing: 0.09em;
       text-transform: uppercase;
     }
 
     .closing-subtitle {
       font-family: var(--font-subtitle);
-      font-size: 1.15rem;
+      font-size: 1.08rem;
       color: var(--text-black);
       max-width: 660px;
       margin: 0 auto 36px auto;
-      line-height: 1.7;
+      line-height: 1.6;
       font-weight: 500;
       font-style: normal;
-      letter-spacing: 0.055em;
+      letter-spacing: 0.085em;
+      text-transform: uppercase;
     }
 
     .contact-block {
@@ -1316,13 +1329,13 @@
     }
 
     .contact-title {
-      font-family: var(--font-title);
-      font-style: italic;
-      font-size: 1.35rem;
+      font-family: var(--font-heading);
+      font-style: normal;
+      font-size: 1.25rem;
       color: var(--accent-violet);
       margin-bottom: 22px;
-      font-weight: 500;
-      letter-spacing: 0.035em;
+      font-weight: 600;
+      letter-spacing: 0.085em;
       text-transform: uppercase;
     }
 
@@ -1370,18 +1383,18 @@
       font-family: var(--font-subtitle);
       font-size: 0.82rem;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.1em;
       color: var(--accent-blue);
-      font-weight: 500;
+      font-weight: 600;
     }
 
     .contact-value {
       display: block;
-      font-family: var(--font-title);
-      font-style: italic;
-      font-size: 1.12rem;
-      font-weight: 500;
-      letter-spacing: 0.015em;
+      font-family: var(--font-heading);
+      font-style: normal;
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
       color: var(--accent-violet);
     }
 
@@ -1397,6 +1410,7 @@
       font-size: 0.95rem;
       font-weight: 400;
       font-style: normal;
+      line-height: 1.6;
       border-top: var(--border-blue);
     }
 
@@ -1421,10 +1435,11 @@
       border-radius: var(--radius-pill);
       border: 2px solid var(--accent-blue);
       box-shadow: var(--shadow-geo-blue);
-      font-family: var(--font-subtitle);
-      font-weight: 500;
-      font-size: 0.98rem;
-      letter-spacing: 0.05em;
+      font-family: var(--font-heading);
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
       transition: var(--transition-scandi);
       cursor: pointer;
     }
@@ -1526,6 +1541,11 @@
     }
 
     @media (max-width: 480px) {
+      body {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
       .whatsapp-floating-text {
         display: none;
       }
@@ -1538,11 +1558,11 @@
       }
 
       .hero-title {
-        font-size: 2.35rem;
+        font-size: 2.2rem;
       }
 
       .pricing-price {
-        font-size: 4rem;
+        font-size: 4.2rem;
       }
 
       .pricing-badge-seal {
