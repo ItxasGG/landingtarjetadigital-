@@ -1,0 +1,2056 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO & Metadatos Principales -->
+  <title>Tarjeta de Presentación Digital Profesional | Tu negocio en el móvil de tu cliente</title>
+  <meta name="description"
+    content="Tu negocio en el móvil de tu cliente en 3 segundos. Tarjeta de presentación digital elegante con foto, enlaces, WhatsApp y código QR. Sin descargar aplicaciones. 120 € con primer año de mantenimiento incluido.">
+  <meta name="author" content="Estrategia Digital Estrella">
+  <meta name="theme-color" content="#2978A0">
+  <link rel="canonical" href="https://tarjetapresentacion-9by.pages.dev/">
+
+  <!-- Open Graph / Redes Sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tarjetapresentacion-9by.pages.dev/">
+  <meta property="og:title" content="Tarjeta de Presentación Digital Profesional">
+  <meta property="og:description"
+    content="Tu negocio en el móvil de tu cliente en 3 segundos. Elegante, con código QR, WhatsApp directo y sin papel.">
+  <meta property="og:image" content="https://tarjetapresentacion-9by.pages.dev/preview.png">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tarjeta de Presentación Digital Profesional">
+  <meta name="twitter:description"
+    content="Tu negocio en el móvil de tu cliente en 3 segundos. Elegante, con código QR y contacto en un solo toque.">
+  <meta name="twitter:image" content="https://tarjetapresentacion-9by.pages.dev/preview.png">
+
+  <!-- Tipografía Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       VARIABLES Y SISTEMA DE DISEÑO (REGLA 60 - 30 - 10)
+       ========================================================================== */
+    :root {
+      /* 60 % Color dominante: Fondo general y secciones */
+      --color-dominant: #E5FCFF;
+
+      /* 30 % Color secundario: Cabecera, secciones alternas, iconos, números de pasos, tarjeta precio, enlaces */
+      --color-secondary: #2978A0;
+      --color-secondary-soft: #D7F4FA;
+      --color-secondary-dark: #1E5C7D;
+
+      /* 10 % Color de acento: Botones de acción, botón flotante, sellos, títulos principales */
+      --color-accent: #270722;
+
+      /* Efecto hover y activo (desktop y táctil móvil) */
+      --color-hover-bg: #ABDAFC;
+      --color-hover-text: #270722;
+
+      /* Colores de texto y tarjetas */
+      --color-text-title: #270722;
+      --color-text-body: #2B2B2B;
+      --color-text-muted: #56646B;
+      --color-white: #FFFFFF;
+
+      /* Tipografías */
+      --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+      /* Sombras y bordes redondeados */
+      --radius-sm: 10px;
+      --radius-md: 18px;
+      --radius-lg: 24px;
+      --radius-xl: 32px;
+      --radius-full: 9999px;
+
+      --shadow-sm: 0 4px 12px rgba(41, 120, 160, 0.08);
+      --shadow-card: 0 12px 30px rgba(41, 120, 160, 0.10);
+      --shadow-hover: 0 16px 36px rgba(41, 120, 160, 0.22);
+      --shadow-btn: 0 10px 24px rgba(39, 7, 34, 0.28);
+      --shadow-btn-hover: 0 14px 30px rgba(41, 120, 160, 0.40);
+
+      --transition-base: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* ==========================================================================
+       RESET Y ESTILOS GLOBALES
+       ========================================================================== */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      background-color: var(--color-dominant);
+      color: var(--color-text-body);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    img,
+    svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    /* ==========================================================================
+       TIPOGRAFÍA Y CONTENEDOR
+       ========================================================================== */
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .container-narrow {
+      max-width: 780px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: var(--font-heading);
+      color: var(--color-text-title);
+      line-height: 1.25;
+      font-weight: 700;
+    }
+
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--color-secondary-soft);
+      color: var(--color-secondary-dark);
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      margin-bottom: 16px;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 44px;
+    }
+
+    .section-title {
+      font-size: 1.95rem;
+      margin-bottom: 14px;
+      color: var(--color-text-title);
+    }
+
+    .section-subtitle {
+      font-size: 1.08rem;
+      color: var(--color-text-muted);
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    /* ==========================================================================
+       BOTONES DE ACCIÓN (ESTILO Y EFECTO HOVER EXIGIDO)
+       ========================================================================== */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background-color: var(--color-accent);
+      color: var(--color-white);
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 700;
+      padding: 16px 32px;
+      border-radius: var(--radius-full);
+      box-shadow: var(--shadow-btn);
+      transition: var(--transition-base);
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .btn-primary:hover,
+    .btn-primary:active {
+      background-color: var(--color-hover-bg) !important;
+      color: var(--color-hover-text) !important;
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-btn-hover);
+    }
+
+    .btn-primary svg {
+      transition: transform 0.3s ease;
+      fill: currentColor;
+    }
+
+    .btn-primary:hover svg {
+      transform: translateX(4px);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background-color: var(--color-white);
+      color: var(--color-secondary);
+      border: 2px solid var(--color-secondary);
+      font-family: var(--font-heading);
+      font-size: 1.02rem;
+      font-weight: 700;
+      padding: 14px 28px;
+      border-radius: var(--radius-full);
+      transition: var(--transition-base);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-secondary:hover,
+    .btn-secondary:active {
+      background-color: var(--color-hover-bg);
+      border-color: var(--color-hover-bg);
+      color: var(--color-accent);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-card);
+    }
+
+    .btn-full {
+      width: 100%;
+    }
+
+    /* ==========================================================================
+       BARRA SUPERIOR (HEADER)
+       ========================================================================== */
+    .site-header {
+      background-color: var(--color-secondary);
+      color: var(--color-white);
+      padding: 14px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 16px rgba(41, 120, 160, 0.15);
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 1.12rem;
+      color: var(--color-white);
+      letter-spacing: -0.01em;
+    }
+
+    .brand-logo-badge {
+      width: 32px;
+      height: 32px;
+      background-color: var(--color-dominant);
+      color: var(--color-accent);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 0.95rem;
+    }
+
+    .header-contact-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--color-dominant);
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      background-color: rgba(229, 252, 255, 0.12);
+      transition: var(--transition-base);
+    }
+
+    .header-contact-link:hover {
+      background-color: var(--color-hover-bg);
+      color: var(--color-accent);
+    }
+
+    /* ==========================================================================
+       SECCIÓN 1: HERO (CABECERA)
+       ========================================================================== */
+    .hero-section {
+      padding: 56px 0 64px 0;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 44px;
+      align-items: center;
+    }
+
+    .hero-content {
+      text-align: center;
+      max-width: 720px;
+    }
+
+    .hero-title {
+      font-size: 2.35rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+      color: var(--color-accent);
+    }
+
+    .hero-subtitle {
+      font-size: 1.15rem;
+      color: var(--color-text-body);
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .hero-price-note {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--color-secondary-dark);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* MOCKUP DEL MÓVIL (TARJETA DE EJEMPLO) */
+    .phone-mockup-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 320px;
+      margin: 0 auto;
+    }
+
+    .phone-mockup-frame {
+      background: #111418;
+      border: 9px solid #1A2127;
+      border-radius: 46px;
+      box-shadow: 0 24px 60px rgba(39, 7, 34, 0.22), 0 10px 24px rgba(41, 120, 160, 0.18);
+      padding: 12px 10px;
+      position: relative;
+    }
+
+    .phone-notch {
+      position: absolute;
+      top: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90px;
+      height: 18px;
+      background-color: #111418;
+      border-radius: var(--radius-full);
+      z-index: 10;
+    }
+
+    .phone-screen {
+      background: #FFFFFF;
+      border-radius: 36px;
+      overflow: hidden;
+      padding: 24px 16px 20px 16px;
+      text-align: center;
+      box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.04);
+    }
+
+    .phone-header-banner {
+      width: 100%;
+      height: 60px;
+      background: linear-gradient(135deg, #2978A0 0%, #1E5C7D 100%);
+      border-radius: 18px;
+      margin-bottom: -32px;
+    }
+
+    .phone-avatar-box {
+      position: relative;
+      width: 68px;
+      height: 68px;
+      margin: 0 auto 10px auto;
+      border-radius: 50%;
+      border: 3px solid #FFFFFF;
+      background-color: #E5FCFF;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .phone-avatar-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .phone-avatar-placeholder {
+      font-size: 1.6rem;
+    }
+
+    .phone-profile-name {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #270722;
+      margin-bottom: 2px;
+    }
+
+    .phone-profile-role {
+      font-size: 0.78rem;
+      color: #2978A0;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .phone-action-list {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      margin-bottom: 14px;
+    }
+
+    .phone-action-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 0.76rem;
+      font-weight: 600;
+      padding: 9px 12px;
+      border-radius: var(--radius-full);
+      text-decoration: none;
+    }
+
+    .phone-btn-whatsapp {
+      background-color: #25D366;
+      color: #FFFFFF;
+    }
+
+    .phone-btn-save {
+      background-color: #270722;
+      color: #FFFFFF;
+    }
+
+    .phone-btn-call {
+      background-color: #E5FCFF;
+      color: #2978A0;
+      border: 1px solid #ABDAFC;
+    }
+
+    .phone-qr-preview {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background-color: #F7FAFC;
+      border: 1px dashed #CBD5E0;
+      padding: 6px 12px;
+      border-radius: var(--radius-sm);
+      font-size: 0.7rem;
+      color: #4A5568;
+      font-weight: 600;
+    }
+
+    .phone-float-badge {
+      position: absolute;
+      background: #FFFFFF;
+      padding: 8px 14px;
+      border-radius: var(--radius-full);
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #270722;
+      box-shadow: 0 8px 20px rgba(39, 7, 34, 0.15);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid #E5FCFF;
+      animation: floatBadge 4s ease-in-out infinite alternate;
+    }
+
+    .badge-top-right {
+      top: 30px;
+      right: -24px;
+    }
+
+    .badge-bottom-left {
+      bottom: 40px;
+      left: -20px;
+      animation-delay: 2s;
+    }
+
+    @keyframes floatBadge {
+      0% {
+        transform: translateY(0);
+      }
+
+      100% {
+        transform: translateY(-8px);
+      }
+    }
+
+    /* ==========================================================================
+       SECCIÓN 2: EL PROBLEMA (TARJETAS DE PAPEL)
+       ========================================================================== */
+    .problem-section {
+      padding: 64px 0;
+      background-color: var(--color-white);
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .problem-card {
+      background-color: var(--color-dominant);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      border: 1px solid #D2F5FA;
+      transition: var(--transition-base);
+    }
+
+    .problem-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .problem-icon-wrap {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      background-color: #FFE6E6;
+      color: #C53030;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+    }
+
+    .problem-text {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--color-text-body);
+      line-height: 1.5;
+    }
+
+    /* ==========================================================================
+       SECCIÓN 3: LOS 3 BENEFICIOS CON ICONOS
+       ========================================================================== */
+    .benefits-section {
+      padding: 72px 0;
+      background-color: var(--color-dominant);
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .benefit-card {
+      background-color: var(--color-white);
+      border-radius: var(--radius-lg);
+      padding: 34px 28px;
+      box-shadow: var(--shadow-card);
+      border: 1px solid rgba(41, 120, 160, 0.08);
+      transition: var(--transition-base);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .benefit-icon-box {
+      width: 60px;
+      height: 60px;
+      background-color: var(--color-dominant);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-secondary);
+      margin-bottom: 22px;
+    }
+
+    .benefit-title {
+      font-size: 1.32rem;
+      margin-bottom: 12px;
+      color: var(--color-text-title);
+    }
+
+    .benefit-desc {
+      font-size: 0.98rem;
+      color: var(--color-text-body);
+      line-height: 1.6;
+    }
+
+    /* ==========================================================================
+       SECCIÓN 4: EJEMPLO REAL
+       ========================================================================== */
+    .demo-section {
+      padding: 70px 0;
+      background-color: var(--color-secondary);
+      color: var(--color-white);
+      text-align: center;
+    }
+
+    .demo-card {
+      background-color: var(--color-white);
+      color: var(--color-text-body);
+      border-radius: var(--radius-xl);
+      padding: 44px 28px;
+      max-width: 760px;
+      margin: 0 auto;
+      box-shadow: var(--shadow-card);
+    }
+
+    .demo-tag {
+      display: inline-block;
+      background-color: var(--color-dominant);
+      color: var(--color-secondary-dark);
+      font-family: var(--font-heading);
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .demo-title {
+      font-size: 1.85rem;
+      margin-bottom: 14px;
+      color: var(--color-accent);
+    }
+
+    .demo-subtitle {
+      font-size: 1.05rem;
+      color: var(--color-text-muted);
+      margin-bottom: 26px;
+    }
+
+    .demo-notice {
+      margin-top: 22px;
+      font-size: 0.88rem;
+      color: var(--color-text-muted);
+      line-height: 1.55;
+      background-color: var(--color-dominant);
+      padding: 14px 20px;
+      border-radius: var(--radius-md);
+      border-left: 4px solid var(--color-secondary);
+    }
+
+    /* ==========================================================================
+       SECCIÓN 5: PARA QUIÉN ES
+       ========================================================================== */
+    .audience-section {
+      padding: 72px 0;
+      background-color: var(--color-dominant);
+    }
+
+    .audience-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .audience-card {
+      background-color: var(--color-white);
+      border-radius: var(--radius-md);
+      padding: 22px 24px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      box-shadow: var(--shadow-card);
+      border: 1px solid rgba(41, 120, 160, 0.06);
+      transition: var(--transition-base);
+    }
+
+    .audience-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .audience-icon-box {
+      width: 52px;
+      height: 52px;
+      background-color: var(--color-dominant);
+      color: var(--color-secondary);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .audience-title {
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: var(--color-text-title);
+      margin-bottom: 4px;
+    }
+
+    .audience-detail {
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+      line-height: 1.4;
+    }
+
+    /* ==========================================================================
+       SECCIÓN 6: CÓMO FUNCIONA EN 3 PASOS
+       ========================================================================== */
+    .steps-section {
+      padding: 72px 0;
+      background-color: var(--color-white);
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+
+    .step-card {
+      background-color: var(--color-dominant);
+      border-radius: var(--radius-lg);
+      padding: 34px 28px;
+      position: relative;
+      border: 1px solid #D2F5FA;
+      transition: var(--transition-base);
+    }
+
+    .step-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .step-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      background-color: var(--color-secondary);
+      color: var(--color-white);
+      font-family: var(--font-heading);
+      font-size: 1.35rem;
+      font-weight: 800;
+      border-radius: var(--radius-md);
+      margin-bottom: 20px;
+      box-shadow: 0 6px 14px rgba(41, 120, 160, 0.25);
+    }
+
+    .step-title {
+      font-size: 1.25rem;
+      color: var(--color-text-title);
+      margin-bottom: 10px;
+    }
+
+    .step-desc {
+      font-size: 0.98rem;
+      color: var(--color-text-body);
+      line-height: 1.6;
+    }
+
+    /* ==========================================================================
+       SECCIÓN 7: PRECIO DESTACADO
+       ========================================================================== */
+    .pricing-section {
+      padding: 76px 0;
+      background-color: var(--color-dominant);
+    }
+
+    .pricing-card-wrapper {
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    .pricing-card {
+      background-color: var(--color-white);
+      border-radius: var(--radius-xl);
+      padding: 44px 32px;
+      box-shadow: var(--shadow-card);
+      border: 2px solid var(--color-secondary);
+      position: relative;
+      text-align: center;
+    }
+
+    /* Sello destacado para Primer año incluido */
+    .pricing-badge-seal {
+      position: absolute;
+      top: -18px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: var(--color-accent);
+      color: var(--color-white);
+      font-family: var(--font-heading);
+      font-size: 0.88rem;
+      font-weight: 800;
+      padding: 8px 22px;
+      border-radius: var(--radius-full);
+      box-shadow: var(--shadow-btn);
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .pricing-service-name {
+      font-size: 1.35rem;
+      color: var(--color-secondary);
+      font-weight: 700;
+      margin-top: 10px;
+      margin-bottom: 12px;
+    }
+
+    .pricing-amount-box {
+      margin-bottom: 26px;
+    }
+
+    .pricing-currency {
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: var(--color-accent);
+      vertical-align: top;
+      position: relative;
+      top: 6px;
+    }
+
+    .pricing-price {
+      font-family: var(--font-heading);
+      font-size: 4.2rem;
+      font-weight: 800;
+      color: var(--color-accent);
+      line-height: 1;
+    }
+
+    .pricing-type {
+      display: block;
+      font-size: 0.95rem;
+      color: var(--color-text-muted);
+      font-weight: 600;
+      margin-top: 6px;
+    }
+
+    .pricing-includes-list {
+      list-style: none;
+      text-align: left;
+      margin: 28px 0 34px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .pricing-includes-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 1rem;
+      color: var(--color-text-body);
+      line-height: 1.45;
+    }
+
+    .pricing-check-icon {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      background-color: var(--color-secondary-soft);
+      color: var(--color-secondary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+    }
+
+    .pricing-maintenance-notice {
+      background-color: var(--color-dominant);
+      border: 1px solid #C4F3FB;
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      margin-bottom: 30px;
+      text-align: left;
+    }
+
+    .maintenance-title {
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--color-secondary-dark);
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .maintenance-desc {
+      font-size: 0.9rem;
+      color: var(--color-text-body);
+      line-height: 1.5;
+    }
+
+    /* ==========================================================================
+       SECCIÓN 8: PREGUNTAS FRECUENTES (FORMATO DESPLEGABLE)
+       ========================================================================== */
+    .faq-section {
+      padding: 72px 0;
+      background-color: var(--color-white);
+    }
+
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background-color: var(--color-dominant);
+      border: 1px solid #D2F5FA;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: var(--transition-base);
+    }
+
+    .faq-item[open] {
+      box-shadow: var(--shadow-sm);
+      border-color: var(--color-secondary);
+      background-color: var(--color-white);
+    }
+
+    .faq-summary {
+      list-style: none;
+      padding: 20px 22px;
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--color-text-title);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      user-select: none;
+    }
+
+    .faq-summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-icon-arrow {
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+      color: var(--color-secondary);
+    }
+
+    .faq-item[open] .faq-icon-arrow {
+      transform: rotate(180deg);
+    }
+
+    .faq-content {
+      padding: 0 22px 20px 22px;
+      font-size: 0.98rem;
+      color: var(--color-text-body);
+      line-height: 1.65;
+    }
+
+    /* ==========================================================================
+       SECCIÓN 9: CIERRE PERSUASIVO Y CONTACTO
+       ========================================================================== */
+    .closing-section {
+      padding: 80px 0 60px 0;
+      background-color: var(--color-dominant);
+      text-align: center;
+    }
+
+    .closing-card {
+      background-color: var(--color-white);
+      border-radius: var(--radius-xl);
+      padding: 48px 30px;
+      max-width: 800px;
+      margin: 0 auto 40px auto;
+      box-shadow: var(--shadow-card);
+    }
+
+    .closing-title {
+      font-size: 2.1rem;
+      margin-bottom: 16px;
+      color: var(--color-accent);
+    }
+
+    .closing-subtitle {
+      font-size: 1.12rem;
+      color: var(--color-text-body);
+      max-width: 640px;
+      margin: 0 auto 32px auto;
+      line-height: 1.6;
+    }
+
+    .contact-block {
+      background-color: var(--color-white);
+      border-radius: var(--radius-lg);
+      padding: 30px 24px;
+      max-width: 680px;
+      margin: 0 auto;
+      box-shadow: var(--shadow-card);
+      border: 1px solid rgba(41, 120, 160, 0.1);
+    }
+
+    .contact-title {
+      font-size: 1.25rem;
+      color: var(--color-text-title);
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .contact-links-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .contact-link-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background-color: var(--color-dominant);
+      padding: 16px 20px;
+      border-radius: var(--radius-md);
+      transition: var(--transition-base);
+      text-align: left;
+    }
+
+    .contact-link-card:hover {
+      background-color: var(--color-hover-bg);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .contact-icon-box {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: var(--color-white);
+      color: var(--color-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .contact-label {
+      display: block;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--color-secondary-dark);
+      font-weight: 700;
+    }
+
+    .contact-value {
+      display: block;
+      font-size: 1.02rem;
+      font-weight: 700;
+      color: var(--color-text-title);
+    }
+
+    /* ==========================================================================
+       PIE DE PÁGINA (FOOTER)
+       ========================================================================== */
+    .site-footer {
+      background-color: var(--color-secondary);
+      color: var(--color-white);
+      padding: 30px 0;
+      text-align: center;
+      font-size: 0.88rem;
+    }
+
+    .footer-copy {
+      opacity: 0.9;
+    }
+
+    /* ==========================================================================
+       BOTÓN FLOTANTE DE WHATSAPP (FIJO EN ESQUINA INFERIOR DERECHA)
+       ========================================================================== */
+    .whatsapp-floating-btn {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background-color: var(--color-accent);
+      color: var(--color-white);
+      padding: 12px 20px;
+      border-radius: var(--radius-full);
+      box-shadow: 0 8px 24px rgba(39, 7, 34, 0.35);
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: var(--transition-base);
+      cursor: pointer;
+    }
+
+    .whatsapp-floating-btn:hover,
+    .whatsapp-floating-btn:active {
+      background-color: var(--color-hover-bg) !important;
+      color: var(--color-hover-text) !important;
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-btn-hover);
+    }
+
+    .whatsapp-pulse-dot {
+      width: 10px;
+      height: 10px;
+      background-color: #25D366;
+      border-radius: 50%;
+      box-shadow: 0 0 0 rgba(37, 211, 102, 0.5);
+      animation: pulseGreen 2s infinite;
+    }
+
+    @keyframes pulseGreen {
+      0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+      }
+
+      70% {
+        box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+      }
+    }
+
+    /* ==========================================================================
+       RESPONSIVE & MEDIA QUERIES (DESKTOP Y TABLETS)
+       ========================================================================== */
+    @media (min-width: 640px) {
+      .problem-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .audience-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .contact-links-grid {
+        flex-direction: row;
+      }
+
+      .contact-link-card {
+        flex: 1;
+      }
+    }
+
+    @media (min-width: 860px) {
+      .hero-grid {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        gap: 60px;
+      }
+
+      .hero-content {
+        text-align: left;
+        flex: 1;
+      }
+
+      .hero-cta-group {
+        align-items: flex-start;
+      }
+
+      .hero-title {
+        font-size: 2.9rem;
+      }
+
+      .benefits-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .audience-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .steps-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .section-title {
+        font-size: 2.3rem;
+      }
+
+      .badge-top-right {
+        right: -32px;
+      }
+
+      .badge-bottom-left {
+        left: -32px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .whatsapp-floating-text {
+        display: none;
+      }
+
+      .whatsapp-floating-btn {
+        padding: 14px;
+        border-radius: 50%;
+        bottom: 20px;
+        right: 20px;
+      }
+
+      .hero-title {
+        font-size: 2rem;
+      }
+
+      .pricing-price {
+        font-size: 3.4rem;
+      }
+
+      .pricing-badge-seal {
+        font-size: 0.78rem;
+        padding: 7px 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       CABECERA DE MARCA
+       ========================================================================== -->
+  <header class="site-header" id="cabecera">
+    <div class="container header-content">
+      <a href="#cabecera" class="brand-logo" id="header-brand-link">
+        <span class="brand-logo-badge">T</span>
+        <span>Tarjeta Digital Profesional</span>
+      </a>
+      <a href="https://wa.me/34660337148?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20la%20tarjeta%20digital."
+        class="header-contact-link" id="header-whatsapp-link" target="_blank" rel="noopener noreferrer"
+        aria-label="Contactar por WhatsApp">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.302c-.087.087-.179.182-.077.357.101.174.451.744.968 1.205.666.594 1.228.778 1.402.865.173.087.275.072.376-.043.101-.116.433-.506.549-.679.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z" />
+        </svg>
+        <span>+34 660 33 71 48</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         SECCIÓN 1: CABECERA CON LA PROMESA Y MOCKUP DE MÓVIL
+         ========================================================================== -->
+    <section class="hero-section" id="inicio">
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+          <div class="section-tag">
+            <span>Innovación para tu marca personal</span>
+          </div>
+          <h1 class="hero-title">
+            Tu negocio en el móvil de tu cliente en 3 segundos
+          </h1>
+          <p class="hero-subtitle">
+            Una tarjeta elegante con tu foto, tu marca y todos tus contactos, que se comparte con un código QR o un
+            enlace y que convierte cada presentación en una oportunidad de trabajo.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="https://wa.me/34660337148?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20la%20tarjeta%20digital."
+              class="btn-primary" id="hero-cta-button" target="_blank" rel="noopener noreferrer">
+              <span>Quiero mi tarjeta digital</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+            <p class="hero-price-note" id="hero-price-line">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
+              120 € con el primer año de mantenimiento incluido
+            </p>
+          </div>
+        </div>
+
+        <!-- MOCKUP VISUAL DE SMARTPHONE CON TARJETA DE EJEMPLO -->
+        <div class="phone-mockup-wrapper" aria-hidden="true">
+          <div class="phone-float-badge badge-top-right">
+            <span>✨ Contacto en 1 toque</span>
+          </div>
+          <div class="phone-float-badge badge-bottom-left">
+            <span>📱 Sin instalar apps</span>
+          </div>
+
+          <div class="phone-mockup-frame">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="phone-header-banner"></div>
+
+              <div class="phone-avatar-box">
+                <!-- Avatar estilizado -->
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="#2978A0">
+                  <path
+                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                </svg>
+              </div>
+
+              <div class="phone-profile-name">Laura Ramos</div>
+              <div class="phone-profile-role">Consultora de Estrategia</div>
+
+              <div class="phone-action-list">
+                <div class="phone-action-btn phone-btn-whatsapp">
+                  <span>💬 WhatsApp directo</span>
+                </div>
+                <div class="phone-action-btn phone-btn-save">
+                  <span>👤 Guardar en agenda</span>
+                </div>
+                <div class="phone-action-btn phone-btn-call">
+                  <span>📞 Llamar por teléfono</span>
+                </div>
+              </div>
+
+              <div class="phone-qr-preview">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M3 3h8v8H3V3zm2 2v4h4V5H5zm8-2h8v8h-8V3zm2 2v4h4V5h-4zM3 13h8v8H3v-8zm2 2v4h4v-4H5zm13-2h3v2h-3v-2zm-5 5h2v3h-2v-3zm3 0h5v3h-5v-3zm2-3h3v2h-3v-2z" />
+                </svg>
+                <span>Código QR personal</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN 2: EL PROBLEMA CON LAS TARJETAS DE PAPEL
+         ========================================================================== -->
+    <section class="problem-section" id="el-problema">
+      <div class="container container-narrow">
+        <div class="section-header">
+          <div class="section-tag">
+            <span>La realidad de las tarjetas tradicionales</span>
+          </div>
+          <h2 class="section-title">¿Por qué las tarjetas de papel ya no funcionan?</h2>
+          <p class="section-subtitle">
+            Entregas tu tarjeta con ilusión, pero en el mundo de hoy el papel crea barreras en lugar de oportunidades.
+          </p>
+        </div>
+
+        <div class="problem-grid">
+          <div class="problem-card">
+            <div class="problem-icon-wrap" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="3 6 5 6 21 6"></polyline>
+                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+              </svg>
+            </div>
+            <p class="problem-text">
+              Nueve de cada diez tarjetas de papel acaban perdidas en el fondo de un cajón o en la papelera el mismo
+              día.
+            </p>
+          </div>
+
+          <div class="problem-card">
+            <div class="problem-icon-wrap" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+              </svg>
+            </div>
+            <p class="problem-text">
+              Si cambias de número, dirección o servicios, tienes que tirar todas tus cajas impresas y volver a pagar.
+            </p>
+          </div>
+
+          <div class="problem-card">
+            <div class="problem-icon-wrap" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <line x1="23" y1="11" x2="17" y2="11"></line>
+              </svg>
+            </div>
+            <p class="problem-text">
+              Casi nadie se toma la molestia de teclear tus datos a mano número a número en la agenda de su teléfono.
+            </p>
+          </div>
+
+          <div class="problem-card">
+            <div class="problem-icon-wrap" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              </svg>
+            </div>
+            <p class="problem-text">
+              El papel no puede abrir una conversación instantánea en WhatsApp ni mostrar tus proyectos con un solo
+              toque.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN 3: LOS 3 BENEFICIOS CON ICONOS
+         ========================================================================== -->
+    <section class="benefits-section" id="beneficios">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span>Ventajas decisivas</span>
+          </div>
+          <h2 class="section-title">Tres razones para pasar tu presentación al mundo digital</h2>
+          <p class="section-subtitle">
+            Diseñada para eliminar cualquier fricción y conseguir que te escriban o te llamen al momento.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          <!-- Beneficio 1 -->
+          <article class="benefit-card" id="beneficio-contacto">
+            <div class="benefit-icon-box" aria-hidden="true">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="benefit-title">1. Te contactan al instante</h3>
+            <p class="benefit-desc">
+              Botones directos de WhatsApp, llamada y email, y la opción de guardar tu contacto completo en la agenda de
+              su móvil con un solo toque.
+            </p>
+          </article>
+
+          <!-- Beneficio 2 -->
+          <article class="benefit-card" id="beneficio-imagen">
+            <div class="benefit-icon-box" aria-hidden="true">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+            </div>
+            <h3 class="benefit-title">2. Imagen profesional que te representa</h3>
+            <p class="benefit-desc">
+              Diseño personalizado con tu foto, tus colores y enlaces a tu página web, tus redes sociales y tu catálogo
+              de servicios.
+            </p>
+          </article>
+
+          <!-- Beneficio 3 -->
+          <article class="benefit-card" id="beneficio-compartir">
+            <div class="benefit-icon-box" aria-hidden="true">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="18" cy="5" r="3"></circle>
+                <circle cx="6" cy="12" r="3"></circle>
+                <circle cx="18" cy="19" r="3"></circle>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+              </svg>
+            </div>
+            <h3 class="benefit-title">3. Se comparte en cualquier lugar</h3>
+            <p class="benefit-desc">
+              Con código QR en eventos y reuniones o con un enlace por WhatsApp, redes sociales o la firma del email.
+              Sin aplicaciones que descargar.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN 4: EJEMPLO REAL
+         ========================================================================== -->
+    <section class="demo-section" id="ejemplo-real">
+      <div class="container">
+        <div class="demo-card">
+          <div class="demo-tag">Demostración en vivo</div>
+          <h2 class="demo-title">Mira cómo queda una tarjeta</h2>
+          <p class="demo-subtitle">
+            Pruébala tú directamente en tu propio navegador y comprueba la fluidez con la que tus futuros clientes verán
+            tus datos.
+          </p>
+
+          <a href="https://tarjetapresentacion-9by.pages.dev/" class="btn-primary" id="demo-card-link-button"
+            target="_blank" rel="noopener noreferrer">
+            <span>Ver tarjeta de ejemplo</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+
+          <div class="demo-notice" id="demo-disclaimer-note">
+            Ten en cuenta que este es un ejemplo modelo. Cada tarjeta se diseña de manera personalizada y única,
+            adaptada a la fotografía, el estilo y la paleta de colores de cada cliente.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN 5: PARA QUIÉN ES
+         ========================================================================== -->
+    <section class="audience-section" id="para-quien-es">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span>Perfiles profesionales</span>
+          </div>
+          <h2 class="section-title">¿Para quién está pensada esta tarjeta?</h2>
+          <p class="section-subtitle">
+            Para profesionales independientes y pequeños negocios que buscan una imagen impecable y una forma ágil de
+            conectar.
+          </p>
+        </div>
+
+        <div class="audience-grid">
+          <!-- Coaches -->
+          <div class="audience-card">
+            <div class="audience-icon-box" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+            </div>
+            <div>
+              <h3 class="audience-title">Coaches y formadores</h3>
+              <p class="audience-detail">Comparte tus programas, agenda sesiones de valoración y facilita el contacto
+                directo.</p>
+            </div>
+          </div>
+
+          <!-- Terapeutas -->
+          <div class="audience-card">
+            <div class="audience-icon-box" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                </path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="audience-title">Terapeutas y bienestar</h3>
+              <p class="audience-detail">Genera cercanía, transmite serenidad y permite solicitar cita previa en un
+                toque.</p>
+            </div>
+          </div>
+
+          <!-- Consultores y Consultoras -->
+          <div class="audience-card">
+            <div class="audience-icon-box" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="audience-title">Consultores y consultoras</h3>
+              <p class="audience-detail">Proyecta solvencia, enlaza tus propuestas y perfil de LinkedIn en reuniones
+                clave.</p>
+            </div>
+          </div>
+
+          <!-- Autónomos y Autónomas -->
+          <div class="audience-card">
+            <div class="audience-icon-box" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="audience-title">Autónomos y autónomas</h3>
+              <p class="audience-detail">Asegura que cualquier cliente potencial guarde tus datos de contacto al
+                instante.</p>
+            </div>
+          </div>
+
+          <!-- Estética y Peluquerías -->
+          <div class="audience-card">
+            <div class="audience-icon-box" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 3v7a6 6 0 0 0 6 6 6 6 0 0 0 6-6V3"></path>
+                <line x1="6" y1="7" x2="18" y2="7"></line>
+                <line x1="12" y1="16" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <div>
+              <h3 class="audience-title">Estética y peluquerías</h3>
+              <p class="audience-detail">Muestra tus trabajos, tu ubicación y tu botón directo de reservas por WhatsApp.
+              </p>
+            </div>
+          </div>
+
+          <!-- Comerciales -->
+          <div class="audience-card">
+            <div class="audience-icon-box" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h3 class="audience-title">Comerciales y ventas</h3>
+              <p class="audience-detail">Cierra contactos en ferias o visitas con un código QR que no se traspapela
+                jamás.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN 6: CÓMO FUNCIONA EN 3 PASOS
+         ========================================================================== -->
+    <section class="steps-section" id="como-funciona">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span>Proceso ágil y sin complicaciones</span>
+          </div>
+          <h2 class="section-title">Cómo funciona en solo 3 pasos</h2>
+          <p class="section-subtitle">
+            Tú no tienes que preocuparte de la parte técnica ni de configuraciones complejas.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <!-- Paso 1 -->
+          <div class="step-card" id="paso-1">
+            <div class="step-number">1</div>
+            <h3 class="step-title">Me cuentas quién eres</h3>
+            <p class="step-desc">
+              Rellenas un breve formulario con tus datos de contacto, tu fotografía o logotipo, tus enlaces y tus
+              colores preferidos.
+            </p>
+          </div>
+
+          <!-- Paso 2 -->
+          <div class="step-card" id="paso-2">
+            <div class="step-number">2</div>
+            <h3 class="step-title">Diseño tu tarjeta</h3>
+            <p class="step-desc">
+              En 72 horas recibes una propuesta personalizada y la ajustamos paso a paso hasta que te encante el
+              resultado final.
+            </p>
+          </div>
+
+          <!-- Paso 3 -->
+          <div class="step-card" id="paso-3">
+            <div class="step-number">3</div>
+            <h3 class="step-title">La publicas y la compartes</h3>
+            <p class="step-desc">
+              Te entrego tu enlace propio y tu código QR listos para usar y compartir con todo el mundo desde el primer
+              día.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN 7: EL PRECIO EN TARJETA DESTACADA
+         ========================================================================== -->
+    <section class="pricing-section" id="precio">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span>Inversión clara y transparente</span>
+          </div>
+          <h2 class="section-title">Una inversión que rentabilizas desde el primer contacto</h2>
+          <p class="section-subtitle">
+            Todo lo necesario para que tu negocio cause una impresión memorable sin costes ocultos.
+          </p>
+        </div>
+
+        <div class="pricing-card-wrapper">
+          <div class="pricing-card" id="tarjeta-precio-principal">
+
+            <!-- Sello destacado Primer año incluido -->
+            <div class="pricing-badge-seal" id="sello-primer-ano">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+              </svg>
+              <span>Primer año de mantenimiento incluido</span>
+            </div>
+
+            <h3 class="pricing-service-name">Tarjeta de Presentación Digital</h3>
+
+            <div class="pricing-amount-box">
+              <span class="pricing-currency">€</span>
+              <span class="pricing-price">120</span>
+              <span class="pricing-type">Pago único inicial</span>
+            </div>
+
+            <ul class="pricing-includes-list" id="lista-incluye-precio">
+              <li class="pricing-includes-item">
+                <div class="pricing-check-icon" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <span><strong>Diseño personalizado</strong> adaptado a tu marca, foto y colores.</span>
+              </li>
+
+              <li class="pricing-includes-item">
+                <div class="pricing-check-icon" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <span><strong>Publicación en internet</strong> con tu enlace propio y exclusivo.</span>
+              </li>
+
+              <li class="pricing-includes-item">
+                <div class="pricing-check-icon" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <span><strong>Código QR exclusivo</strong> de alta resolución para usar en cualquier soporte.</span>
+              </li>
+
+              <li class="pricing-includes-item">
+                <div class="pricing-check-icon" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <span><strong>Ajustes en el diseño inicial</strong> hasta que quede exactamente como quieres.</span>
+              </li>
+
+              <li class="pricing-includes-item">
+                <div class="pricing-check-icon" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <span><strong>Primer año de mantenimiento incluido</strong>, con hasta 2 cambios durante el año.</span>
+              </li>
+            </ul>
+
+            <!-- Mantenimiento como ventaja competitiva -->
+            <div class="pricing-maintenance-notice" id="bloque-mantenimiento-segundo-ano">
+              <div class="maintenance-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                <span>Tu tarjeta nunca se queda desactualizada</span>
+              </div>
+              <p class="maintenance-desc">
+                A partir del segundo año: mantenimiento de <strong>22 €/año</strong> (menos de 2 € al mes). Incluye que
+                tu tarjeta siga siempre publicada y funcionando, además de <strong>2 cambios al año</strong> para
+                actualizar tu teléfono, foto, nuevos servicios o nuevos enlaces cuando lo necesites.
+              </p>
+            </div>
+
+            <a href="https://wa.me/34660337148?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20la%20tarjeta%20digital."
+              class="btn-primary btn-full" id="pricing-cta-button" target="_blank" rel="noopener noreferrer">
+              <span>Quiero mi tarjeta digital</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN 8: PREGUNTAS FRECUENTES EN FORMATO DESPLEGABLE
+         ========================================================================== -->
+    <section class="faq-section" id="preguntas-frecuentes">
+      <div class="container container-narrow">
+        <div class="section-header">
+          <div class="section-tag">
+            <span>Resolvemos tus dudas</span>
+          </div>
+          <h2 class="section-title">Preguntas frecuentes</h2>
+          <p class="section-subtitle">
+            Todo lo que necesitas saber antes de encargar tu tarjeta digital profesional.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <!-- FAQ 1 -->
+          <details class="faq-item" id="faq-app">
+            <summary class="faq-summary">
+              <span>¿Necesito descargar una aplicación?</span>
+              <svg class="faq-icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </summary>
+            <div class="faq-content">
+              No, se abre en cualquier navegador web moderno sin necesidad de instalar nada. Ni tú ni tus clientes
+              tenéis que ocupar espacio de memoria en vuestros teléfonos.
+            </div>
+          </details>
+
+          <!-- FAQ 2 -->
+          <details class="faq-item" id="faq-mantenimiento">
+            <summary class="faq-summary">
+              <span>¿Qué incluye el mantenimiento?</span>
+              <svg class="faq-icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </summary>
+            <div class="faq-content">
+              Que tu tarjeta siga publicada y funcionando al 100 %, y 2 cambios al año para modificar datos, fotos,
+              enlaces o servicios. El primer año va incluido en el precio; a partir del segundo, son solo 22 € al año
+              (menos de 2 € al mes).
+            </div>
+          </details>
+
+          <!-- FAQ 3 -->
+          <details class="faq-item" id="faq-cambios-extra">
+            <summary class="faq-summary">
+              <span>¿Qué pasa si necesito más de dos cambios al año?</span>
+              <svg class="faq-icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </summary>
+            <div class="faq-content">
+              Escríbeme por WhatsApp o correo y lo valoramos de manera sencilla y personalizada según lo que requieras.
+            </div>
+          </details>
+
+          <!-- FAQ 4 -->
+          <details class="faq-item" id="faq-tiempo">
+            <summary class="faq-summary">
+              <span>¿Cuánto tarda en estar lista?</span>
+              <svg class="faq-icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </summary>
+            <div class="faq-content">
+              Recibes tu primera propuesta personalizada en 72 horas para que la revises y me des tu opinión.
+            </div>
+          </details>
+
+          <!-- FAQ 5 -->
+          <details class="faq-item" id="faq-dispositivos">
+            <summary class="faq-summary">
+              <span>¿Funciona en cualquier móvil?</span>
+              <svg class="faq-icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </summary>
+            <div class="faq-content">
+              Sí, funciona perfectamente tanto en iPhone como en teléfonos Android, además de tablets y ordenadores.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN 9: CIERRE PERSUASIVO Y CONTACTO
+         ========================================================================== -->
+    <section class="closing-section" id="contacto">
+      <div class="container container-narrow">
+
+        <div class="closing-card">
+          <h2 class="closing-title">Cada presentación es una oportunidad de trabajo</h2>
+          <p class="closing-subtitle">
+            Deja atrás el papel y empieza a compartir tu tarjeta con la profesionalidad, comodidad y rapidez que tu
+            negocio merece hoy.
+          </p>
+
+          <a href="https://wa.me/34660337148?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20la%20tarjeta%20digital."
+            class="btn-primary" id="closing-cta-button" target="_blank" rel="noopener noreferrer">
+            <span>Quiero mi tarjeta digital</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="contact-block">
+          <h3 class="contact-title">¿Tienes preguntas antes de empezar? Escríbeme directamente</h3>
+          <div class="contact-links-grid">
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/34660337148?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20la%20tarjeta%20digital."
+              class="contact-link-card" id="contact-box-whatsapp" target="_blank" rel="noopener noreferrer">
+              <div class="contact-icon-box" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.302c-.087.087-.179.182-.077.357.101.174.451.744.968 1.205.666.594 1.228.778 1.402.865.173.087.275.072.376-.043.101-.116.433-.506.549-.679.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z" />
+                </svg>
+              </div>
+              <div>
+                <span class="contact-label">WhatsApp</span>
+                <span class="contact-value">+34 660 33 71 48</span>
+              </div>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:estrategiadigitalestrella@gmail.com?subject=Informaci%C3%B3n%20tarjeta%20digital"
+              class="contact-link-card" id="contact-box-email">
+              <div class="contact-icon-box" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-label">Correo electrónico</span>
+                <span class="contact-value">estrategiadigitalestrella@gmail.com</span>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       PIE DE PÁGINA
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-copy">
+        &copy; 2026 Tarjeta de Presentación Digital Profesional. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       BOTÓN FLOTANTE DE WHATSAPP (FIJO EN ESQUINA INFERIOR DERECHA)
+       ========================================================================== -->
+  <a href="https://wa.me/34660337148?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20la%20tarjeta%20digital."
+    class="whatsapp-floating-btn" id="floating-whatsapp-btn" target="_blank" rel="noopener noreferrer"
+    aria-label="Abrir WhatsApp para solicitar información de la tarjeta digital">
+    <span class="whatsapp-pulse-dot" aria-hidden="true"></span>
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.302c-.087.087-.179.182-.077.357.101.174.451.744.968 1.205.666.594 1.228.778 1.402.865.173.087.275.072.376-.043.101-.116.433-.506.549-.679.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z" />
+    </svg>
+    <span class="whatsapp-floating-text">Pedir información</span>
+  </a>
+
+  <!-- Script interactivo para comportamiento acordeón exclusivo y accesible -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const detailsList = document.querySelectorAll('.faq-item');
+      detailsList.forEach(item => {
+        item.addEventListener('toggle', () => {
+          if (item.open) {
+            detailsList.forEach(otherItem => {
+              if (otherItem !== item && otherItem.open) {
+                otherItem.open = false;
+              }
+            });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
