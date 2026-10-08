@@ -8,7 +8,7 @@
   <!-- SEO & Metadatos Principales -->
   <title>Tarjeta de Presentación Digital Profesional | Tu negocio en el móvil de tu cliente</title>
   <meta name="description"
-    content="Tu negocio en el móvil de tu cliente en 3 segundos. Tarjeta de presentación digital elegante con foto, enlaces, WhatsApp y código QR. Sin descargar aplicaciones. Promo lanzamiento 97 € con primer año de mantenimiento incluido.">
+    content="Tu negocio en el móvil de tu cliente en 3 segundos. Tarjeta de presentación digital elegante con foto, enlaces, WhatsApp y código QR. Sin descargar aplicaciones. 97 € con primer año de mantenimiento incluido (precio habitual 121 €).">
   <meta name="author" content="Estrategia Digital Estrella">
   <meta name="theme-color" content="#270722">
   <link rel="canonical" href="https://tarjetapresentacion-9by.pages.dev/">
@@ -1005,29 +1005,15 @@
       margin-bottom: 28px;
     }
 
-    .pricing-promo-badge {
-      display: inline-block;
-      background-color: var(--accent-violet);
-      color: var(--text-light);
-      border: 2px solid #ff3131;
-      font-family: var(--font-subtitle);
-      font-size: 0.92rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      padding: 7px 20px;
-      border-radius: var(--radius-pill);
-      margin-bottom: 16px;
-      box-shadow: 0 4px 0 #ff3131;
-    }
 
     .pricing-comparison {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 18px;
+      gap: 16px;
       margin-bottom: 6px;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
+      white-space: nowrap;
     }
 
     .pricing-old-price-wrapper {
@@ -1035,7 +1021,9 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 6px 12px;
+      padding: 4px 10px;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
 
     .pricing-old-price {
@@ -1046,6 +1034,7 @@
       color: var(--accent-violet);
       opacity: 0.65;
       line-height: 1;
+      white-space: nowrap;
     }
 
     .pricing-cross-svg {
@@ -1061,6 +1050,8 @@
     .pricing-new-price-wrapper {
       display: inline-flex;
       align-items: flex-start;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
 
     .pricing-currency {
@@ -1095,20 +1086,6 @@
       margin-top: 8px;
     }
 
-    .hero-promo-tag {
-      display: inline-flex;
-      align-items: center;
-      background-color: var(--accent-violet);
-      color: var(--text-light);
-      font-family: var(--font-subtitle);
-      font-size: 0.78rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.09em;
-      padding: 3px 10px;
-      border-radius: var(--radius-pill);
-      border: 1.5px solid #ff3131;
-    }
 
     .hero-old-price-crossed {
       font-family: var(--font-heading);
@@ -1119,6 +1096,7 @@
       padding: 0 4px;
       color: var(--accent-violet);
       opacity: 0.7;
+      white-space: nowrap;
     }
 
     .hero-cross-svg {
@@ -1561,8 +1539,32 @@
         font-size: 2.2rem;
       }
 
+      .pricing-card {
+        padding: 46px 18px 36px 18px;
+      }
+
+      .pricing-comparison {
+        gap: 10px;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+      }
+
+      .pricing-old-price-wrapper {
+        padding: 2px 6px;
+      }
+
+      .pricing-old-price {
+        font-size: 2rem;
+        white-space: nowrap;
+      }
+
+      .pricing-currency {
+        font-size: 1.6rem;
+        top: 6px;
+      }
+
       .pricing-price {
-        font-size: 4.2rem;
+        font-size: 3.8rem;
       }
 
       .pricing-badge-seal {
@@ -1624,15 +1626,14 @@
               </svg>
             </a>
             <p class="hero-price-note" id="hero-price-line">
-              <span class="hero-promo-tag">Promo lanzamiento</span>
               <span class="hero-old-price-crossed" title="Precio habitual: 121 €">
-                121 €
+                121&nbsp;€
                 <svg class="hero-cross-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
                   <line x1="5" y1="12" x2="95" y2="88" stroke="#ff3131" stroke-width="12" stroke-linecap="round" />
                   <line x1="5" y1="88" x2="95" y2="12" stroke="#ff3131" stroke-width="12" stroke-linecap="round" />
                 </svg>
               </span>
-              <strong>97 €</strong> con el primer año de mantenimiento incluido
+              <strong>97&nbsp;€</strong> con el primer año de mantenimiento incluido
             </p>
           </div>
         </div>
@@ -2060,10 +2061,9 @@
             <h3 class="pricing-service-name">Tarjeta de Presentación Digital</h3>
 
             <div class="pricing-amount-box">
-              <div class="pricing-promo-badge">Promo lanzamiento</div>
               <div class="pricing-comparison">
                 <span class="pricing-old-price-wrapper" title="Precio habitual: 121 €">
-                  <span class="pricing-old-price">121 €</span>
+                  <span class="pricing-old-price">121&nbsp;€</span>
                   <svg class="pricing-cross-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
                     <line x1="6" y1="12" x2="94" y2="88" stroke="#ff3131" stroke-width="12" stroke-linecap="round" />
                     <line x1="6" y1="88" x2="94" y2="12" stroke="#ff3131" stroke-width="12" stroke-linecap="round" />
