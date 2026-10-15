@@ -8,9 +8,12 @@
   <!-- SEO & Metadatos Principales -->
   <title>Tarjeta de Presentación Digital Profesional | Tu negocio en el móvil de tu cliente</title>
   <meta name="description"
-    content="Tu negocio en el móvil de tu cliente en 3 segundos. Tarjeta de presentación digital elegante con foto, enlaces, WhatsApp y código QR. Sin descargar aplicaciones. Precio especial de lanzamiento: 67 € (precio habitual 97 €) con primer año de mantenimiento incluido.">
+    content="Tu negocio en el móvil de tu cliente en 3 segundos. Tarjeta de presentación digital elegante con foto, enlaces, WhatsApp y código QR. Sin descargar aplicaciones. Precio de lanzamiento: 67 € hasta el 31 de diciembre con primer año de mantenimiento incluido.">
   <meta name="author" content="Estrategia Digital Estrella">
-  <meta name="theme-color" content="#f7f7f5">
+  <meta name="theme-color" content="#F3F2E8">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon-ede.svg">
 
   <!-- Open Graph / Redes Sociales -->
   <meta property="og:type" content="website">
@@ -25,85 +28,84 @@
   <meta name="twitter:description"
     content="Tu negocio en el móvil de tu cliente en 3 segundos. Elegante, con código QR y contacto en un solo toque.">
 
-  <!-- Tipografía Google Fonts UI/UX Design Inspiration 2026: Plus Jakarta Sans + Inter -->
+  <!-- Tipografías Google Fonts: Outfit (400, 500, 700), DM Sans (400, 500), Saira Stencil One -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400;1,9..40,500&family=Outfit:wght@400;500;700&family=Saira+Stencil+One&display=swap"
     rel="stylesheet">
 
   <style>
-/* ==========================================================================
-       ESTILO MINIMALISTA UI/UX DESIGN INSPIRATION 2026
-       Inspirado en estudios de diseño gráfico y UI/UX de vanguardia:
-       fondos blanco marfil, tipografía monumental negra con leading compacto,
-       líneas de detalle, módulos wireframe táctiles en tonos arena/melocotón suave.
+    /* ==========================================================================
+       NUEVA IDENTIDAD VISUAL - ESTRATEGIA DIGITAL ESTRELLA
+       Paleta plana y minimalista: Crema, Negro, Blanco y Rojo acento.
+       Tipografías Google Fonts: Outfit (títulos), DM Sans (textos), Saira Stencil One (cifras/precios).
        ========================================================================== */
     :root {
-      /* Lienzo y Fondos Neutros Cálidos */
-      --bg-canvas: #f7f7f5;
-      --bg-surface: #ffffff;
-      --bg-card: #ffffff;
-      --bg-warm-sand: #f5ede6;
-      --bg-warm-tint: #faf6f2;
-      --bg-subtle-box: #f0ebe4;
+      /* 1. PALETA DE COLOR OFICIAL */
+      --color-acento: #F93A2A; /* Rojo, SOLO como acento */
+      --color-fondo: #F3F2E8;  /* Crema, fondo principal */
+      --color-texto: #0A0A0A;  /* Negro, textos e iconos */
+      --color-blanco: #FFFFFF; /* Blanco */
 
-      /* Retrocompatibilidad */
-      --bg-mist: #f7f7f5;
-      --bg-ice: #ffffff;
+      /* Mapeo de compatibilidad interna */
+      --bg-canvas: var(--color-fondo);
+      --bg-surface: var(--color-blanco);
+      --bg-card: var(--color-blanco);
+      --bg-warm-sand: var(--color-fondo);
+      --bg-warm-tint: var(--color-fondo);
+      --bg-subtle-box: var(--color-blanco);
+      --bg-mist: var(--color-fondo);
+      --bg-ice: var(--color-blanco);
 
-      /* Contraste Gráfico: Negro Puro y Carbón */
-      --text-pure: #111113;
-      --text-heading: #0d0d0f;
-      --text-silver: #4a4a54;
-      --text-muted: #6e6e7a;
-      --text-dim: #90909e;
-      --text-black: #111113;
-      --text-violet: #111113;
-      --text-light: #ffffff;
+      --text-pure: var(--color-texto);
+      --text-heading: var(--color-texto);
+      --text-silver: var(--color-texto);
+      --text-muted: rgba(10, 10, 10, 0.72);
+      --text-dim: rgba(10, 10, 10, 0.5);
+      --text-black: var(--color-texto);
+      --text-violet: var(--color-texto);
+      --text-light: var(--color-blanco);
 
-      /* Acentos Cromáticos */
-      --accent-black: #111113;
-      --accent-warm: #eedfd2;
-      --accent-blue: #111113;
-      --accent-violet: #111113;
-      --crimson-pure: #ff3131;
+      --accent-black: var(--color-texto);
+      --accent-warm: var(--color-fondo);
+      --accent-blue: var(--color-acento);
+      --accent-violet: var(--color-acento);
+      --crimson-pure: var(--color-acento);
 
-      /* Tipografía UI/UX 2026: Plus Jakarta Sans + Inter */
-      --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-      --font-title: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-      --font-subtitle: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      /* 2. TIPOGRAFÍAS (Google Fonts) */
+      --font-heading: 'Outfit', sans-serif;
+      --font-title: 'Outfit', sans-serif;
+      --font-subtitle: 'DM Sans', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
+      --font-price: 'Saira Stencil One', cursive, sans-serif;
 
-      /* Radios Suaves de Diseño */
-      --radius-sm: 10px;
-      --radius-md: 20px;
-      --radius-lg: 28px;
+      /* Radios y Bordes - Estilo plano y minimalista */
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
       --radius-arch: 24px;
       --radius-arch-lg: 32px;
       --radius-pill: 9999px;
 
-      /* Bordes Wireframe Finos */
-      --border-wire: 1.5px solid #111113;
-      --border-subtle: 1px solid rgba(0, 0, 0, 0.08);
-      --border-card: 1px solid rgba(0, 0, 0, 0.07);
-      --border-blue: 1px solid rgba(0, 0, 0, 0.09);
-      --border-violet: 1.5px solid #111113;
+      --border-wire: 1.5px solid var(--color-texto);
+      --border-subtle: 1px solid rgba(10, 10, 10, 0.12);
+      --border-card: 1px solid rgba(10, 10, 10, 0.1);
+      --border-blue: 1px solid rgba(10, 10, 10, 0.12);
+      --border-violet: 1.5px solid var(--color-texto);
 
-      /* Sombras Limpias y Orgánicas */
-      --shadow-clean-sm: 0 4px 14px rgba(0, 0, 0, 0.03);
-      --shadow-clean-md: 0 12px 32px rgba(0, 0, 0, 0.05);
-      --shadow-clean-lg: 0 24px 60px rgba(0, 0, 0, 0.07);
-      --shadow-geo-blue: 0 10px 30px rgba(0, 0, 0, 0.04);
-      --shadow-geo-violet: 0 16px 40px rgba(0, 0, 0, 0.06);
-      --shadow-geo-lift: 0 20px 48px rgba(0, 0, 0, 0.08);
+      /* Sin degradados, sombras marcadas ni efectos de brillo */
+      --shadow-clean-sm: none;
+      --shadow-clean-md: none;
+      --shadow-clean-lg: none;
+      --shadow-geo-blue: none;
+      --shadow-geo-violet: none;
+      --shadow-geo-lift: none;
 
-      --transition-smooth: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+      --transition-smooth: all 0.2s ease;
     }
 
-    /* ==========================================================================
-       RESET Y BASE ESTRUCTURAL
-       ========================================================================== */
+    /* RESET Y BASE ESTRUCTURAL */
     *,
     *::before,
     *::after {
@@ -116,17 +118,23 @@
       scroll-behavior: smooth;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      background-color: var(--bg-canvas);
+      background-color: var(--color-fondo);
     }
 
     body {
-      background-color: var(--bg-canvas);
-      color: var(--text-silver);
+      background-color: var(--color-fondo);
+      color: var(--color-texto);
       font-family: var(--font-body);
       font-size: 16px;
       font-weight: 400;
       line-height: 1.65;
       overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-heading);
+      color: var(--color-texto);
+      letter-spacing: -0.02em;
     }
 
     img,
@@ -147,9 +155,7 @@
       background: none;
     }
 
-    /* ==========================================================================
-       CONTENEDOR Y ENCABEZADOS DE DISEÑO
-       ========================================================================== */
+    /* CONTENEDOR Y ENCABEZADOS */
     .container {
       width: 100%;
       max-width: 1160px;
@@ -170,13 +176,13 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: var(--bg-warm-sand);
-      color: #111113;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      font-family: var(--font-subtitle);
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.06em;
+      background: var(--color-blanco);
+      color: var(--color-texto);
+      border: 1px solid rgba(10, 10, 10, 0.15);
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
       text-transform: uppercase;
       padding: 7px 18px;
       border-radius: var(--radius-pill);
@@ -187,9 +193,9 @@
       font-family: var(--font-heading);
       font-style: normal;
       font-size: clamp(2.3rem, 4.8vw, 3.6rem);
-      font-weight: 800;
-      color: var(--text-heading);
-      line-height: 1.08;
+      font-weight: 700;
+      color: var(--color-texto);
+      line-height: 1.1;
       letter-spacing: -0.03em;
       margin-bottom: 18px;
     }
@@ -197,62 +203,85 @@
     .section-subtitle {
       font-family: var(--font-body);
       font-size: 1.12rem;
-      color: var(--text-muted);
+      color: rgba(10, 10, 10, 0.72);
       font-weight: 400;
       line-height: 1.65;
       max-width: 700px;
       margin: 0 auto;
     }
 
-    /* ==========================================================================
-       BOTÓN PRINCIPAL: NEGRO GRÁFICO SÓLIDO
-       ========================================================================== */
+    /* BOTONES */
     .btn-primary {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 12px;
-      background: #111113;
-      color: #ffffff;
-      font-family: var(--font-subtitle);
-      font-size: 0.95rem;
-      font-weight: 700;
-      letter-spacing: 0.02em;
+      background: var(--color-acento);
+      color: var(--color-blanco);
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
       padding: 18px 36px;
       border-radius: var(--radius-pill);
-      border: 1px solid #111113;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-      transition: var(--transition-smooth);
+      border: 1px solid var(--color-acento);
+      box-shadow: none;
+      transition: opacity 0.2s ease, transform 0.2s ease;
       position: relative;
+      cursor: pointer;
+      text-decoration: none;
     }
 
     .btn-primary:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.18);
-      background: #232328;
-      color: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: none;
+      background: #e02f20;
+      border-color: #e02f20;
+      color: var(--color-blanco);
     }
 
     .btn-primary:active {
-      transform: translateY(1px);
+      transform: translateY(0);
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: transparent;
+      color: var(--color-texto);
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      font-weight: 500;
+      padding: 14px 28px;
+      border-radius: var(--radius-pill);
+      border: 1.5px solid var(--color-texto);
+      box-shadow: none;
+      transition: var(--transition-smooth);
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .btn-outline:hover {
+      background: var(--color-texto);
+      color: var(--color-blanco);
     }
 
     .btn-full {
       width: 100%;
     }
 
-    /* ==========================================================================
-       CABECERA DEL SITIO
-       ========================================================================== */
+    /* CABECERA */
     .site-header {
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(247, 247, 245, 0.92);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border-bottom: 1px solid rgba(0, 0, 0, 0.07);
-      padding: 16px 0;
+      background: rgba(243, 242, 232, 0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(10, 10, 10, 0.1);
+      padding: 14px 0;
     }
 
     .header-content {
@@ -262,59 +291,65 @@
     }
 
     .brand-logo {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-family: var(--font-heading);
-      font-size: 0.95rem;
-      font-weight: 800;
-      letter-spacing: -0.01em;
-      color: var(--text-heading);
-    }
-
-    .brand-logo-badge {
       display: inline-flex;
       align-items: center;
-      justify-content: center;
-      width: 32px;
-      height: 32px;
-      background: #111113;
-      color: #ffffff;
-      border-radius: 8px;
-      font-family: var(--font-heading);
-      font-weight: 800;
-      font-size: 1rem;
+      text-decoration: none;
+    }
+
+    .site-logo-img {
+      height: 44px;
+      width: auto;
+      max-width: 190px;
+      object-fit: contain;
+      display: block;
     }
 
     .header-contact-link {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: #ffffff;
-      color: var(--text-heading);
-      font-family: var(--font-subtitle);
-      font-size: 0.84rem;
-      font-weight: 700;
+      background: var(--color-blanco);
+      color: var(--color-texto);
+      font-family: var(--font-body);
+      font-size: 0.88rem;
+      font-weight: 500;
       padding: 9px 18px;
       border-radius: var(--radius-pill);
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+      border: 1px solid rgba(10, 10, 10, 0.15);
+      box-shadow: none;
       transition: var(--transition-smooth);
     }
 
     .header-contact-link:hover {
-      border-color: #111113;
-      background: #111113;
-      color: #ffffff;
+      border-color: var(--color-texto);
+      background: var(--color-texto);
+      color: var(--color-blanco);
       transform: translateY(-1px);
     }
 
-    /* ==========================================================================
-       SECCIÓN HERO: INSPIRACIÓN DE DISEÑO UI/UX 2026
-       ========================================================================== */
+    /* SECCIÓN HERO Y BANNER */
     .hero-section {
-      padding: 72px 0 96px 0;
+      padding: 40px 0 88px 0;
       position: relative;
+    }
+
+    .hero-banner-wrapper {
+      width: 100%;
+      max-width: 1160px;
+      margin: 0 auto 48px auto;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid rgba(10, 10, 10, 0.1);
+      background-color: var(--color-fondo);
+    }
+
+    .hero-banner-img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 2172 / 724;
+      object-fit: contain;
+      object-position: 78% center;
+      display: block;
     }
 
     .hero-grid {
@@ -335,18 +370,18 @@
     .hero-title {
       font-family: var(--font-heading);
       font-style: normal;
-      font-size: clamp(3rem, 6.8vw, 5.2rem);
-      font-weight: 800;
-      line-height: 1.04;
+      font-size: clamp(2.8rem, 6.2vw, 4.6rem);
+      font-weight: 700;
+      line-height: 1.06;
       letter-spacing: -0.035em;
-      color: var(--text-heading);
+      color: var(--color-texto);
       margin-bottom: 24px;
     }
 
     .hero-subtitle {
       font-family: var(--font-body);
       font-size: 1.15rem;
-      color: var(--text-silver);
+      color: var(--color-texto);
       font-weight: 400;
       line-height: 1.65;
       margin-bottom: 34px;
@@ -356,56 +391,20 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 18px;
-      width: 100%;
+      gap: 14px;
     }
 
     .hero-price-note {
-      font-family: var(--font-subtitle);
-      font-size: 0.95rem;
-      font-weight: 600;
-      letter-spacing: 0.01em;
-      color: var(--text-muted);
       display: inline-flex;
       align-items: center;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
+      gap: 7px;
+      font-family: var(--font-body);
+      font-size: 0.88rem;
+      color: rgba(10, 10, 10, 0.72);
+      font-weight: 500;
     }
 
-    .hero-old-price-crossed {
-      font-family: var(--font-heading);
-      font-style: normal;
-      font-weight: 700;
-      position: relative;
-      display: inline-block;
-      padding: 0 4px;
-      color: var(--text-dim);
-      font-size: 1.25rem;
-      white-space: nowrap;
-    }
-
-    .hero-cross-svg {
-      position: absolute;
-      top: -1px;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      overflow: visible;
-    }
-
-    .hero-price-note strong {
-      color: var(--text-heading);
-      font-family: var(--font-heading);
-      font-size: 1.45rem;
-      font-weight: 800;
-      white-space: nowrap;
-    }
-
-    /* ==========================================================================
-       MOCKUP SMARTPHONE ESTILO WIREFRAME / UI DESIGN (LAURA RAMOS)
-       ========================================================================== */
+    /* MOCKUP SMARTPHONE */
     .phone-mockup-wrapper {
       position: relative;
       width: 100%;
@@ -414,10 +413,10 @@
     }
 
     .phone-mockup-frame {
-      background: #ffffff;
-      border: 3px solid #111113;
+      background: var(--color-blanco);
+      border: 2.5px solid var(--color-texto);
       border-radius: 46px;
-      box-shadow: 0 28px 65px rgba(0, 0, 0, 0.09), 0 6px 16px rgba(0, 0, 0, 0.04);
+      box-shadow: none;
       padding: 10px;
       position: relative;
     }
@@ -429,18 +428,18 @@
       transform: translateX(-50%);
       width: 86px;
       height: 16px;
-      background-color: #111113;
+      background-color: var(--color-texto);
       border-radius: var(--radius-pill);
       z-index: 10;
     }
 
     .phone-screen {
-      background: #faf8f5;
+      background: var(--color-fondo);
       border-radius: 36px;
       overflow: hidden;
       padding: 18px 14px 16px 14px;
       text-align: center;
-      border: 1px solid rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(10, 10, 10, 0.1);
     }
 
     .phone-top-bar {
@@ -455,13 +454,13 @@
       align-items: center;
       gap: 6px;
       padding: 4px 10px;
-      background: #ffffff;
+      background: var(--color-blanco);
       border-radius: var(--radius-pill);
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      font-family: var(--font-subtitle);
+      border: 1px solid rgba(10, 10, 10, 0.12);
+      font-family: var(--font-body);
       font-size: 0.65rem;
-      font-weight: 700;
-      color: var(--text-heading);
+      font-weight: 500;
+      color: var(--color-texto);
       letter-spacing: 0.04em;
       text-transform: uppercase;
     }
@@ -470,8 +469,7 @@
       width: 6px;
       height: 6px;
       border-radius: 50%;
-      background-color: #10b981;
-      box-shadow: 0 0 6px rgba(16, 185, 129, 0.6);
+      background-color: var(--color-acento);
     }
 
     .phone-top-qr-icon {
@@ -481,9 +479,9 @@
       width: 26px;
       height: 26px;
       border-radius: 50%;
-      background: #ffffff;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      color: var(--text-heading);
+      background: var(--color-blanco);
+      border: 1px solid rgba(10, 10, 10, 0.12);
+      color: var(--color-texto);
     }
 
     .phone-avatar-box {
@@ -492,13 +490,13 @@
       height: 80px;
       margin: 0 auto 8px auto;
       border-radius: 50%;
-      border: 2.5px solid #111113;
-      background-color: #ffffff;
+      border: 2px solid var(--color-texto);
+      background-color: var(--color-blanco);
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: hidden;
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+      box-shadow: none;
     }
 
     .phone-avatar-img {
@@ -514,18 +512,18 @@
       font-family: var(--font-heading);
       font-style: normal;
       font-size: 1.25rem;
-      font-weight: 800;
+      font-weight: 700;
       letter-spacing: -0.02em;
-      color: var(--text-heading);
+      color: var(--color-texto);
       margin-bottom: 2px;
       line-height: 1.2;
     }
 
     .phone-profile-role {
-      font-family: var(--font-subtitle);
+      font-family: var(--font-body);
       font-size: 0.74rem;
-      color: var(--text-muted);
-      font-weight: 600;
+      color: rgba(10, 10, 10, 0.7);
+      font-weight: 500;
       letter-spacing: 0.01em;
       margin-bottom: 8px;
       display: flex;
@@ -538,20 +536,20 @@
       display: inline-block;
       padding: 1px 7px;
       border-radius: var(--radius-pill);
-      background-color: #111113;
-      color: #ffffff;
+      background-color: var(--color-texto);
+      color: var(--color-blanco);
       font-size: 0.68rem;
-      font-weight: 700;
+      font-weight: 500;
     }
 
     .phone-quote-capsule {
       margin: 0 auto 10px auto;
       padding: 5px 12px;
-      background: var(--bg-warm-sand);
-      border: 1px solid rgba(0, 0, 0, 0.08);
+      background: var(--color-blanco);
+      border: 1px solid rgba(10, 10, 10, 0.1);
       border-radius: var(--radius-pill);
       font-size: 0.7rem;
-      color: var(--text-silver);
+      color: var(--color-texto);
       font-style: italic;
       max-width: 250px;
       line-height: 1.35;
@@ -570,23 +568,23 @@
       align-items: center;
       justify-content: center;
       padding: 8px 4px;
-      background-color: #ffffff;
-      border: 1px solid rgba(0, 0, 0, 0.1);
+      background-color: var(--color-blanco);
+      border: 1px solid rgba(10, 10, 10, 0.12);
       border-radius: 14px;
-      color: var(--text-heading);
+      color: var(--color-texto);
       font-size: 0.64rem;
-      font-family: var(--font-subtitle);
-      font-weight: 700;
+      font-family: var(--font-body);
+      font-weight: 500;
       gap: 3px;
       text-decoration: none;
       transition: var(--transition-smooth);
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+      box-shadow: none;
     }
 
     .phone-quick-btn:hover {
-      background-color: #111113;
-      color: #ffffff;
-      border-color: #111113;
+      background-color: var(--color-texto);
+      color: var(--color-blanco);
+      border-color: var(--color-texto);
     }
 
     .phone-quick-icon {
@@ -606,22 +604,22 @@
       gap: 6px;
       width: 100%;
       padding: 10px 12px;
-      background-color: #111113;
-      color: #ffffff;
+      background-color: var(--color-texto);
+      color: var(--color-blanco);
       border-radius: var(--radius-pill);
-      font-family: var(--font-subtitle);
+      font-family: var(--font-body);
       font-size: 0.78rem;
-      font-weight: 700;
+      font-weight: 500;
       letter-spacing: 0.01em;
       text-decoration: none;
-      border: 1px solid #111113;
+      border: 1px solid var(--color-texto);
       margin-bottom: 8px;
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+      box-shadow: none;
       transition: var(--transition-smooth);
     }
 
     .phone-btn-save-master:hover {
-      background-color: #2b2b32;
+      background-color: rgba(10, 10, 10, 0.85);
       transform: translateY(-1px);
     }
 
@@ -631,39 +629,38 @@
       justify-content: center;
       gap: 4px;
       padding: 6px 14px;
-      background: var(--bg-warm-sand);
-      border: 1px solid rgba(0, 0, 0, 0.12);
+      background: var(--color-blanco);
+      border: 1px solid rgba(10, 10, 10, 0.15);
       border-radius: var(--radius-pill);
-      color: var(--text-heading);
-      font-family: var(--font-subtitle);
+      color: var(--color-texto);
+      font-family: var(--font-body);
       font-size: 0.7rem;
-      font-weight: 700;
+      font-weight: 500;
       text-decoration: none;
       transition: var(--transition-smooth);
     }
 
     .phone-live-demo-tag:hover {
-      background-color: #111113;
-      color: #ffffff;
-      border-color: #111113;
+      background-color: var(--color-texto);
+      color: var(--color-blanco);
+      border-color: var(--color-texto);
     }
 
     .phone-float-badge {
       position: absolute;
-      background: #ffffff;
+      background: var(--color-blanco);
       padding: 9px 18px;
       border-radius: var(--radius-pill);
-      font-family: var(--font-subtitle);
+      font-family: var(--font-body);
       font-size: 0.82rem;
-      font-weight: 700;
-      color: var(--text-heading);
-      border: 1.5px solid #111113;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      font-weight: 500;
+      color: var(--color-texto);
+      border: 1.5px solid var(--color-texto);
+      box-shadow: none;
       display: flex;
       align-items: center;
       gap: 6px;
       text-decoration: none;
-      animation: floatBadge 4s ease-in-out infinite alternate;
     }
 
     .phone-badge-link {
@@ -672,39 +669,27 @@
     }
 
     .phone-badge-link:hover {
-      background-color: #111113;
-      color: #ffffff;
+      background-color: var(--color-texto);
+      color: var(--color-blanco);
       transform: translateY(-2px);
     }
 
     .badge-top-right {
-      top: 30px;
-      right: -24px;
+      top: 18px;
+      right: -20px;
     }
 
     .badge-bottom-left {
-      bottom: 40px;
+      bottom: 24px;
       left: -20px;
-      animation-delay: 2s;
     }
 
-    @keyframes floatBadge {
-      0% {
-        transform: translateY(0);
-      }
-      100% {
-        transform: translateY(-8px);
-      }
-    }
-
-    /* ==========================================================================
-       SECCIÓN 2: EL PROBLEMA CON LAS TARJETAS DE PAPEL
-       ========================================================================== */
+    /* SECCIÓN 2: PROBLEMA */
     .problem-section {
       padding: 92px 0;
-      background-color: #ffffff;
-      border-top: var(--border-card);
-      border-bottom: var(--border-card);
+      background-color: var(--color-blanco);
+      border-top: 1px solid rgba(10, 10, 10, 0.08);
+      border-bottom: 1px solid rgba(10, 10, 10, 0.08);
     }
 
     .problem-grid {
@@ -714,50 +699,48 @@
     }
 
     .problem-card {
-      background-color: var(--bg-canvas);
+      background-color: var(--color-fondo);
       border-radius: var(--radius-md);
       padding: 26px 24px;
       display: flex;
       align-items: center;
       gap: 20px;
-      border: 1px solid rgba(0, 0, 0, 0.07);
+      border: 1px solid rgba(10, 10, 10, 0.1);
+      box-shadow: none;
       transition: var(--transition-smooth);
     }
 
     .problem-card:hover {
-      transform: translateY(-3px);
-      border-color: #111113;
-      background-color: #ffffff;
-      box-shadow: var(--shadow-clean-md);
+      transform: translateY(-2px);
+      border-color: var(--color-texto);
+      box-shadow: none;
     }
 
     .problem-icon-wrap {
       flex-shrink: 0;
       width: 48px;
       height: 48px;
-      background-color: #ffffff;
-      color: #111113;
-      border: 1.5px solid #111113;
+      background-color: var(--color-blanco);
+      color: var(--color-texto);
+      border: 1.5px solid var(--color-texto);
       border-radius: 14px;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+      box-shadow: none;
     }
 
     .problem-text {
       font-family: var(--font-body);
       font-size: 1.05rem;
-      color: var(--text-silver);
+      color: var(--color-texto);
       line-height: 1.6;
     }
 
-    /* ==========================================================================
-       SECCIÓN 3: BENEFICIOS / TRES RAZONES
-       ========================================================================== */
+    /* SECCIÓN 3: BENEFICIOS */
     .benefits-section {
       padding: 96px 0;
-      background-color: var(--bg-canvas);
+      background-color: var(--color-fondo);
     }
 
     .benefits-grid {
@@ -767,41 +750,41 @@
     }
 
     .benefit-card {
-      background-color: #ffffff;
+      background-color: var(--color-blanco);
       border-radius: var(--radius-md);
       padding: 40px 32px;
-      border: 1px solid rgba(0, 0, 0, 0.08);
-      box-shadow: var(--shadow-clean-sm);
+      border: 1px solid rgba(10, 10, 10, 0.1);
+      box-shadow: none;
       transition: var(--transition-smooth);
       position: relative;
     }
 
     .benefit-card:hover {
-      transform: translateY(-4px);
-      border-color: #111113;
-      box-shadow: var(--shadow-clean-lg);
+      transform: translateY(-2px);
+      border-color: var(--color-texto);
+      box-shadow: none;
     }
 
     .benefit-icon-box {
       width: 56px;
       height: 56px;
-      background: var(--bg-warm-sand);
-      color: #111113;
-      border: 1.5px solid #111113;
+      background: var(--color-fondo);
+      color: var(--color-texto);
+      border: 1.5px solid var(--color-texto);
       border-radius: 16px;
       display: flex;
       align-items: center;
       justify-content: center;
       margin-bottom: 22px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+      box-shadow: none;
     }
 
     .benefit-title {
       font-family: var(--font-heading);
       font-style: normal;
       font-size: 1.35rem;
-      font-weight: 800;
-      color: var(--text-heading);
+      font-weight: 700;
+      color: var(--color-texto);
       letter-spacing: -0.02em;
       margin-bottom: 12px;
     }
@@ -809,42 +792,40 @@
     .benefit-desc {
       font-family: var(--font-body);
       font-size: 1rem;
-      color: var(--text-silver);
+      color: var(--color-texto);
       line-height: 1.65;
     }
 
-    /* ==========================================================================
-       SECCIÓN 4: EJEMPLO REAL (SHOWCASE DE LAURA RAMOS)
-       ========================================================================== */
+    /* SECCIÓN 4: EJEMPLO REAL */
     .demo-section {
       padding: 96px 0;
-      background: #ffffff;
-      border-top: var(--border-card);
-      border-bottom: var(--border-card);
+      background: var(--color-blanco);
+      border-top: 1px solid rgba(10, 10, 10, 0.08);
+      border-bottom: 1px solid rgba(10, 10, 10, 0.08);
       text-align: center;
     }
 
     .demo-card {
-      background-color: var(--bg-canvas);
+      background-color: var(--color-fondo);
       border-radius: var(--radius-lg);
       padding: 56px 36px;
       max-width: 820px;
       margin: 0 auto;
-      border: 1.5px solid #111113;
-      box-shadow: var(--shadow-clean-lg);
+      border: 1.5px solid var(--color-texto);
+      box-shadow: none;
     }
 
     .demo-tag {
       display: inline-block;
-      background: #ffffff;
-      color: #111113;
-      font-family: var(--font-subtitle);
+      background: var(--color-blanco);
+      color: var(--color-texto);
+      font-family: var(--font-body);
       font-size: 0.8rem;
-      font-weight: 700;
+      font-weight: 500;
       padding: 6px 20px;
       border-radius: var(--radius-pill);
       margin-bottom: 20px;
-      border: 1px solid rgba(0, 0, 0, 0.12);
+      border: 1px solid rgba(10, 10, 10, 0.15);
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
@@ -854,8 +835,8 @@
       font-style: normal;
       font-size: clamp(2.2rem, 4.4vw, 3.2rem);
       margin-bottom: 16px;
-      color: var(--text-heading);
-      font-weight: 800;
+      color: var(--color-texto);
+      font-weight: 700;
       letter-spacing: -0.03em;
       line-height: 1.1;
     }
@@ -863,7 +844,7 @@
     .demo-subtitle {
       font-family: var(--font-body);
       font-size: 1.1rem;
-      color: var(--text-silver);
+      color: var(--color-texto);
       margin-bottom: 32px;
       line-height: 1.65;
     }
@@ -872,12 +853,12 @@
       display: inline-flex;
       align-items: center;
       gap: 16px;
-      background-color: #ffffff;
-      border: 1.5px solid #111113;
+      background-color: var(--color-blanco);
+      border: 1.5px solid var(--color-texto);
       border-radius: var(--radius-pill);
       padding: 10px 24px 10px 12px;
       margin-bottom: 28px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+      box-shadow: none;
       text-align: left;
     }
 
@@ -885,10 +866,10 @@
       width: 54px;
       height: 54px;
       border-radius: 50%;
-      border: 2px solid #111113;
+      border: 2px solid var(--color-texto);
       overflow: hidden;
       flex-shrink: 0;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      box-shadow: none;
     }
 
     .demo-profile-avatar img {
@@ -907,43 +888,41 @@
     .demo-profile-name {
       font-family: var(--font-heading);
       font-size: 1.1rem;
-      font-weight: 800;
-      color: var(--text-heading);
+      font-weight: 700;
+      color: var(--color-texto);
       letter-spacing: -0.01em;
       line-height: 1.2;
     }
 
     .demo-profile-role {
-      font-family: var(--font-subtitle);
+      font-family: var(--font-body);
       font-size: 0.78rem;
-      font-weight: 600;
-      color: var(--text-muted);
+      font-weight: 500;
+      color: rgba(10, 10, 10, 0.7);
     }
 
     .demo-profile-quote {
       font-family: var(--font-body);
       font-size: 0.82rem;
-      color: var(--text-silver);
+      color: var(--color-texto);
       font-style: italic;
     }
 
     .demo-notice {
       margin-top: 28px;
       font-size: 0.95rem;
-      color: var(--text-muted);
+      color: rgba(10, 10, 10, 0.72);
       line-height: 1.6;
-      background-color: #ffffff;
+      background-color: var(--color-blanco);
       padding: 16px 24px;
       border-radius: 16px;
-      border: 1px solid rgba(0, 0, 0, 0.07);
+      border: 1px solid rgba(10, 10, 10, 0.1);
     }
 
-    /* ==========================================================================
-       SECCIÓN 5: PARA QUIÉN ES
-       ========================================================================== */
+    /* SECCIÓN 5: PARA QUIÉN ES */
     .audience-section {
       padding: 92px 0;
-      background-color: var(--bg-canvas);
+      background-color: var(--color-fondo);
     }
 
     .audience-grid {
@@ -953,43 +932,43 @@
     }
 
     .audience-card {
-      background-color: #ffffff;
+      background-color: var(--color-blanco);
       border-radius: var(--radius-md);
       padding: 28px 24px;
       display: flex;
       align-items: center;
       gap: 20px;
-      border: 1px solid rgba(0, 0, 0, 0.08);
-      box-shadow: var(--shadow-clean-sm);
+      border: 1px solid rgba(10, 10, 10, 0.1);
+      box-shadow: none;
       transition: var(--transition-smooth);
     }
 
     .audience-card:hover {
-      transform: translateY(-3px);
-      border-color: #111113;
-      box-shadow: var(--shadow-clean-md);
+      transform: translateY(-2px);
+      border-color: var(--color-texto);
+      box-shadow: none;
     }
 
     .audience-icon-box {
       flex-shrink: 0;
       width: 54px;
       height: 54px;
-      background: var(--bg-warm-sand);
-      color: #111113;
-      border: 1.5px solid #111113;
+      background: var(--color-fondo);
+      color: var(--color-texto);
+      border: 1.5px solid var(--color-texto);
       border-radius: 14px;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+      box-shadow: none;
     }
 
     .audience-title {
       font-family: var(--font-heading);
       font-style: normal;
       font-size: 1.22rem;
-      font-weight: 800;
-      color: var(--text-heading);
+      font-weight: 700;
+      color: var(--color-texto);
       letter-spacing: -0.02em;
       margin-bottom: 6px;
     }
@@ -997,18 +976,16 @@
     .audience-detail {
       font-family: var(--font-body);
       font-size: 0.98rem;
-      color: var(--text-silver);
+      color: var(--color-texto);
       line-height: 1.6;
     }
 
-    /* ==========================================================================
-       SECCIÓN 6: CÓMO FUNCIONA EN 3 PASOS
-       ========================================================================== */
+    /* SECCIÓN 6: CÓMO FUNCIONA */
     .steps-section {
       padding: 92px 0;
-      background-color: #ffffff;
-      border-top: var(--border-card);
-      border-bottom: var(--border-card);
+      background-color: var(--color-blanco);
+      border-top: 1px solid rgba(10, 10, 10, 0.08);
+      border-bottom: 1px solid rgba(10, 10, 10, 0.08);
     }
 
     .steps-grid {
@@ -1018,27 +995,26 @@
     }
 
     .step-card {
-      background-color: var(--bg-canvas);
+      background-color: var(--color-fondo);
       border-radius: var(--radius-md);
       padding: 40px 30px;
-      border: 1px solid rgba(0, 0, 0, 0.08);
-      box-shadow: var(--shadow-clean-sm);
+      border: 1px solid rgba(10, 10, 10, 0.1);
+      box-shadow: none;
       transition: var(--transition-smooth);
     }
 
     .step-card:hover {
-      transform: translateY(-4px);
-      border-color: #111113;
-      background-color: #ffffff;
-      box-shadow: var(--shadow-clean-md);
+      transform: translateY(-2px);
+      border-color: var(--color-texto);
+      box-shadow: none;
     }
 
     .step-number {
       font-family: var(--font-heading);
       font-style: normal;
       font-size: 3.4rem;
-      font-weight: 800;
-      color: #111113;
+      font-weight: 700;
+      color: var(--color-texto);
       line-height: 1;
       margin-bottom: 16px;
       letter-spacing: -0.03em;
@@ -1048,8 +1024,8 @@
       font-family: var(--font-heading);
       font-style: normal;
       font-size: 1.35rem;
-      font-weight: 800;
-      color: var(--text-heading);
+      font-weight: 700;
+      color: var(--color-texto);
       letter-spacing: -0.02em;
       margin-bottom: 12px;
     }
@@ -1057,16 +1033,14 @@
     .step-desc {
       font-family: var(--font-body);
       font-size: 1rem;
-      color: var(--text-silver);
+      color: var(--color-texto);
       line-height: 1.65;
     }
 
-    /* ==========================================================================
-       SECCIÓN 7: PRECIOS (TARJETA LIMPIA UI 2026)
-       ========================================================================== */
+    /* SECCIÓN 7: PRECIO */
     .pricing-section {
       padding: 96px 0;
-      background-color: var(--bg-canvas);
+      background-color: var(--color-fondo);
     }
 
     .pricing-card-wrapper {
@@ -1075,11 +1049,11 @@
     }
 
     .pricing-card {
-      background: #ffffff;
+      background: var(--color-blanco);
       border-radius: var(--radius-lg);
       padding: 58px 36px 48px 36px;
-      border: 2px solid #111113;
-      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.08);
+      border: 2px solid var(--color-texto);
+      box-shadow: none;
       position: relative;
       text-align: center;
     }
@@ -1089,15 +1063,15 @@
       top: -22px;
       left: 50%;
       transform: translateX(-50%);
-      background: #111113;
-      color: #ffffff;
-      font-family: var(--font-subtitle);
+      background: var(--color-texto);
+      color: var(--color-blanco);
+      font-family: var(--font-body);
       font-size: 0.85rem;
-      font-weight: 700;
+      font-weight: 500;
       padding: 10px 24px;
       border-radius: var(--radius-pill);
-      border: 1px solid #111113;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      border: 1px solid var(--color-texto);
+      box-shadow: none;
       letter-spacing: 0.04em;
       white-space: nowrap;
       display: inline-flex;
@@ -1109,8 +1083,8 @@
       font-family: var(--font-heading);
       font-style: normal;
       font-size: 1.65rem;
-      color: var(--text-heading);
-      font-weight: 800;
+      color: var(--color-texto);
+      font-weight: 700;
       letter-spacing: -0.02em;
       margin-top: 14px;
       margin-bottom: 14px;
@@ -1120,82 +1094,50 @@
       margin-bottom: 28px;
     }
 
-    .pricing-comparison {
+    .pricing-price-display {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 18px;
       margin-bottom: 6px;
-      flex-wrap: nowrap;
-      white-space: nowrap;
     }
 
-    .pricing-old-price-wrapper {
-      position: relative;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 4px 10px;
-      white-space: nowrap;
-      flex-shrink: 0;
-    }
-
-    .pricing-old-price {
-      font-family: var(--font-heading);
-      font-style: normal;
-      font-size: 2.9rem;
-      font-weight: 700;
-      color: #a0a0ab;
+    .pricing-figure {
+      font-family: var(--font-price);
+      font-size: clamp(3.8rem, 8vw, 5.2rem);
+      color: var(--color-acento);
       line-height: 1;
-      white-space: nowrap;
+      letter-spacing: -0.02em;
     }
 
-    .pricing-cross-svg {
-      position: absolute;
-      top: -4px;
-      left: -4px;
-      width: calc(100% + 8px);
-      height: calc(100% + 8px);
-      pointer-events: none;
-      overflow: visible;
+    .pricing-figure-inline {
+      font-family: var(--font-price);
+      color: var(--color-acento);
+      letter-spacing: 0.01em;
+      font-size: 1.05em;
     }
 
-    .pricing-new-price-wrapper {
-      display: inline-flex;
-      align-items: flex-start;
-      white-space: nowrap;
-      flex-shrink: 0;
-    }
-
-    .pricing-currency {
-      font-family: var(--font-heading);
-      font-style: normal;
-      font-size: 2.3rem;
-      font-weight: 800;
-      color: var(--text-heading);
-      vertical-align: top;
-      position: relative;
-      top: 10px;
-    }
-
-    .pricing-price {
-      font-family: var(--font-heading);
-      font-style: normal;
-      font-size: 5.6rem;
-      font-weight: 800;
-      color: var(--text-heading);
-      line-height: 1;
-      letter-spacing: -0.04em;
+    .pricing-launch-tag {
+      display: inline-block;
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--color-texto);
+      background: var(--color-fondo);
+      border: 1px solid rgba(10, 10, 10, 0.15);
+      padding: 6px 18px;
+      border-radius: var(--radius-pill);
+      margin-top: 6px;
+      margin-bottom: 10px;
     }
 
     .pricing-type {
       display: block;
-      font-family: var(--font-subtitle);
+      font-family: var(--font-body);
       font-size: 0.95rem;
-      color: var(--text-muted);
-      font-weight: 600;
-      letter-spacing: 0.02em;
-      margin-top: 8px;
+      color: rgba(10, 10, 10, 0.72);
+      font-weight: 400;
+      margin-top: 6px;
+      line-height: 1.5;
     }
 
     .pricing-includes-list {
@@ -1212,39 +1154,31 @@
       align-items: center;
       gap: 14px;
       font-size: 1.05rem;
-      color: var(--text-silver);
+      color: var(--color-texto);
     }
 
     .pricing-check-icon {
       flex-shrink: 0;
       width: 26px;
       height: 26px;
-      background: var(--bg-warm-sand);
-      color: #111113;
-      border: 1.5px solid #111113;
+      background: var(--color-fondo);
+      color: var(--color-texto);
+      border: 1.5px solid var(--color-texto);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
     }
 
-    .pricing-note {
-      font-family: var(--font-body);
-      font-size: 0.92rem;
-      color: var(--text-muted);
-      margin-top: 20px;
-      font-style: normal;
-    }
-
     .pricing-maintenance-notice {
       margin-top: 24px;
-      padding: 16px 20px;
-      background-color: var(--bg-canvas);
+      padding: 18px 22px;
+      background-color: var(--color-fondo);
       border-radius: 14px;
-      border: 1px solid rgba(0, 0, 0, 0.07);
-      font-size: 0.92rem;
+      border: 1px solid rgba(10, 10, 10, 0.1);
+      font-size: 0.95rem;
       line-height: 1.6;
-      color: var(--text-silver);
+      color: var(--color-texto);
       text-align: left;
     }
 
@@ -1256,65 +1190,60 @@
       font-family: var(--font-heading);
       font-style: normal;
       font-weight: 700;
-      color: var(--text-heading);
+      color: var(--color-texto);
       letter-spacing: -0.01em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 6px;
     }
 
     .maintenance-desc {
-      color: var(--text-muted);
+      color: rgba(10, 10, 10, 0.85);
     }
 
-    .pricing-annual-clause {
-      margin-top: 14px;
-      font-size: 0.82rem;
-      color: var(--text-muted);
-      line-height: 1.55;
-    }
-
-    /* ==========================================================================
-       SECCIÓN 8: PREGUNTAS FRECUENTES
-       ========================================================================== */
+    /* SECCIÓN 8: PREGUNTAS FRECUENTES */
     .faq-section {
       padding: 92px 0;
-      background-color: #ffffff;
-      border-top: var(--border-card);
-      border-bottom: var(--border-card);
+      background-color: var(--color-blanco);
+      border-top: 1px solid rgba(10, 10, 10, 0.08);
+      border-bottom: 1px solid rgba(10, 10, 10, 0.08);
     }
 
     .faq-list {
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 14px;
     }
 
     .faq-item {
-      background-color: var(--bg-canvas);
-      border-radius: var(--radius-md);
-      border: 1px solid rgba(0, 0, 0, 0.08);
+      background-color: var(--color-fondo);
+      border-radius: 16px;
+      border: 1px solid rgba(10, 10, 10, 0.1);
       overflow: hidden;
+      box-shadow: none;
       transition: var(--transition-smooth);
     }
 
     .faq-item[open] {
-      border-color: #111113;
-      background-color: #ffffff;
-      box-shadow: var(--shadow-clean-md);
+      border-color: var(--color-texto);
+      background-color: var(--color-fondo);
+      box-shadow: none;
     }
 
     .faq-summary {
-      padding: 24px 28px;
+      padding: 22px 26px;
       font-family: var(--font-heading);
-      font-style: normal;
-      font-size: 1.15rem;
-      font-weight: 800;
-      letter-spacing: -0.01em;
-      color: var(--text-heading);
+      font-size: 1.12rem;
+      font-weight: 700;
+      color: var(--color-texto);
       cursor: pointer;
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 16px;
       list-style: none;
+      user-select: none;
     }
 
     .faq-summary::-webkit-details-marker {
@@ -1325,8 +1254,8 @@
       flex-shrink: 0;
       width: 22px;
       height: 22px;
-      color: #111113;
-      transition: transform 0.3s ease;
+      color: var(--color-texto);
+      transition: transform 0.25s ease;
     }
 
     .faq-item[open] .faq-icon-arrow {
@@ -1334,39 +1263,35 @@
     }
 
     .faq-content {
-      padding: 0 28px 26px 28px;
+      padding: 0 26px 24px 26px;
       font-family: var(--font-body);
-      font-size: 1.05rem;
-      color: var(--text-silver);
+      font-size: 1rem;
+      color: var(--color-texto);
       line-height: 1.7;
-      border-top: 1px solid rgba(0, 0, 0, 0.06);
-      padding-top: 16px;
     }
 
-    /* ==========================================================================
-       SECCIÓN 9: CONTACTO FINAL
-       ========================================================================== */
+    /* SECCIÓN 9: CONTACTO FINAL */
     .closing-section {
       padding: 96px 0;
-      background-color: var(--bg-canvas);
+      background-color: var(--color-fondo);
     }
 
     .closing-card {
-      background: #ffffff;
+      background: var(--color-blanco);
       border-radius: var(--radius-lg);
       padding: 56px 36px;
       text-align: center;
-      border: 2px solid #111113;
-      box-shadow: 0 25px 65px rgba(0, 0, 0, 0.07);
+      border: 2px solid var(--color-texto);
+      box-shadow: none;
     }
 
     .closing-title {
       font-family: var(--font-heading);
       font-style: normal;
       font-size: clamp(2.3rem, 4.8vw, 3.6rem);
-      font-weight: 800;
+      font-weight: 700;
       letter-spacing: -0.03em;
-      color: var(--text-heading);
+      color: var(--color-texto);
       margin-bottom: 18px;
       line-height: 1.1;
     }
@@ -1374,7 +1299,7 @@
     .closing-subtitle {
       font-family: var(--font-body);
       font-size: 1.12rem;
-      color: var(--text-silver);
+      color: var(--color-texto);
       line-height: 1.65;
       max-width: 680px;
       margin: 0 auto 36px auto;
@@ -1383,16 +1308,16 @@
     .contact-block {
       margin-top: 48px;
       padding-top: 40px;
-      border-top: 1px solid rgba(0, 0, 0, 0.08);
+      border-top: 1px solid rgba(10, 10, 10, 0.1);
     }
 
     .contact-title {
       font-family: var(--font-heading);
       font-style: normal;
       font-size: 1.15rem;
-      font-weight: 800;
+      font-weight: 700;
       letter-spacing: -0.01em;
-      color: var(--text-heading);
+      color: var(--color-texto);
       margin-bottom: 22px;
     }
 
@@ -1405,31 +1330,31 @@
     }
 
     .contact-link-card {
-      background-color: var(--bg-canvas);
+      background-color: var(--color-fondo);
       border-radius: var(--radius-md);
       padding: 18px 24px;
       display: flex;
       align-items: center;
       gap: 18px;
-      border: 1px solid rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(10, 10, 10, 0.1);
+      box-shadow: none;
       transition: var(--transition-smooth);
       text-align: left;
     }
 
     .contact-link-card:hover {
-      transform: translateY(-3px);
-      border-color: #111113;
-      background-color: #ffffff;
-      box-shadow: var(--shadow-clean-md);
+      transform: translateY(-2px);
+      border-color: var(--color-texto);
+      box-shadow: none;
     }
 
     .contact-icon-box {
       width: 44px;
       height: 44px;
       border-radius: 12px;
-      background: var(--bg-warm-sand);
-      color: #111113;
-      border: 1.5px solid #111113;
+      background: var(--color-blanco);
+      color: var(--color-texto);
+      border: 1.5px solid var(--color-texto);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1438,96 +1363,79 @@
 
     .contact-label {
       display: block;
-      font-family: var(--font-subtitle);
+      font-family: var(--font-body);
       font-size: 0.78rem;
-      color: var(--text-muted);
+      color: rgba(10, 10, 10, 0.7);
       text-transform: uppercase;
       letter-spacing: 0.04em;
-      font-weight: 700;
+      font-weight: 500;
     }
 
     .contact-value {
       display: block;
-      font-family: var(--font-subtitle);
+      font-family: var(--font-body);
       font-size: 1.05rem;
-      font-weight: 700;
-      color: var(--text-heading);
+      font-weight: 500;
+      color: var(--color-texto);
       letter-spacing: -0.01em;
     }
 
-    /* ==========================================================================
-       PIE DE PÁGINA
-       ========================================================================== */
+    /* PIE DE PÁGINA (FONDO NEGRO) */
     .site-footer {
-      background-color: #ffffff;
-      padding: 36px 0;
-      border-top: 1px solid rgba(0, 0, 0, 0.07);
+      background-color: var(--color-texto);
+      color: var(--color-blanco);
+      padding: 48px 0 36px 0;
       text-align: center;
     }
 
-    .footer-copy {
-      font-family: var(--font-subtitle);
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      font-weight: 500;
+    .footer-logo-img {
+      height: 48px;
+      width: auto;
+      margin: 0 auto 18px auto;
+      display: block;
     }
 
-    /* ==========================================================================
-       BOTÓN FLOTANTE DE WHATSAPP
-       ========================================================================== */
+    .footer-copy {
+      font-family: var(--font-body);
+      font-size: 0.88rem;
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    /* BOTÓN FLOTANTE DE WHATSAPP (CTA EN ROJO ACENTO CON TEXTO E ICONO EN BLANCO) */
     .whatsapp-floating-btn {
       position: fixed;
       bottom: 28px;
       right: 28px;
       z-index: 999;
-      background: #111113;
-      color: #ffffff;
+      background: var(--color-acento);
+      color: var(--color-blanco);
       border-radius: var(--radius-pill);
       padding: 14px 22px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      box-shadow: none;
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      border: 1.5px solid #111113;
+      border: 1px solid var(--color-acento);
       transition: var(--transition-smooth);
     }
 
     .whatsapp-floating-btn:hover {
-      transform: translateY(-4px) scale(1.03);
-      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.28);
-      background: #282830;
-    }
-
-    .whatsapp-pulse-dot {
-      width: 9px;
-      height: 9px;
-      border-radius: 50%;
-      background-color: #25D366;
-      box-shadow: 0 0 8px #25D366;
-      animation: pulseGreen 2s infinite;
-    }
-
-    @keyframes pulseGreen {
-      0%, 100% {
-        opacity: 1;
-        transform: scale(1);
-      }
-      50% {
-        opacity: 0.4;
-        transform: scale(0.85);
-      }
+      transform: translateY(-2px);
+      box-shadow: none;
+      background: #e02f20;
+      border-color: #e02f20;
+      color: var(--color-blanco);
     }
 
     .whatsapp-floating-text {
-      font-family: var(--font-subtitle);
-      font-size: 0.85rem;
-      font-weight: 700;
-      letter-spacing: 0.02em;
+      font-family: var(--font-body);
+      font-size: 0.88rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      color: var(--color-blanco);
     }
 
-    /* ==========================================================================
-       MEDIA QUERIES RESPONSIVAS
-       ========================================================================== */
+    /* MEDIA QUERIES RESPONSIVAS */
     @media (min-width: 640px) {
       .problem-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -1565,7 +1473,7 @@
       }
 
       .hero-title {
-        font-size: clamp(3.2rem, 5.2vw, 5rem);
+        font-size: clamp(3rem, 4.8vw, 4.5rem);
       }
 
       .benefits-grid {
@@ -1595,6 +1503,10 @@
         line-height: 1.6;
       }
 
+      .container {
+        padding: 0 16px;
+      }
+
       .whatsapp-floating-text {
         display: none;
       }
@@ -1607,45 +1519,37 @@
       }
 
       .hero-title {
-        font-size: 2.6rem;
+        font-size: 2.3rem;
+      }
+
+      .hero-section {
+        padding: 24px 0 64px 0;
+      }
+
+      .hero-banner-wrapper {
+        margin-bottom: 32px;
+        border-radius: 12px;
       }
 
       .pricing-card {
         padding: 46px 18px 36px 18px;
       }
 
-      .pricing-comparison {
-        gap: 10px;
-        flex-wrap: nowrap;
-        white-space: nowrap;
-      }
-
-      .pricing-old-price-wrapper {
-        padding: 2px 6px;
-      }
-
-      .pricing-old-price {
-        font-size: 2rem;
-        white-space: nowrap;
-      }
-
-      .pricing-currency {
-        font-size: 1.6rem;
-        top: 6px;
-      }
-
-      .pricing-price {
-        font-size: 3.8rem;
+      .pricing-figure {
+        font-size: 3.4rem;
       }
 
       .pricing-badge-seal {
-        font-size: 0.78rem;
-        padding: 8px 16px;
+        font-size: 0.76rem;
+        padding: 8px 14px;
+        white-space: normal;
+        text-align: center;
+        max-width: 90%;
       }
 
       .demo-profile-preview {
         flex-direction: column;
-        border-radius: 24px;
+        border-radius: 20px;
         text-align: center;
         padding: 16px;
         gap: 8px;
@@ -1661,9 +1565,8 @@
        ========================================================================== -->
   <header class="site-header" id="cabecera">
     <div class="container header-content">
-      <a href="#cabecera" class="brand-logo" id="header-brand-link">
-        <span class="brand-logo-badge">T</span>
-        <span>Tarjeta siempre actualizada</span>
+      <a href="#cabecera" class="brand-logo" id="header-brand-link" aria-label="Estrategia Digital Estrella">
+        <img src="assets/EDE-solo-digital-rojo.svg" alt="Estrategia Digital Estrella" class="site-logo-img">
       </a>
       <a href="https://wa.me/34660337148?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20la%20tarjeta%20digital."
         class="header-contact-link" id="header-whatsapp-link" target="_blank" rel="noopener noreferrer"
@@ -1682,7 +1585,14 @@
          SECCIÓN 1: CABECERA CON LA PROMESA Y MOCKUP DE MÓVIL
          ========================================================================== -->
     <section class="hero-section" id="inicio">
-      <div class="container hero-grid">
+      <div class="container">
+
+        <!-- Banner de cabecera: sin texto encima, mesa iluminada visible completa -->
+        <div class="hero-banner-wrapper">
+          <img src="assets/banner-estrategia.png" alt="Estrategia Digital Estrella" class="hero-banner-img" fetchpriority="high">
+        </div>
+
+        <div class="hero-grid">
 
         <div class="hero-content">
           <div class="section-tag">
@@ -1742,7 +1652,7 @@
               </div>
 
               <div class="phone-avatar-box">
-                <img src="foto-perfil.jpg" alt="Laura Ramos - Editora jefe de AUREA" class="phone-avatar-img">
+                <img src="foto-perfil.jpg" alt="Laura Ramos - Editora jefe de AUREA" class="phone-avatar-img" loading="lazy">
               </div>
 
               <div class="phone-profile-name">Laura Ramos</div>
@@ -1785,9 +1695,9 @@
             </div>
           </div>
         </div>
-
       </div>
-    </section>
+    </div>
+  </section>
 
     <!-- ==========================================================================
          SECCIÓN 2: EL PROBLEMA CON LAS TARJETAS DE PAPEL
@@ -1948,7 +1858,7 @@
 
           <div class="demo-profile-preview">
             <div class="demo-profile-avatar">
-              <img src="foto-perfil.jpg" alt="Laura Ramos - Editora jefe de AUREA">
+              <img src="foto-perfil.jpg" alt="Laura Ramos - Editora jefe de AUREA" loading="lazy">
             </div>
             <div class="demo-profile-info">
               <span class="demo-profile-name">Laura Ramos</span>
@@ -1958,7 +1868,7 @@
           </div>
 
           <div>
-            <a href="https://tarjeta-laura-ramos.pages.dev/" class="btn-primary" id="demo-card-link-button"
+            <a href="https://tarjeta-laura-ramos.pages.dev/" class="btn-outline" id="demo-card-link-button"
               target="_blank" rel="noopener noreferrer">
               <span>Abrir tarjeta de Laura Ramos</span>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
@@ -2166,20 +2076,11 @@
             <h3 class="pricing-service-name">Tarjeta de Presentación Digital</h3>
 
             <div class="pricing-amount-box">
-              <div class="pricing-comparison">
-                <span class="pricing-old-price-wrapper" title="Precio habitual: 97 €">
-                  <span class="pricing-old-price">97&nbsp;€</span>
-                  <svg class="pricing-cross-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-                    <line x1="6" y1="12" x2="94" y2="88" stroke="#ff3131" stroke-width="12" stroke-linecap="round" />
-                    <line x1="6" y1="88" x2="94" y2="12" stroke="#ff3131" stroke-width="12" stroke-linecap="round" />
-                  </svg>
-                </span>
-                <div class="pricing-new-price-wrapper">
-                  <span class="pricing-currency">€</span>
-                  <span class="pricing-price">67</span>
-                </div>
+              <div class="pricing-price-display">
+                <span class="pricing-figure">67 €</span>
               </div>
-              <span class="pricing-type">Precio especial de lanzamiento · Pago único inicial</span>
+              <span class="pricing-launch-tag">Precio de lanzamiento hasta el 31 de diciembre</span>
+              <span class="pricing-type">Tarjeta de presentación digital: 97 € con el primer año de mantenimiento incluido (IVA incluido)</span>
             </div>
 
             <ul class="pricing-includes-list" id="lista-incluye-precio">
@@ -2244,9 +2145,7 @@
                 <span>Tu tarjeta nunca se queda desactualizada</span>
               </div>
               <p class="maintenance-desc">
-                A partir del segundo año: mantenimiento de <strong>22 €/año</strong> (menos de 2 € al mes). Incluye que
-                tu tarjeta siga siempre publicada y funcionando, además de <strong>2 cambios al año</strong> para
-                actualizar tu teléfono, foto, nuevos servicios o nuevos enlaces cuando lo necesites.
+                A partir del segundo año: mantenimiento de <strong class="pricing-figure-inline">22 €/año</strong> con dos cambios incluidos. Si no se renueva, la tarjeta se desactiva a los 15 días.
               </p>
             </div>
 
@@ -2320,9 +2219,7 @@
               </svg>
             </summary>
             <div class="faq-content">
-              Que tu tarjeta siga publicada y funcionando al 100 %, y 2 cambios al año para modificar datos, fotos,
-              enlaces o servicios. El primer año va incluido en el precio; a partir del segundo, son solo 22 € al año
-              (menos de 2 € al mes).
+              Que tu tarjeta siga publicada y funcionando al 100 %, y dos cambios al año para modificar datos, fotos, enlaces o servicios. El primer año va incluido en el precio; a partir del segundo, el mantenimiento es de <strong class="pricing-figure-inline">22 €/año</strong> con dos cambios incluidos. Si no se renueva, la tarjeta se desactiva a los 15 días.
             </div>
           </details>
 
@@ -2441,8 +2338,9 @@
        ========================================================================== -->
   <footer class="site-footer">
     <div class="container">
+      <img src="assets/logo vectorizado negro.svg" alt="Estrategia Digital Estrella" class="footer-logo-img" loading="lazy">
       <p class="footer-copy">
-        &copy; 2026 Tarjeta de Presentación Digital Profesional. Todos los derechos reservados.
+        &copy; 2026 Estrategia Digital Estrella. Todos los derechos reservados.
       </p>
     </div>
   </footer>
@@ -2453,7 +2351,6 @@
   <a href="https://wa.me/34660337148?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20la%20tarjeta%20digital."
     class="whatsapp-floating-btn" id="floating-whatsapp-btn" target="_blank" rel="noopener noreferrer"
     aria-label="Abrir WhatsApp para solicitar información de la tarjeta digital">
-    <span class="whatsapp-pulse-dot" aria-hidden="true"></span>
     <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
       <path
         d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.302c-.087.087-.179.182-.077.357.101.174.451.744.968 1.205.666.594 1.228.778 1.402.865.173.087.275.072.376-.043.101-.116.433-.506.549-.679.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z" />
