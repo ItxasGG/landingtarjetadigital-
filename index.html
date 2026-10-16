@@ -11,6 +11,7 @@
     content="Tu negocio en el móvil de tu cliente en 3 segundos. Tarjeta de presentación digital elegante con foto, enlaces, WhatsApp y código QR. Sin descargar aplicaciones. Precio de lanzamiento: 67 € hasta el 31 de diciembre con primer año de mantenimiento incluido.">
   <meta name="author" content="Estrategia Digital Estrella">
   <meta name="theme-color" content="#F3F2E8">
+  <link rel="canonical" href="https://tarjeta.estrategiadigitalestrella.com/">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/favicon-ede.svg">
@@ -20,6 +21,8 @@
   <meta property="og:title" content="Tarjeta de Presentación Digital Profesional">
   <meta property="og:description"
     content="Tu negocio en el móvil de tu cliente en 3 segundos. Elegante, con código QR, WhatsApp directo y sin papel.">
+  <meta property="og:url" content="https://tarjeta.estrategiadigitalestrella.com/">
+  <meta property="og:image" content="https://tarjeta.estrategiadigitalestrella.com/assets/banner-estrategia.png">
   <meta property="og:locale" content="es_ES">
 
   <!-- Twitter Card -->
@@ -27,6 +30,23 @@
   <meta name="twitter:title" content="Tarjeta de Presentación Digital Profesional">
   <meta name="twitter:description"
     content="Tu negocio en el móvil de tu cliente en 3 segundos. Elegante, con código QR y contacto en un solo toque.">
+  <meta name="twitter:image" content="https://tarjeta.estrategiadigitalestrella.com/assets/banner-estrategia.png">
+
+  <!-- Datos estructurados Schema.org (Organization) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Estrategia Digital Estrella",
+    "url": "https://tarjeta.estrategiadigitalestrella.com",
+    "email": "estrategiadigitalestrella@gmail.com",
+    "telephone": "+34660337148",
+    "sameAs": [
+      "https://www.instagram.com/estrategiadigitalestrella/",
+      "https://www.tiktok.com/@ede.estrategia.di"
+    ]
+  }
+  </script>
 
   <!-- Tipografías Google Fonts: Outfit (400, 500, 700), DM Sans (400, 500), Saira Stencil One -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -304,27 +324,11 @@
       display: block;
     }
 
-    .header-contact-link {
+    .header-social-links {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      background: var(--color-blanco);
-      color: var(--color-texto);
-      font-family: var(--font-body);
-      font-size: 0.88rem;
-      font-weight: 500;
-      padding: 9px 18px;
-      border-radius: var(--radius-pill);
-      border: 1px solid rgba(10, 10, 10, 0.15);
-      box-shadow: none;
-      transition: var(--transition-smooth);
-    }
-
-    .header-contact-link:hover {
-      border-color: var(--color-texto);
-      background: var(--color-texto);
-      color: var(--color-blanco);
-      transform: translateY(-1px);
+      gap: 16px;
+      flex-shrink: 0;
     }
 
     /* SECCIÓN HERO Y BANNER */
@@ -796,7 +800,7 @@
       line-height: 1.65;
     }
 
-    /* SECCIÓN 4: EJEMPLO REAL */
+    /* SECCIÓN 4: TARJETA DE EJEMPLO */
     .demo-section {
       padding: 96px 0;
       background: var(--color-blanco);
@@ -1380,6 +1384,90 @@
       letter-spacing: -0.01em;
     }
 
+    /* REDES SOCIALES */
+    .contact-social-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 28px;
+      flex-wrap: wrap;
+    }
+
+    .contact-social-label {
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--color-texto);
+      letter-spacing: -0.01em;
+    }
+
+    .contact-social-links,
+    .footer-social-links {
+      display: inline-flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      min-width: 44px;
+      min-height: 44px;
+      border-radius: 50%;
+      text-decoration: none;
+      transition: var(--transition-smooth);
+      cursor: pointer;
+    }
+
+    .social-link svg {
+      width: 24px;
+      height: 24px;
+      display: block;
+    }
+
+    .social-link-dark {
+      color: var(--color-texto);
+    }
+
+    .social-link-dark:hover,
+    .social-link-dark:focus-visible {
+      color: var(--color-acento);
+      transform: translateY(-2px);
+    }
+
+    .social-link-accent {
+      color: var(--color-acento);
+    }
+
+    .social-link-accent:hover,
+    .social-link-accent:focus-visible {
+      color: #e02f20;
+      transform: translateY(-2px);
+    }
+
+    .social-link-light {
+      color: var(--color-blanco);
+    }
+
+    .social-link-light:hover,
+    .social-link-light:focus-visible {
+      color: var(--color-acento);
+      transform: translateY(-2px);
+    }
+
+    .social-link:focus-visible {
+      outline: 2px solid var(--color-acento);
+      outline-offset: 3px;
+    }
+
+    .footer-social-links {
+      margin: 0 auto 16px auto;
+    }
+
     /* PIE DE PÁGINA (FONDO NEGRO) */
     .site-footer {
       background-color: var(--color-texto);
@@ -1518,6 +1606,11 @@
         right: 20px;
       }
 
+      .site-logo-img {
+        height: 38px;
+        max-width: 130px;
+      }
+
       .hero-title {
         font-size: 2.3rem;
       }
@@ -1568,15 +1661,32 @@
       <a href="#cabecera" class="brand-logo" id="header-brand-link" aria-label="Estrategia Digital Estrella">
         <img src="assets/EDE-solo-digital-rojo.svg" alt="Estrategia Digital Estrella" class="site-logo-img">
       </a>
-      <a href="https://wa.me/34660337148?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20la%20tarjeta%20digital."
-        class="header-contact-link" id="header-whatsapp-link" target="_blank" rel="noopener noreferrer"
-        aria-label="Contactar por WhatsApp">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-          <path
-            d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.302c-.087.087-.179.182-.077.357.101.174.451.744.968 1.205.666.594 1.228.778 1.402.865.173.087.275.072.376-.043.101-.116.433-.506.549-.679.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z" />
-        </svg>
-        <span>+34 660 33 71 48</span>
-      </a>
+      <div class="header-social-links" id="header-social-links">
+        <a href="https://wa.me/34660337148?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20la%20tarjeta%20digital."
+          class="social-link social-link-accent" id="header-whatsapp-link" target="_blank" rel="noopener noreferrer"
+          aria-label="Escribir por WhatsApp a Estrategia Digital Estrella">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+            <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/estrategiadigitalestrella/"
+          class="social-link social-link-dark" id="header-instagram-link" target="_blank" rel="noopener noreferrer"
+          aria-label="Instagram de Estrategia Digital Estrella">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" />
+            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+            <path d="M17 7l0 .01" />
+          </svg>
+        </a>
+        <a href="https://www.tiktok.com/@ede.estrategia.di"
+          class="social-link social-link-dark" id="header-tiktok-link" target="_blank" rel="noopener noreferrer"
+          aria-label="TikTok de Estrategia Digital Estrella">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917" />
+          </svg>
+        </a>
+      </div>
     </div>
   </header>
 
@@ -1596,7 +1706,7 @@
 
         <div class="hero-content">
           <div class="section-tag">
-            <span>Tu Contacto: te lleva siempre en su móvil.</span>
+            <span>Tu contacto, siempre en el móvil de tu cliente.</span>
           </div>
           <h1 class="hero-title">
             Tu tarjeta de presentación digital
@@ -1627,10 +1737,17 @@
         <!-- MOCKUP VISUAL DE SMARTPHONE CON TARJETA DE EJEMPLO DE LAURA RAMOS -->
         <div class="phone-mockup-wrapper">
           <div class="phone-float-badge badge-top-right">
-            <span>✨ Contacto en 1 toque</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+            <span>Contacto en 1 toque</span>
           </div>
-          <a href="https://tarjeta-laura-ramos.pages.dev/" target="_blank" rel="noopener noreferrer" class="phone-float-badge badge-bottom-left phone-badge-link" title="Abrir tarjeta real de Laura Ramos">
-            <span>👁️ Ver tarjeta real ↗</span>
+          <a href="https://tarjeta-laura-ramos.pages.dev/" target="_blank" rel="noopener noreferrer" class="phone-float-badge badge-bottom-left phone-badge-link" title="Abrir tarjeta de ejemplo">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+            <span>Ver tarjeta de ejemplo ↗</span>
           </a>
 
           <div class="phone-mockup-frame">
@@ -1667,26 +1784,39 @@
 
               <div class="phone-action-row">
                 <a href="https://tarjeta-laura-ramos.pages.dev/" target="_blank" rel="noopener noreferrer" class="phone-quick-btn" title="WhatsApp en tarjeta de Laura">
-                  <span class="phone-quick-icon">💬</span>
+                  <span class="phone-quick-icon">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                    </svg>
+                  </span>
                   <span class="phone-quick-text">WhatsApp</span>
                 </a>
                 <a href="https://tarjeta-laura-ramos.pages.dev/" target="_blank" rel="noopener noreferrer" class="phone-quick-btn" title="Email en tarjeta de Laura">
-                  <span class="phone-quick-icon">✉️</span>
+                  <span class="phone-quick-icon">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </span>
                   <span class="phone-quick-text">Email</span>
                 </a>
                 <a href="https://tarjeta-laura-ramos.pages.dev/" target="_blank" rel="noopener noreferrer" class="phone-quick-btn" title="Llamar en tarjeta de Laura">
-                  <span class="phone-quick-icon">📞</span>
+                  <span class="phone-quick-icon">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                  </span>
                   <span class="phone-quick-text">Llamar</span>
                 </a>
               </div>
 
-              <a href="https://tarjeta-laura-ramos.pages.dev/" target="_blank" rel="noopener noreferrer" class="phone-btn-save-master" title="Abrir tarjeta real de Laura Ramos">
+              <a href="https://tarjeta-laura-ramos.pages.dev/" target="_blank" rel="noopener noreferrer" class="phone-btn-save-master" title="Abrir tarjeta de ejemplo">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
                   <polyline points="17 21 17 13 7 13 7 21"></polyline>
                   <polyline points="7 3 7 8 15 8"></polyline>
                 </svg>
-                <span>Guardar Contacto</span>
+                <span>Guardar contacto</span>
               </a>
 
               <a href="https://tarjeta-laura-ramos.pages.dev/" target="_blank" rel="noopener noreferrer" class="phone-live-demo-tag">
@@ -1844,16 +1974,15 @@
     </section>
 
     <!-- ==========================================================================
-         SECCIÓN 4: EJEMPLO REAL
+         SECCIÓN 4: TARJETA DE EJEMPLO
          ========================================================================== -->
-    <section class="demo-section" id="ejemplo-real">
+    <section class="demo-section" id="tarjeta-ejemplo">
       <div class="container">
         <div class="demo-card">
-          <div class="demo-tag">Demostración en vivo · Caso Real</div>
-          <h2 class="demo-title">Mira cómo queda la tarjeta de Laura Ramos</h2>
+          <div class="demo-tag">Demostración en vivo · Tarjeta de ejemplo</div>
+          <h2 class="demo-title">Así queda una tarjeta terminada</h2>
           <p class="demo-subtitle">
-            Pruébala tú directamente en tu propio navegador y comprueba la fluidez con la que tus futuros clientes verán
-            tus datos.
+            Pruébala tú directamente en tu propio navegador y comprueba la fluidez con la que tu clientela verá tus datos.
           </p>
 
           <div class="demo-profile-preview">
@@ -1881,7 +2010,7 @@
           </div>
 
           <div class="demo-notice" id="demo-disclaimer-note">
-            Ten en cuenta que este es el ejemplo real de Laura Ramos (AUREA Magazine). Cada tarjeta se diseña de manera personalizada y única,
+            Laura Ramos y AUREA Magazine son un ejemplo creado para esta demostración. Cada tarjeta se diseña de manera personalizada y única,
             adaptada a la fotografía, el estilo y la paleta de colores de cada cliente.
           </div>
         </div>
@@ -1915,7 +2044,7 @@
               </svg>
             </div>
             <div>
-              <h3 class="audience-title">Agentes inmobiliarios</h3>
+              <h3 class="audience-title">Sector inmobiliario</h3>
               <p class="audience-detail">Enlaza tus inmuebles, tus reseñas y tu WhatsApp para que cada visita se convierta en un contacto guardado.</p>
             </div>
           </div>
@@ -1944,7 +2073,7 @@
               </svg>
             </div>
             <div>
-              <h3 class="audience-title">Comerciales y representantes</h3>
+              <h3 class="audience-title">Ventas y representación comercial</h3>
               <p class="audience-detail">En ferias y visitas, un código QR que se escanea en segundos y no se traspapela jamás.</p>
             </div>
           </div>
@@ -1974,7 +2103,7 @@
             </div>
             <div>
               <h3 class="audience-title">Turismo, eventos y bodas</h3>
-              <p class="audience-detail">Para fotógrafos, organizadores de bodas, guías y servicios turísticos: tu porfolio y tu contacto, también en varios idiomas para clientes internacionales.</p>
+              <p class="audience-detail">Para fotografía, organización de bodas, guías y servicios turísticos: tu porfolio y tu contacto, también en varios idiomas para clientes internacionales.</p>
             </div>
           </div>
 
@@ -2018,7 +2147,7 @@
           <!-- Paso 1 -->
           <div class="step-card" id="paso-1">
             <div class="step-number">1</div>
-            <h3 class="step-title">Me cuentas quién eres</h3>
+            <h3 class="step-title">Nos cuentas quién eres</h3>
             <p class="step-desc">
               Rellenas un breve formulario con tus datos de contacto, tu fotografía o logotipo, tus enlaces y tus
               colores preferidos.
@@ -2028,7 +2157,7 @@
           <!-- Paso 2 -->
           <div class="step-card" id="paso-2">
             <div class="step-number">2</div>
-            <h3 class="step-title">Diseño tu tarjeta</h3>
+            <h3 class="step-title">Diseñamos tu tarjeta</h3>
             <p class="step-desc">
               En 72 horas recibes tu propuesta personalizada y cuentas con hasta 4 ajustes incluidos para perfeccionarla hasta que te encante.
             </p>
@@ -2039,7 +2168,7 @@
             <div class="step-number">3</div>
             <h3 class="step-title">La publicas y la compartes</h3>
             <p class="step-desc">
-              Te entrego tu enlace propio y tu código QR listos para usar y compartir con todo el mundo desde el primer
+              Te entregamos tu enlace propio y tu código QR listos para usar y compartir con todo el mundo desde el primer
               día.
             </p>
           </div>
@@ -2073,14 +2202,14 @@
               <span>Primer año de mantenimiento incluido</span>
             </div>
 
-            <h3 class="pricing-service-name">Tarjeta de Presentación Digital</h3>
+            <h3 class="pricing-service-name">Tarjeta de presentación digital</h3>
 
             <div class="pricing-amount-box">
               <div class="pricing-price-display">
                 <span class="pricing-figure">67 €</span>
               </div>
               <span class="pricing-launch-tag">Precio de lanzamiento hasta el 31 de diciembre</span>
-              <span class="pricing-type">Tarjeta de presentación digital: 97 € con el primer año de mantenimiento incluido (IVA incluido)</span>
+              <span class="pricing-type">Después, 97 €. IVA incluido.</span>
             </div>
 
             <ul class="pricing-includes-list" id="lista-incluye-precio">
@@ -2121,7 +2250,7 @@
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
                 </div>
-                <span><strong>Ventaja destacada: 4 ajustes en el diseño inicial</strong> para revisar y perfeccionar cada detalle hasta que quede exactamente como quieres.</span>
+                <span><strong>4 ajustes en el diseño inicial</strong> para revisar y perfeccionar cada detalle hasta que quede exactamente como quieres.</span>
               </li>
 
               <li class="pricing-includes-item">
@@ -2233,7 +2362,7 @@
               </svg>
             </summary>
             <div class="faq-content">
-              Escríbeme por WhatsApp o correo y lo valoramos de manera sencilla y personalizada según lo que requieras.
+              Escríbenos por WhatsApp o correo y lo valoramos de manera sencilla y personalizada según lo que requieras.
             </div>
           </details>
 
@@ -2247,7 +2376,7 @@
               </svg>
             </summary>
             <div class="faq-content">
-              Recibes tu primera propuesta personalizada en 72 horas para que la revises y me des tu opinión.
+              Recibes tu primera propuesta personalizada en 72 horas para que la revises y nos des tu opinión.
             </div>
           </details>
 
@@ -2292,7 +2421,7 @@
         </div>
 
         <div class="contact-block">
-          <h3 class="contact-title">¿Tienes preguntas antes de empezar? Escríbeme directamente</h3>
+          <h3 class="contact-title">¿Tienes preguntas antes de empezar? Escríbenos directamente</h3>
           <div class="contact-links-grid">
 
             <!-- WhatsApp -->
@@ -2327,6 +2456,27 @@
             </a>
 
           </div>
+
+          <!-- Redes Sociales -->
+          <div class="contact-social-row">
+            <span class="contact-social-label">Síguenos en redes</span>
+            <div class="contact-social-links">
+              <a href="https://www.instagram.com/estrategiadigitalestrella/" target="_blank" rel="noopener noreferrer"
+                class="social-link social-link-dark" aria-label="Instagram de Estrategia Digital Estrella">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" />
+                  <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                  <path d="M17 7l0 .01" />
+                </svg>
+              </a>
+              <a href="https://www.tiktok.com/@ede.estrategia.di" target="_blank" rel="noopener noreferrer"
+                class="social-link social-link-dark" aria-label="TikTok de Estrategia Digital Estrella">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917" />
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -2339,6 +2489,22 @@
   <footer class="site-footer">
     <div class="container">
       <img src="assets/logo vectorizado negro.svg" alt="Estrategia Digital Estrella" class="footer-logo-img" loading="lazy">
+      <div class="footer-social-links">
+        <a href="https://www.instagram.com/estrategiadigitalestrella/" target="_blank" rel="noopener noreferrer"
+          class="social-link social-link-light" aria-label="Instagram de Estrategia Digital Estrella">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" />
+            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+            <path d="M17 7l0 .01" />
+          </svg>
+        </a>
+        <a href="https://www.tiktok.com/@ede.estrategia.di" target="_blank" rel="noopener noreferrer"
+          class="social-link social-link-light" aria-label="TikTok de Estrategia Digital Estrella">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917" />
+          </svg>
+        </a>
+      </div>
       <p class="footer-copy">
         &copy; 2026 Estrategia Digital Estrella. Todos los derechos reservados.
       </p>

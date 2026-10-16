@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tarjeta.estrategiadigitalestrella.com/sitemap.xml
