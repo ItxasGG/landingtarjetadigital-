@@ -1653,6 +1653,220 @@
         gap: 8px;
       }
     }
+
+    /* ==========================================================================
+       SELECTOR DINÁMICO DE TARJETAS DE EJEMPLO (NUEVO)
+       ========================================================================== */
+    .phone-showcase-column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 340px;
+      margin: 0 auto;
+    }
+
+    .card-switcher-container {
+      width: 100%;
+      max-width: 320px;
+      margin-bottom: 16px;
+    }
+
+    .card-switcher-hint {
+      font-family: var(--font-body);
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: rgba(10, 10, 10, 0.55);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 8px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .card-switcher-hint-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: var(--color-acento);
+      display: inline-block;
+    }
+
+    .card-switcher-tabs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      width: 100%;
+    }
+
+    .card-switcher-tab {
+      appearance: none;
+      -webkit-appearance: none;
+      background: var(--color-blanco);
+      border: 1.5px solid rgba(10, 10, 10, 0.14);
+      border-radius: var(--radius-pill);
+      padding: 8px 10px;
+      font-family: var(--font-body);
+      font-size: 0.74rem;
+      font-weight: 500;
+      color: var(--color-texto);
+      cursor: pointer;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      white-space: nowrap;
+      transition: var(--transition-smooth);
+      box-shadow: none;
+    }
+
+    .card-switcher-tab:hover {
+      border-color: var(--color-texto);
+      background-color: rgba(10, 10, 10, 0.04);
+    }
+
+    .card-switcher-tab.active {
+      background-color: var(--color-texto);
+      color: var(--color-blanco);
+      border-color: var(--color-texto);
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(10, 10, 10, 0.12);
+    }
+
+    .card-switcher-tab-name {
+      line-height: 1;
+    }
+
+    /* Contenedor de escenario para iframes dentro del mockup */
+    .phone-iframe-stage {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      border-radius: 36px;
+      overflow: hidden;
+      background: var(--color-fondo);
+      border: 1px solid rgba(10, 10, 10, 0.1);
+      z-index: 5;
+      opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+      transition: opacity 0.25s ease, visibility 0.25s ease;
+    }
+
+    .phone-iframe-stage.active {
+      opacity: 1;
+      pointer-events: auto;
+      visibility: visible;
+    }
+
+    .phone-screen {
+      transition: opacity 0.25s ease, visibility 0.25s ease;
+    }
+
+    .phone-screen.card-screen-hidden {
+      opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+    }
+
+    .card-iframe-loader {
+      position: absolute;
+      inset: 0;
+      background: var(--color-fondo);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-family: var(--font-body);
+      font-size: 0.74rem;
+      color: rgba(10, 10, 10, 0.6);
+      font-weight: 500;
+      z-index: 6;
+      transition: opacity 0.2s ease, visibility 0.2s ease;
+    }
+
+    .card-iframe-loader.hidden {
+      opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+    }
+
+    .card-loader-spinner {
+      width: 22px;
+      height: 22px;
+      border: 2px solid rgba(10, 10, 10, 0.12);
+      border-top-color: var(--color-texto);
+      border-radius: 50%;
+      animation: cardSpinner 0.7s linear infinite;
+    }
+
+    @keyframes cardSpinner {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .card-iframes-holder {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-demo-iframe {
+      border: none;
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #FFFFFF;
+    }
+
+    .card-demo-iframe.active {
+      display: block;
+    }
+
+    /* Enlace "Ver tarjeta completa" debajo del mockup */
+    .card-view-full-container {
+      width: 100%;
+      max-width: 320px;
+      margin-top: 14px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card-view-full-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      font-family: var(--font-body);
+      font-size: 0.76rem;
+      font-weight: 500;
+      color: var(--color-texto);
+      background: var(--color-blanco);
+      border: 1px solid rgba(10, 10, 10, 0.14);
+      text-decoration: none;
+      transition: var(--transition-smooth);
+      box-shadow: none;
+    }
+
+    .card-view-full-btn:hover {
+      background-color: var(--color-texto);
+      color: var(--color-blanco);
+      border-color: var(--color-texto);
+      transform: translateY(-1px);
+    }
   </style>
 </head>
 
@@ -1739,96 +1953,143 @@
           </div>
         </div>
 
-        <!-- MOCKUP VISUAL DE SMARTPHONE CON TARJETA DE EJEMPLO DE LAURA RAMOS -->
-        <div class="phone-mockup-wrapper">
-          <div class="phone-float-badge badge-top-right">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-            </svg>
-            <span>Contacto en 1 toque</span>
-          </div>
-          <a href="https://tarjeta-laura-ramos.pages.dev/" target="_blank" rel="noopener noreferrer" class="phone-float-badge badge-bottom-left phone-badge-link" title="Abrir tarjeta de ejemplo">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-              <circle cx="12" cy="12" r="3"></circle>
-            </svg>
-            <span>Ver tarjeta de ejemplo ↗</span>
-          </a>
+        <!-- MOCKUP VISUAL DE SMARTPHONE CON SELECTOR DE TARJETAS DE EJEMPLO -->
+        <div class="phone-showcase-column">
 
-          <div class="phone-mockup-frame">
-            <div class="phone-notch"></div>
-            <div class="phone-screen">
-              <div class="phone-top-bar">
-                <span class="phone-brand-pill">
-                  <span class="phone-brand-dot"></span>
-                  <span>AUREA · EDITORIAL</span>
-                </span>
-                <span class="phone-top-qr-icon" title="Código QR">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="3" y="3" width="7" height="7"></rect>
-                    <rect x="14" y="3" width="7" height="7"></rect>
-                    <rect x="14" y="14" width="7" height="7"></rect>
-                    <rect x="3" y="14" width="7" height="7"></rect>
-                  </svg>
-                </span>
-              </div>
-
-              <div class="phone-avatar-box">
-                <img src="foto-perfil.jpg" alt="Laura Ramos - Editora jefe de AUREA" class="phone-avatar-img" loading="lazy">
-              </div>
-
-              <div class="phone-profile-name">Laura Ramos</div>
-              <div class="phone-profile-role">
-                <span>Editora jefe de</span>
-                <span class="phone-role-badge">AUREA</span>
-              </div>
-
-              <div class="phone-quote-capsule">
-                <span>«Cada portada, una declaración de estilo.»</span>
-              </div>
-
-              <div class="phone-action-row">
-                <a href="https://tarjeta-laura-ramos.pages.dev/" target="_blank" rel="noopener noreferrer" class="phone-quick-btn" title="WhatsApp en tarjeta de Laura">
-                  <span class="phone-quick-icon">
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-                    </svg>
-                  </span>
-                  <span class="phone-quick-text">WhatsApp</span>
-                </a>
-                <a href="https://tarjeta-laura-ramos.pages.dev/" target="_blank" rel="noopener noreferrer" class="phone-quick-btn" title="Email en tarjeta de Laura">
-                  <span class="phone-quick-icon">
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                      <polyline points="22,6 12,13 2,6"></polyline>
-                    </svg>
-                  </span>
-                  <span class="phone-quick-text">Email</span>
-                </a>
-                <a href="https://tarjeta-laura-ramos.pages.dev/" target="_blank" rel="noopener noreferrer" class="phone-quick-btn" title="Llamar en tarjeta de Laura">
-                  <span class="phone-quick-icon">
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                    </svg>
-                  </span>
-                  <span class="phone-quick-text">Llamar</span>
-                </a>
-              </div>
-
-              <a href="https://tarjeta-laura-ramos.pages.dev/" target="_blank" rel="noopener noreferrer" class="phone-btn-save-master" title="Abrir tarjeta de ejemplo">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
-                  <polyline points="17 21 17 13 7 13 7 21"></polyline>
-                  <polyline points="7 3 7 8 15 8"></polyline>
-                </svg>
-                <span>Guardar contacto</span>
-              </a>
-
-              <a href="https://tarjeta-laura-ramos.pages.dev/" target="_blank" rel="noopener noreferrer" class="phone-live-demo-tag">
-                <span>Probar tarjeta en vivo ↗</span>
-              </a>
+          <!-- Selector discreto de tarjetas de ejemplo -->
+          <div class="card-switcher-container" role="region" aria-label="Selector de ejemplos de tarjetas digitales">
+            <div class="card-switcher-hint">
+              <span class="card-switcher-hint-dot"></span>
+              <span>4 ejemplos reales</span>
+            </div>
+            <div class="card-switcher-tabs" role="tablist">
+              <button type="button" class="card-switcher-tab active" data-index="0" role="tab" aria-selected="true" id="tab-card-0">
+                <span class="card-switcher-tab-name">Laura Ramos</span>
+              </button>
+              <button type="button" class="card-switcher-tab" data-index="1" role="tab" aria-selected="false" id="tab-card-1">
+                <span class="card-switcher-tab-name">María Ortiz</span>
+              </button>
+              <button type="button" class="card-switcher-tab" data-index="2" role="tab" aria-selected="false" id="tab-card-2">
+                <span class="card-switcher-tab-name">Daniel Vega</span>
+              </button>
+              <button type="button" class="card-switcher-tab" data-index="3" role="tab" aria-selected="false" id="tab-card-3">
+                <span class="card-switcher-tab-name">Fernando López</span>
+              </button>
             </div>
           </div>
+
+          <div class="phone-mockup-wrapper">
+            <div class="phone-float-badge badge-top-right">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+              <span>Contacto en 1 toque</span>
+            </div>
+            <a href="https://tarjeta-laura-ramos.pages.dev/" target="_blank" rel="noopener noreferrer" class="phone-float-badge badge-bottom-left phone-badge-link" title="Abrir tarjeta de ejemplo">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              <span>Ver tarjeta de ejemplo ↗</span>
+            </a>
+
+            <div class="phone-mockup-frame" id="phone-mockup-frame">
+              <div class="phone-notch"></div>
+              <div class="phone-screen" id="phone-screen-laura">
+                <div class="phone-top-bar">
+                  <span class="phone-brand-pill">
+                    <span class="phone-brand-dot"></span>
+                    <span>AUREA · EDITORIAL</span>
+                  </span>
+                  <span class="phone-top-qr-icon" title="Código QR">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="3" width="7" height="7"></rect>
+                      <rect x="14" y="3" width="7" height="7"></rect>
+                      <rect x="14" y="14" width="7" height="7"></rect>
+                      <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg>
+                  </span>
+                </div>
+
+                <div class="phone-avatar-box">
+                  <img src="foto-perfil.jpg" alt="Laura Ramos - Editora jefe de AUREA" class="phone-avatar-img" loading="lazy">
+                </div>
+
+                <div class="phone-profile-name">Laura Ramos</div>
+                <div class="phone-profile-role">
+                  <span>Editora jefe de</span>
+                  <span class="phone-role-badge">AUREA</span>
+                </div>
+
+                <div class="phone-quote-capsule">
+                  <span>«Cada portada, una declaración de estilo.»</span>
+                </div>
+
+                <div class="phone-action-row">
+                  <a href="https://tarjeta-laura-ramos.pages.dev/" target="_blank" rel="noopener noreferrer" class="phone-quick-btn" title="WhatsApp en tarjeta de Laura">
+                    <span class="phone-quick-icon">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                      </svg>
+                    </span>
+                    <span class="phone-quick-text">WhatsApp</span>
+                  </a>
+                  <a href="https://tarjeta-laura-ramos.pages.dev/" target="_blank" rel="noopener noreferrer" class="phone-quick-btn" title="Email en tarjeta de Laura">
+                    <span class="phone-quick-icon">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                      </svg>
+                    </span>
+                    <span class="phone-quick-text">Email</span>
+                  </a>
+                  <a href="https://tarjeta-laura-ramos.pages.dev/" target="_blank" rel="noopener noreferrer" class="phone-quick-btn" title="Llamar en tarjeta de Laura">
+                    <span class="phone-quick-icon">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                      </svg>
+                    </span>
+                    <span class="phone-quick-text">Llamar</span>
+                  </a>
+                </div>
+
+                <a href="https://tarjeta-laura-ramos.pages.dev/" target="_blank" rel="noopener noreferrer" class="phone-btn-save-master" title="Abrir tarjeta de ejemplo">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                    <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                    <polyline points="7 3 7 8 15 8"></polyline>
+                  </svg>
+                  <span>Guardar contacto</span>
+                </a>
+
+                <a href="https://tarjeta-laura-ramos.pages.dev/" target="_blank" rel="noopener noreferrer" class="phone-live-demo-tag">
+                  <span>Probar tarjeta en vivo ↗</span>
+                </a>
+              </div>
+
+              <!-- Escenario dinámico para tarjetas externas vía iframe -->
+              <div class="phone-iframe-stage" id="phone-iframe-stage" aria-hidden="true">
+                <div class="card-iframe-loader hidden" id="card-iframe-loader" aria-hidden="true">
+                  <div class="card-loader-spinner"></div>
+                  <span>Cargando tarjeta...</span>
+                </div>
+                <div class="card-iframes-holder" id="card-iframes-holder"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Enlace debajo del mockup para ver la tarjeta completa -->
+          <div class="card-view-full-container">
+            <a href="https://tarjeta-laura-ramos.pages.dev/" target="_blank" rel="noopener noreferrer" class="card-view-full-btn" id="card-view-full-btn" title="Abrir tarjeta completa en una pestaña nueva" aria-label="Abrir tarjeta completa en una pestaña nueva">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              <span id="card-view-full-text">Ver tarjeta completa ↗</span>
+            </a>
+          </div>
+
         </div>
       </div>
     </div>
@@ -2545,6 +2806,202 @@
         });
       });
     });
+  </script>
+
+  <!-- Script interactivo para el selector dinámico de tarjetas de ejemplo -->
+  <script>
+    (function () {
+      const demoCards = [
+        {
+          id: 'laura',
+          name: 'Laura Ramos',
+          url: 'https://tarjeta-laura-ramos.pages.dev/',
+          isNative: true
+        },
+        {
+          id: 'maria',
+          name: 'María Ortiz',
+          url: 'https://tarjetapresentacionmariaortiz.pages.dev/',
+          isNative: false
+        },
+        {
+          id: 'daniel',
+          name: 'Daniel Vega',
+          url: 'https://daniel-tarjetadigital.pages.dev/',
+          isNative: false
+        },
+        {
+          id: 'fernando',
+          name: 'Fernando López',
+          url: 'https://fernando-ingenieria-tarjetadigital.pages.dev/',
+          isNative: false
+        }
+      ];
+
+      let currentIndex = 0;
+      const loadedIframes = {};
+
+      function updateIframeScale() {
+        const stage = document.getElementById('phone-iframe-stage');
+        if (!stage) return;
+        const stageWidth = stage.clientWidth || 295;
+        const stageHeight = stage.clientHeight || 459;
+        const baseWidth = 375;
+        const scale = stageWidth / baseWidth;
+        const targetHeight = stageHeight / scale;
+
+        const iframes = stage.querySelectorAll('.card-demo-iframe');
+        iframes.forEach(iframe => {
+          iframe.style.width = baseWidth + 'px';
+          iframe.style.height = targetHeight + 'px';
+          iframe.style.transform = `scale(${scale})`;
+          iframe.style.transformOrigin = 'top left';
+        });
+      }
+
+      function initCardSwitcher() {
+        const tabs = document.querySelectorAll('.card-switcher-tab');
+        const nativeScreen = document.getElementById('phone-screen-laura');
+        const iframeStage = document.getElementById('phone-iframe-stage');
+        const iframesHolder = document.getElementById('card-iframes-holder');
+        const loader = document.getElementById('card-iframe-loader');
+        const fullLinkBtn = document.getElementById('card-view-full-btn');
+        const fullLinkText = document.getElementById('card-view-full-text');
+        const phoneMockupFrame = document.getElementById('phone-mockup-frame');
+
+        if (!tabs.length || !nativeScreen || !iframeStage || !iframesHolder) return;
+
+        function selectCard(index) {
+          if (index < 0 || index >= demoCards.length) return;
+          currentIndex = index;
+          const card = demoCards[index];
+
+          // 1. Actualizar estado activo de las pestañas
+          tabs.forEach((tab, i) => {
+            const isActive = i === index;
+            tab.classList.toggle('active', isActive);
+            tab.setAttribute('aria-selected', isActive ? 'true' : 'false');
+            tab.setAttribute('tabindex', isActive ? '0' : '-1');
+          });
+
+          // 2. Actualizar botón "Ver tarjeta completa"
+          if (fullLinkBtn) {
+            if (card.url) {
+              fullLinkBtn.href = card.url;
+              fullLinkBtn.setAttribute('title', `Abrir tarjeta completa de ${card.name} en una pestaña nueva`);
+              fullLinkBtn.setAttribute('aria-label', `Abrir tarjeta completa de ${card.name} en una pestaña nueva`);
+              if (fullLinkText) {
+                fullLinkText.textContent = `Ver tarjeta completa ↗`;
+              }
+              fullLinkBtn.style.display = 'inline-flex';
+            } else {
+              fullLinkBtn.style.display = 'none';
+            }
+          }
+
+          // 3. Alternar entre vista nativa (Laura) y vista iframe
+          if (card.isNative) {
+            iframeStage.classList.remove('active');
+            nativeScreen.classList.remove('card-screen-hidden');
+            Object.values(loadedIframes).forEach(ifr => ifr.classList.remove('active'));
+            if (loader) loader.classList.add('hidden');
+          } else {
+            nativeScreen.classList.add('card-screen-hidden');
+            iframeStage.classList.add('active');
+
+            // Ocultar otros iframes
+            Object.values(loadedIframes).forEach(ifr => ifr.classList.remove('active'));
+
+            if (loadedIframes[card.id]) {
+              loadedIframes[card.id].classList.add('active');
+              if (loader) loader.classList.add('hidden');
+              updateIframeScale();
+            } else {
+              // Carga bajo demanda al hacer clic (lazy)
+              if (loader) loader.classList.remove('hidden');
+
+              const iframe = document.createElement('iframe');
+              iframe.className = 'card-demo-iframe';
+              iframe.title = `Tarjeta digital de ${card.name}`;
+              iframe.setAttribute('loading', 'lazy');
+
+              iframe.onload = () => {
+                if (loader) loader.classList.add('hidden');
+              };
+
+              // Temporizador de respaldo por si la carga tarda o está cacheada
+              setTimeout(() => {
+                if (loader) loader.classList.add('hidden');
+              }, 2000);
+
+              iframe.src = card.url;
+              iframesHolder.appendChild(iframe);
+              loadedIframes[card.id] = iframe;
+
+              updateIframeScale();
+              iframe.classList.add('active');
+            }
+          }
+        }
+
+        // Asignar eventos de clic y accesibilidad a pestañas
+        tabs.forEach((tab, index) => {
+          tab.addEventListener('click', () => {
+            selectCard(index);
+          });
+
+          tab.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+              e.preventDefault();
+              const nextIndex = (currentIndex + 1) % demoCards.length;
+              tabs[nextIndex].focus();
+              selectCard(nextIndex);
+            } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+              e.preventDefault();
+              const prevIndex = (currentIndex - 1 + demoCards.length) % demoCards.length;
+              tabs[prevIndex].focus();
+              selectCard(prevIndex);
+            }
+          });
+        });
+
+        // Gestos táctiles de deslizamiento (swipe) en el móvil
+        if (phoneMockupFrame) {
+          let touchStartX = 0;
+          let touchStartY = 0;
+
+          phoneMockupFrame.addEventListener('touchstart', (e) => {
+            if (e.touches && e.touches[0]) {
+              touchStartX = e.touches[0].clientX;
+              touchStartY = e.touches[0].clientY;
+            }
+          }, { passive: true });
+
+          phoneMockupFrame.addEventListener('touchend', (e) => {
+            if (e.changedTouches && e.changedTouches[0]) {
+              const diffX = e.changedTouches[0].clientX - touchStartX;
+              const diffY = e.changedTouches[0].clientY - touchStartY;
+              if (Math.abs(diffX) > 45 && Math.abs(diffX) > Math.abs(diffY)) {
+                if (diffX < 0) {
+                  selectCard((currentIndex + 1) % demoCards.length);
+                } else {
+                  selectCard((currentIndex - 1 + demoCards.length) % demoCards.length);
+                }
+              }
+            }
+          }, { passive: true });
+        }
+
+        // Ajuste reactivo al cambiar tamaño de ventana
+        window.addEventListener('resize', updateIframeScale, { passive: true });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCardSwitcher);
+      } else {
+        initCardSwitcher();
+      }
+    })();
   </script>
 </body>
 
